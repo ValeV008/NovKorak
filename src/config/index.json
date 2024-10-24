@@ -5,20 +5,20 @@
   },
   "navigation": [
     {
-      "name": "Product",
+      "name": "O delovni terapiji",
       "href": "product"
     },
     {
-      "name": "Features",
+      "name": "Prednosti",
       "href": "features"
     },
 
     {
-      "name": "Pricing",
+      "name": "Cena",
       "href": "pricing"
     },
     {
-      "name": "About",
+      "name": "O nas",
       "href": "about"
     }
   ],
@@ -27,9 +27,9 @@
     "href": "#"
   },
   "mainHero": {
-    "title": "Use me as your",
-    "subtitle": "landing page.",
-    "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
+    "title": "Delovna terapija",
+    "subtitle": "po vaši meri.",
+    "description": "Delovna terapija je poklic, osredotočen na stranke, ki se ukvarja s spodbujanjem zdravja in dobrega počutja skozi dejavnosti. Primarni cilj delovne terapije je omogočiti ljudem sodelovanje v vsakodnevnih aktivnostih.",
     "img": "/assets/images/happyTeam.jpeg",
     "primaryAction": {
       "text": "Get started",
@@ -37,11 +37,11 @@
     },
     "secondaryAction": {
       "text": "Email us",
-      "href": "mailto:issaafakattan@gmail.com?subject=I like react landing page!"
+      "href": "mailto:kragelj.valentin@gmail.com?subject=Poizvedba za delovno terapijo"
     }
   },
   "product": {
-    "title": "React landing page 2021",
+    "title": "O delovni terapiji",
     "items": [
       {
         "title": "A plug n play template",
@@ -57,26 +57,26 @@
   },
   "features": {
     "title": "Latest & greatest ",
-    "subtitle": "All the best technologies out there!",
+    "subtitle": "Prednosti delovne terapije",
     "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
     "items": [
       {
-        "name": "React.js",
+        "name": "Boljše zdravje",
         "description": "React is a free and open-source front-end JavaScript library for building user interfaces or UI components.",
         "icon": "/assets/images/react.png"
       },
       {
-        "name": "Tailwind",
+        "name": "Boljše počutje",
         "description": "Tailwind CSS is a highly customizable, low-level CSS framework for quickly creating beautiful designs without any annoying opinionated stylesheet nonsense.",
         "icon": "/assets/images/tailwindcss.svg"
       },
       {
-        "name": "Next.js",
+        "name": "Več aktivnosti",
         "description": "Next.js is a framework for server-rendered React applications using Next.js.",
         "icon": "/assets/images/nextjs.svg"
       },
       {
-        "name": "Typescript",
+        "name": "Več samostojnosti",
         "description": "TypeScript is a programming language developed and maintained by Microsoft.",
         "icon": "/assets/images/ts.png"
       }
