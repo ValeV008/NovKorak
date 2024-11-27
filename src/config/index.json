@@ -14,7 +14,7 @@
     },
 
     {
-      "name": "Cena",
+      "name": "Cenik",
       "href": "pricing"
     },
     {
@@ -32,11 +32,11 @@
     "description": "Delovna terapija je poklic, osredotočen na stranke, ki se ukvarja s spodbujanjem zdravja in dobrega počutja skozi dejavnosti. Primarni cilj delovne terapije je omogočiti ljudem sodelovanje v vsakodnevnih aktivnostih.",
     "img": "/assets/images/happyTeam.jpeg",
     "primaryAction": {
-      "text": "Get started",
-      "href": "#"
+      "text": "O delovni terapiji",
+      "href": "product"
     },
     "secondaryAction": {
-      "text": "Email us",
+      "text": "Pišite nam!",
       "href": "mailto:kragelj.valentin@gmail.com?subject=Poizvedba za delovno terapijo"
     }
   },
@@ -44,79 +44,81 @@
     "title": "O delovni terapiji",
     "items": [
       {
-        "title": "A plug n play template",
-        "description": "Just edit the config.json file with details about your company and voila your beautiful state of the art landing page is ready to go live! Remember to also update your assets, add any images you want to show to /assets/images and link them in the config.json",
+        "title": "Kaj je delovna terapija?",
+        "description": "Delovna terapija je zdravstvena stroka, ki pomaga ljudem vseh starosti živeti bolj polno in samostojno življenje. Osredotoča se na omogočanje izvajanja vsakodnevnih aktivnosti, kot so skrb zase, delo in prosti čas. Terapevti sodelujejo s posamezniki, da premagajo fizične, čustvene ali socialne ovire, ki jim preprečujejo sodelovanje v življenjskih aktivnostih.",
         "img": "/assets/images/product1.jpg"
       },
       {
-        "title": "Make it your own!",
-        "description": "Play around with the theme.ts file and configure the color palette to match the branding of your company! If you're feeling wild, maybe change some tailwind css as well!",
+        "title": "Kako poteka delovna terapija?",
+        "description": "Delovni terapevt najprej oceni posameznikove potrebe, sposobnosti in okolje. Na podlagi tega razvije individualiziran načrt obravnave, ki vključuje praktične aktivnosti in prilagoditve za doseganje zastavljenih ciljev. Terapija lahko vključuje učenje novih načinov izvajanja aktivnosti, uporabo pripomočkov, prilagajanje okolja ali razvijanje novih spretnosti. Cilj je vedno izboljšati kakovost življenja in omogočiti čim večjo samostojnost.",
         "img": "/assets/images/product2.jpg"
       }
     ]
   },
   "features": {
-    "title": "Latest & greatest ",
+    "title": "Ne spreglejte ...",
     "subtitle": "Prednosti delovne terapije",
-    "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
+    "description": "Delovna terapija prinaša številne prednosti za vaše zdravje in kakovost življenja. Z individualno prilagojenim pristopom vam pomagamo doseči večjo samostojnost pri vsakodnevnih aktivnostih, izboljšati telesno in duševno počutje ter aktivno sodelovati v družbi. Spoznajte ključne prednosti, ki jih lahko prinese delovna terapija v vaše življenje.",
     "items": [
       {
         "name": "Boljše zdravje",
-        "description": "React is a free and open-source front-end JavaScript library for building user interfaces or UI components.",
+        "description": "Delovna terapija pomaga izboljšati vaše fizično zdravje skozi ciljane aktivnosti in vaje. Z rednim izvajanjem terapevtskih aktivnosti lahko okrepite mišice, izboljšate gibljivost in koordinacijo ter zmanjšate bolečine.",
         "icon": "/assets/images/react.png"
       },
       {
         "name": "Boljše počutje",
-        "description": "Tailwind CSS is a highly customizable, low-level CSS framework for quickly creating beautiful designs without any annoying opinionated stylesheet nonsense.",
+        "description": "Z delovno terapijo lahko izboljšate svoje duševno počutje in zmanjšate stres. Terapevtske aktivnosti vam pomagajo pri sproščanju, izboljšanju razpoloženja in krepitvi samozavesti.",
         "icon": "/assets/images/tailwindcss.svg"
       },
       {
         "name": "Več aktivnosti",
-        "description": "Next.js is a framework for server-rendered React applications using Next.js.",
+        "description": "Delovna terapija vam pomaga ponovno vzpostaviti rutino vsakodnevnih aktivnosti in vam omogoča, da se vrnete k svojim najljubšim dejavnostim. Naučite se novih načinov izvajanja aktivnosti in odkrijete nove interese.",
         "icon": "/assets/images/nextjs.svg"
       },
       {
         "name": "Več samostojnosti",
-        "description": "TypeScript is a programming language developed and maintained by Microsoft.",
+        "description": "S pomočjo delovne terapije lahko dosežete večjo samostojnost pri vsakodnevnih opravilih. Naučite se novih strategij in uporabe pripomočkov, ki vam olajšajo izvajanje aktivnosti in zmanjšajo odvisnost od pomoči drugih.",
         "icon": "/assets/images/ts.png"
       }
     ]
   },
   "pricing": {
-    "title": "Pricing",
+    "title": "Cenik",
     "items": [
       {
-        "name": "Free",
-        "price": "$0",
-        "priceDetails": "for one user",
+        "name": "Osnovna obravnava",
+        "price": "45€",
+        "priceDetails": "na obravnavo",
         "features": [
-          "1 user",
-          "Basic Support",
-          "1 GB of storage",
-          "Email support"
+          "Začetna ocena stanja",
+          "Individualni načrt terapije",
+          "45-minutna obravnava",
+          "Osnovni terapevtski pripomočki",
+          "Nasveti za domačo vadbo"
         ]
       },
       {
-        "name": "Pro",
-        "price": "$15",
-        "priceDetails": "per user",
-
+        "name": "Paket 5 obravnav",
+        "price": "200€",
+        "priceDetails": "prihranek 25€",
         "features": [
-          "5 users",
-          "Priority Support",
-          "10 GB of storage",
-          "Phone and Email support"
+          "5 terapevtskih obravnav",
+          "Poglobljena začetna ocena",
+          "Prilagojen program vadbe",
+          "Napredni terapevtski pripomočki",
+          "Redna evalvacija napredka"
         ]
       },
       {
-        "name": "Enterprise",
-        "price": "$29",
-        "priceDetails": "per user",
+        "name": "Paket 10 obravnav",
+        "price": "380€",
+        "priceDetails": "prihranek 70€",
         "features": [
-          "50 users",
-          "24/7 Support",
-          "100 GB of storage",
-          "Phone and Email support"
+          "10 terapevtskih obravnav",
+          "Celostna ocena stanja",
+          "Intenziven program rehabilitacije",
+          "Vsi terapevtski pripomočki",
+          "Podrobno spremljanje napredka"
         ]
       }
     ]
@@ -124,30 +126,30 @@
   "about": {
     "sections": [
       {
-        "name": "Something",
+        "name": "Something1",
         "href": "#",
         "content": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
       },
       {
-        "name": "Something",
+        "name": "Something2",
         "href": "#",
         "content": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
       },
       {
-        "name": "Something",
+        "name": "Something3",
         "href": "#",
         "content": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
       },
       {
-        "name": "Something",
+        "name": "Something4",
         "href": "#",
         "content": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
       }
     ],
     "socialMedia": {
-      "github": "https://github.com/issaafalkattan",
-      "twitter": "https://twitter.com/issaafkattan",
-      "linkedin": "https://www.linkedin.com/in/issaaf-kattan/"
+      "github": "https://google.com",
+      "twitter": "https://google.com",
+      "linkedin": "https://google.com"
     }
   }
 }

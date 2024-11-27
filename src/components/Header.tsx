@@ -58,12 +58,15 @@ const Menu = () => {
                   {item.name}
                 </Link>
               ))}
-              <a
-                href="#"
+              <Link
+                spy={true}
+                smooth={true}
+                duration={1000}
+                to="about"
                 className={`font-medium text-primary hover:text-secondary`}
               >
-                Call to action
-              </a>
+                Kontakt
+              </Link>
             </div>
           </nav>
         </div>
