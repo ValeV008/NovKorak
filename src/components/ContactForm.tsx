@@ -13,10 +13,8 @@ const ContactForm = () => {
         name="contact"
         method="POST"
         data-netlify="true"
-        action="/"
         className={`bg-gray-100 w-2/5 mx-auto my-2 py-5 font-bold text-center text-xl text-gray-500`}
       >
-        <input type="hidden" name="form-name" value="contact" />
         <p className="mb-5">
           <label htmlFor="name">Ime</label>
           <br />
@@ -42,7 +40,7 @@ const ContactForm = () => {
         <p
           className={`w-1/4 m-auto flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-background bg-primary hover:bg-border hover:text-primary md:py-4 md:text-lg md:px-10 cursor-pointer`}
         >
-          <button type="submit">Send</button>
+          <button type="submit">Pošlji</button>
         </p>
       </form>
     </div>
