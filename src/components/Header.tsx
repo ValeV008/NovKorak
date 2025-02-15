@@ -7,7 +7,7 @@ import { Link } from "react-scroll";
 import config from "../config/index.json";
 
 const Menu = () => {
-  const { navigation, company, callToAction } = config;
+  const { mainHero, navigation, company, callToAction } = config;
   const { name: companyName, logo } = company;
 
   return (
@@ -53,20 +53,17 @@ const Menu = () => {
                   duration={1000}
                   key={item.name}
                   to={item.href}
-                  className="font-medium text-gray-500 hover:text-gray-900"
+                  className="font-medium text-gray-500 hover:text-gray-900 cursor-pointer"
                 >
                   {item.name}
                 </Link>
               ))}
-              <Link
-                spy={true}
-                smooth={true}
-                duration={1000}
-                to="about"
+              <a
+                href={mainHero.secondaryAction.href}
                 className={`font-medium text-primary hover:text-secondary`}
               >
                 Kontakt
-              </Link>
+              </a>
             </div>
           </nav>
         </div>

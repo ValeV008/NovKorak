@@ -69,7 +69,7 @@ const Pricing = () => {
               <ul className={`w-full text-center text-base font-bold`}>
                 {secondPlan?.features.map((feature) => (
                   <li
-                    className={`border-b py-4`}
+                    className={`border-b py-4 text-gray-500`}
                     key={`${secondPlan?.name}-${feature}`}
                   >
                     {feature}
@@ -82,7 +82,10 @@ const Pricing = () => {
             >
               <div className={`w-full pt-6 text-4xl font-bold text-center`}>
                 {secondPlan?.price}
-                <span className={`text-base`}> {secondPlan?.priceDetails}</span>
+                <span className={`text-base text-primary`}>
+                  {" "}
+                  {secondPlan?.priceDetails}
+                </span>
               </div>
             </div>
           </div>

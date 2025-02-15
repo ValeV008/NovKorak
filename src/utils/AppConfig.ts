@@ -1,6 +1,6 @@
 export const AppConfig = {
-  site_name: "React landing page",
-  title: "React landing page template 2021",
+  site_name: "Nov Korak",
+  title: "Delovna terapija po vaši meri",
   description: "Production ready plug n play landing page!",
   locale: "en",
 };

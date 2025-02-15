@@ -3,6 +3,7 @@ import React from "react";
 import About from "../components/About";
 import Analytics from "../components/Analytics";
 import Canvas from "../components/Canvas";
+import ContactForm from "../components/ContactForm";
 import Features from "../components/Features";
 import Header from "../components/Header";
 import LazyShow from "../components/LazyShow";
@@ -40,6 +41,9 @@ const App = () => {
       </LazyShow>
       <LazyShow>
         <Pricing />
+      </LazyShow>
+      <LazyShow>
+        <ContactForm />
       </LazyShow>
       <LazyShow>
         <>

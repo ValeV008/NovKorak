@@ -1,11 +1,13 @@
 import React from "react";
 
+import { Link } from "react-scroll";
+
 import config from "../config/index.json";
 
 const About = () => {
-  const { company, about } = config;
+  const { navigation, company, about, mainHero } = config;
   const { logo, name: companyName } = company;
-  const { socialMedia, sections } = about;
+  const { socialMedia } = about;
 
   return (
     <div
@@ -17,15 +19,25 @@ const About = () => {
           <img src={logo} alt={companyName} className="w-16 h-16" />
         </div>
         <div className="flex flex-wrap sm:gap-10 gap-8 items-center justify-center mt-4 h-12">
-          {sections.map((section, index) => (
-            <a
-              key={`${section.name}-${index}`}
-              href={section.href}
-              className="hover:text-primary text-base cursor-pointer leading-4 text-gray-800 dark:text-gray-400 dark:hover:text-white"
+          {navigation.map((item) => (
+            <Link
+              spy={true}
+              active="active"
+              smooth={true}
+              duration={1000}
+              key={item.name}
+              to={item.href}
+              className="font-medium text-gray-500 hover:text-gray-900 cursor-pointer"
             >
-              {section.name}
-            </a>
+              {item.name}
+            </Link>
           ))}
+          <a
+            href={mainHero.secondaryAction.href}
+            className={`font-medium text-primary hover:text-secondary`}
+          >
+            Kontakt
+          </a>
         </div>
         <div className="flex items-center gap-x-8 mt-6 h-8">
           <a
@@ -79,10 +91,7 @@ const About = () => {
         </div>
         <div className="flex items-center mt-6">
           <p className="mt-6 text-xs lg:text-sm leading-none text-gray-900 dark:text-gray-50">
-            &copy; {new Date().getFullYear()} designed by{" "}
-            <a href="https://github.com/issaafalkattan" rel="nofollow">
-              Issaaf Kattan
-            </a>
+            &copy; {new Date().getFullYear()} Nov Korak. All rights reserved.
           </p>
         </div>
       </div>
