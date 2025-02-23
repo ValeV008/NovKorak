@@ -1,50 +1,92 @@
+"use client";
+
+import React, { FormEvent, useState } from "react";
+
 import Divider from "./Divider";
 
-const ContactForm = () => {
+export default function ContactForm2() {
+  const [submitted, setSubmitted] = useState(false);
+
+  const handleSubmit = async (event: FormEvent) => {
+    event.preventDefault();
+    const formData = new FormData(event.target as HTMLFormElement);
+
+    const response = await fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(formData as any).toString(),
+    });
+
+    if (response.ok) {
+      setSubmitted(true);
+    } else {
+      // alert("Form submission failed.");
+      console.error("Form submission failed.");
+    }
+  };
+
   return (
-    <div id="form">
-      <h1
-        className={`w-full my-2 text-5xl font-bold leading-tight text-center text-primary`}
-      >
-        Pišite nam
-      </h1>
-      <Divider />
-      <form
-        name="contact"
-        method="POST"
-        data-netlify="true"
-        className={`bg-gray-100 w-2/5 mx-auto my-2 py-5 font-bold text-center text-xl text-gray-500`}
-      >
-        <p className="mb-5">
-          <label htmlFor="name">Ime</label>
-          <br />
-          <input type="text" id="name" name="name" />
+    <div className="max-w-lg mx-auto mt-10 p-6 bg-white shadow-lg rounded-lg">
+      {submitted ? (
+        <p className="text-green-600 text-center text-lg font-semibold">
+          Hvala! Sporočilo je bilo poslano.
         </p>
-        <p className="mb-5">
-          <label htmlFor="youremail" className="px-5">
-            Email
-          </label>
-          <br />
-          <input type="email" name="email" id="youremail" />
-        </p>
-        <p>
-          <label htmlFor="yourmessage">Sporočilo</label>
-          <br />
-          <textarea
-            name="message"
-            id="yourmessage"
-            rows={6}
-            className="w-3/4 rounded-md text-base text-gray-900"
-          ></textarea>
-        </p>
-        <p
-          className={`w-1/4 m-auto flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-background bg-primary hover:bg-border hover:text-primary md:py-4 md:text-lg md:px-10 cursor-pointer`}
-        >
-          <button type="submit">Pošlji</button>
-        </p>
-      </form>
+      ) : (
+        <>
+          <h1
+            id="form"
+            className={`w-full my-2 text-5xl font-bold leading-tight text-center text-primary`}
+          >
+            Pišite nam
+          </h1>
+          <Divider />
+          <form
+            onSubmit={handleSubmit}
+            name="contact"
+            data-netlify="true"
+            className="space-y-4"
+          >
+            <input type="hidden" name="form-name" value="contact" />
+
+            <div>
+              <label className="block text-gray-700 font-medium">Name</label>
+              <input
+                type="text"
+                name="name"
+                required
+                className="mt-1 w-full p-2 border rounded-lg focus:ring focus:ring-blue-300"
+              />
+            </div>
+
+            <div>
+              <label className="block text-gray-700 font-medium">Email</label>
+              <input
+                type="email"
+                name="email"
+                required
+                className="mt-1 w-full p-2 border rounded-lg focus:ring focus:ring-blue-300"
+              />
+            </div>
+
+            <div>
+              <label className="block text-gray-700 font-medium">Message</label>
+              <textarea
+                name="message"
+                required
+                rows={4}
+                className="mt-1 w-full p-2 border rounded-lg focus:ring focus:ring-blue-300"
+              ></textarea>
+            </div>
+
+            <button
+              type="submit"
+              className="w-full bg-primary text-white py-2 rounded-lg hover:bg-blue-700 transition"
+            >
+              Send
+            </button>
+          </form>
+        </>
+      )}
     </div>
   );
-};
-
-export default ContactForm;
+}
