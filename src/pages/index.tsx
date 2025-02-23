@@ -3,7 +3,7 @@ import React from "react";
 import About from "../components/About";
 import Analytics from "../components/Analytics";
 import Canvas from "../components/Canvas";
-import ContactForm from "../components/ContactForm";
+import ContactForm2 from "../components/ContactForm2";
 import Features from "../components/Features";
 import Header from "../components/Header";
 import LazyShow from "../components/LazyShow";
@@ -43,7 +43,7 @@ const App = () => {
         <Pricing />
       </LazyShow>
       <LazyShow>
-        <ContactForm />
+        <ContactForm2 />
       </LazyShow>
       <LazyShow>
         <>
