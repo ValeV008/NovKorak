@@ -32,12 +32,16 @@ const About = () => {
               {item.name}
             </Link>
           ))}
-          <a
-            href={mainHero.secondaryAction.href}
-            className={`font-medium text-primary hover:text-secondary`}
+          <Link
+            spy={true}
+            active="active"
+            smooth={true}
+            duration={1000}
+            to={mainHero.secondaryAction.href}
+            className={`font-medium text-primary hover:text-secondary cursor-pointer`}
           >
             Kontakt
-          </a>
+          </Link>
         </div>
         <div className="flex items-center gap-x-8 mt-6 h-8">
           <a

@@ -12,14 +12,9 @@
       "name": "Prednosti",
       "href": "features"
     },
-
     {
       "name": "Cenik",
       "href": "pricing"
-    },
-    {
-      "name": "O nas",
-      "href": "about"
     }
   ],
   "callToAction": {
