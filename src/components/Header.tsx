@@ -7,7 +7,7 @@ import { Link } from "react-scroll";
 import config from "../config/index.json";
 
 const Menu = () => {
-  const { mainHero, navigation, company, callToAction } = config;
+  const { mainHero, navigation, company } = config;
   const { name: companyName, logo } = company;
 
   return (
@@ -116,12 +116,16 @@ const Menu = () => {
                   </Link>
                 ))}
               </div>
-              <a
-                href={callToAction.href}
+              <Link
+                spy={true}
+                active="active"
+                smooth={true}
+                duration={1000}
+                to={mainHero.secondaryAction.href}
                 className={`block w-full px-5 py-3 text-center font-medium text-primary bg-gray-50 hover:bg-gray-100`}
               >
-                {callToAction.text}
-              </a>
+                {mainHero.secondaryAction.text}
+              </Link>
             </div>
           </Popover.Panel>
         </Transition>

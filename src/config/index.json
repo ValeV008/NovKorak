@@ -17,10 +17,6 @@
       "href": "pricing"
     }
   ],
-  "callToAction": {
-    "text": "Get started",
-    "href": "#"
-  },
   "mainHero": {
     "title": "Delovna terapija",
     "subtitle": "po vaši meri.",
@@ -142,9 +138,7 @@
       }
     ],
     "socialMedia": {
-      "github": "https://google.com",
-      "twitter": "https://google.com",
-      "linkedin": "https://google.com"
+      "linkedin": "https://www.linkedin.com/in/tina-zadravec-034140152/"
     }
   }
 }
