@@ -1,6 +1,7 @@
 import React from "react";
 
 import About from "../components/About";
+import AboutMe from "../components/AboutMe";
 import Analytics from "../components/Analytics";
 import Canvas from "../components/Canvas";
 import ContactForm from "../components/ContactForm";
@@ -29,6 +30,7 @@ const App = () => {
       <Canvas />
       <LazyShow>
         <>
+          <AboutMe />
           <Product />
           <Canvas />
         </>

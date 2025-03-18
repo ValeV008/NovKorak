@@ -37,7 +37,7 @@ export default function ContactForm2() {
             id="form"
             className={`w-full my-2 text-5xl font-bold leading-tight text-center text-primary`}
           >
-            Pišite nam
+            Pišite mi
           </h1>
           <Divider />
           <form
@@ -49,7 +49,7 @@ export default function ContactForm2() {
             <input type="hidden" name="form-name" value="contact" />
 
             <div>
-              <label className="block text-gray-700 font-medium">Name</label>
+              <label className="block text-gray-700 font-medium">Ime</label>
               <input
                 type="text"
                 name="name"
@@ -59,7 +59,9 @@ export default function ContactForm2() {
             </div>
 
             <div>
-              <label className="block text-gray-700 font-medium">Email</label>
+              <label className="block text-gray-700 font-medium">
+                Elektronski naslov
+              </label>
               <input
                 type="email"
                 name="email"
@@ -69,12 +71,21 @@ export default function ContactForm2() {
             </div>
 
             <div>
-              <label className="block text-gray-700 font-medium">Message</label>
+              <label className="block text-gray-700 font-medium">
+                Sporočilo
+              </label>
               <textarea
                 name="message"
                 required
-                rows={4}
+                rows={10}
                 className="mt-1 w-full p-2 border rounded-lg focus:ring focus:ring-blue-300"
+                defaultValue={`Pozdravljeni,
+
+zanima me/nas več informacij o vaših storitvah delovne terapije in možnostih obravnave. Prosim za podrobnosti glede terminov in prispevka za terapijo oz. obravnavo. 
+
+Hvala!
+
+Lepo vas pozdravljam/o.`}
               ></textarea>
             </div>
 
