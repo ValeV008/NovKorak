@@ -7,7 +7,7 @@ const { aboutMe } = config;
 
 const AboutMe = () => {
   return (
-    <main className="max-w-5xl mx-auto">
+    <main className="max-w-5xl mx-auto" id="aboutMe">
       <div className="flex flex-col-reverse sm:flex-row sm:items-center sm:space-x-10">
         <div className="w-full sm:w-1/2 my-6">
           <img

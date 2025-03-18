@@ -26,7 +26,10 @@ export default function ContactForm2() {
   };
 
   return (
-    <div className="max-w-lg mx-auto mt-10 p-6 bg-white shadow-lg rounded-lg">
+    <div
+      className="max-w-lg mx-auto mt-10 p-6 bg-white shadow-lg rounded-lg"
+      id="form"
+    >
       {submitted ? (
         <p className="text-green-600 text-center text-lg font-semibold">
           Hvala! Sporočilo je bilo poslano.
@@ -34,7 +37,6 @@ export default function ContactForm2() {
       ) : (
         <>
           <h1
-            id="form"
             className={`w-full my-2 text-5xl font-bold leading-tight text-center text-primary`}
           >
             Pišite mi

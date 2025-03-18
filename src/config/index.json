@@ -1,6 +1,6 @@
 {
   "company": {
-    "name": "React landing page 2021",
+    "name": "Nov Korak",
     "logo": "/assets/images/logo.png"
   },
   "navigation": [
@@ -11,6 +11,10 @@
     {
       "name": "Prednosti",
       "href": "features"
+    },
+    {
+      "name": "O meni",
+      "href": "aboutMe"
     },
     {
       "name": "Cenik",
@@ -27,14 +31,15 @@
       "href": "product"
     },
     "secondaryAction": {
-      "text": "Pišite nam!",
+      "text": "Pišite mi!",
       "href": "form"
     }
   },
   "aboutMe": {
     "title": "O meni",
     "highlighted_title": "Delovna terapevtka",
-    "img": "/assets/images/aboutMe.png"
+    "img": "/assets/images/aboutMe.png",
+    "href": "aboutMe"
   },
   "product": {
     "title": "O delovni terapiji",
