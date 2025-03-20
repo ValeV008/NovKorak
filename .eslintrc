@@ -5,7 +5,7 @@
     "prettier/prettier": [
       "error",
       {
-        "endOfLine": "crlf"
+        // "endOfLine": "crlf"
       }
     ],
     "linebreak-style": ["error", "windows"]
@@ -27,8 +27,8 @@
         "prettier/prettier": [
           "error",
           {
-            "singleQuote": false,
-            "endOfLine": "crlf"
+            "singleQuote": false
+            // "endOfLine": "crlf"
           }
         ],
         "react/destructuring-assignment": "off", // Vscode doesn't support automatically destructuring, it's a pain to add a new variable
