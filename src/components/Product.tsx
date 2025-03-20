@@ -1,5 +1,7 @@
 import React from "react";
 
+import Image from "next/image";
+
 import config from "../config/index.json";
 import Divider from "./Divider";
 
@@ -33,20 +35,28 @@ const Product = () => {
             <p className={`text-gray-600`}>{firstItem?.description}</p>
           </div>
           <div className={`w-full sm:w-1/2 p-6`}>
-            <img
-              className="h-6/6"
-              src={firstItem?.img}
-              alt={firstItem?.title}
-            />
+            {firstItem?.img && (
+              <Image
+                className="h-6/6"
+                src={firstItem.img}
+                alt={firstItem?.title}
+                width={500}
+                height={500}
+              />
+            )}
           </div>
         </div>
         <div className={`flex flex-wrap flex-col-reverse sm:flex-row`}>
           <div className={`w-full sm:w-1/2 p-6`}>
-            <img
-              className="h-6/6"
-              src={secondItem?.img}
-              alt={secondItem?.title}
-            />
+            {secondItem?.img && (
+              <Image
+                className="h-6/6"
+                src={secondItem.img}
+                alt={secondItem.title}
+                width={500}
+                height={500}
+              />
+            )}
           </div>
           <div className={`w-full sm:w-1/2 p-6 mt-20`}>
             <div className={`align-middle`}>

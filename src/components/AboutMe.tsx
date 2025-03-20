@@ -1,5 +1,8 @@
 import React from "react";
 
+import Image from "next/image";
+
+import aboutMePic from "../../public/assets/images/aboutMe.png";
 import config from "../config/index.json";
 import Divider from "./Divider";
 
@@ -10,10 +13,10 @@ const AboutMe = () => {
     <main className="max-w-5xl mx-auto" id="aboutMe">
       <div className="flex flex-col-reverse sm:flex-row sm:items-center sm:space-x-10">
         <div className="w-full sm:w-1/2 my-6">
-          <img
-            className="rounded-lg shadow-lg object-cover w-full h-auto sm:mx-0 mx-auto"
-            src={aboutMe.img}
+          <Image
+            src={aboutMePic}
             alt="My picture"
+            className="rounded-lg shadow-lg object-cover w-full h-auto sm:mx-0 mx-auto"
           />
         </div>
         <div className="w-full sm:w-1/2 lg:text-right">
