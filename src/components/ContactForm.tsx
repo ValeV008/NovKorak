@@ -11,7 +11,7 @@ export default function ContactForm2() {
     event.preventDefault();
     const formData = new FormData(event.target as HTMLFormElement);
 
-    const response = await fetch("/", {
+    const response = await fetch("/netlify-form-detection.html", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: new URLSearchParams(formData as any).toString(),
