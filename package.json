@@ -6,8 +6,7 @@
     "build": "next build",
     "start": "next start",
     "build-stats": "cross-env ANALYZE=true npm run build",
-    "export": "next export",
-    "build-prod": "run-s clean build export",
+    "build-prod": "run-s clean build",
     "clean": "rimraf .next out",
     "lint": "next lint",
     "build-types": "tsc --noEmit --pretty",
@@ -17,15 +16,16 @@
     "@headlessui/react": "^1.4.1",
     "@heroicons/react": "^1.0.5",
     "framer-motion": "^5.0.0",
-    "next": "^12.0.0",
+    "next": "^15.2.3",
     "next-seo": "^4.28.1",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "react-scroll": "^1.8.4",
     "smooth-scroll": "^16.1.3",
     "styled-jsx-plugin-postcss": "^4.0.1"
   },
   "devDependencies": {
+    "@netlify/plugin-nextjs": "^5.10.1",
     "@next/bundle-analyzer": "^12.0.0",
     "@types/node": "^16.11.6",
     "@types/react": "^17.0.33",
@@ -51,7 +51,7 @@
     "prettier": "^2.4.1",
     "rimraf": "^3.0.2",
     "tailwindcss": "^2.2.17",
-    "typescript": "^4.4.4"
+    "typescript": "^5.8.2"
   },
   "license": "ISC",
   "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"

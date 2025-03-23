@@ -5,10 +5,9 @@
     "prettier/prettier": [
       "error",
       {
-        // "endOfLine": "crlf"
+        //"singleQuote": true
       }
-    ],
-    "linebreak-style": ["error", "windows"]
+    ]
   },
   "overrides": [
     // Configuration for TypeScript files
@@ -27,8 +26,7 @@
         "prettier/prettier": [
           "error",
           {
-            "singleQuote": false
-            // "endOfLine": "crlf"
+            //"singleQuote": true
           }
         ],
         "react/destructuring-assignment": "off", // Vscode doesn't support automatically destructuring, it's a pain to add a new variable
