@@ -3,7 +3,8 @@ import React, { Fragment } from "react";
 import { Popover, Transition } from "@headlessui/react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import Image from "next/image";
-import { Link } from "react-scroll";
+import Link from "next/link";
+import { Link as ScrollLink } from "react-scroll";
 
 import config from "../config/index.json";
 
@@ -52,7 +53,7 @@ const Menu = () => {
             </div>
             <div className="hidden md:flex md:ml-10 md:pr-4 md:space-x-8 items-center">
               {navigation.map((item) => (
-                <Link
+                <ScrollLink
                   spy={true}
                   active="active"
                   smooth={true}
@@ -62,9 +63,9 @@ const Menu = () => {
                   className="font-medium text-gray-500 hover:text-gray-900 cursor-pointer"
                 >
                   {item.name}
-                </Link>
+                </ScrollLink>
               ))}
-              <Link
+              <ScrollLink
                 spy={true}
                 active="active"
                 smooth={true}
@@ -73,7 +74,7 @@ const Menu = () => {
                 className={`font-medium text-primary hover:text-secondary cursor-pointer`}
               >
                 Kontakt
-              </Link>
+              </ScrollLink>
             </div>
             {/* Button under the menu on desktop */}
           </nav>
@@ -116,7 +117,7 @@ const Menu = () => {
               </div>
               <div className="px-2 pt-2 pb-3 space-y-1">
                 {navigation.map((item) => (
-                  <Link
+                  <ScrollLink
                     spy={true}
                     active="active"
                     smooth={true}
@@ -126,10 +127,10 @@ const Menu = () => {
                     className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
                   >
                     {item.name}
-                  </Link>
+                  </ScrollLink>
                 ))}
               </div>
-              <Link
+              <ScrollLink
                 spy={true}
                 active="active"
                 smooth={true}
@@ -138,7 +139,7 @@ const Menu = () => {
                 className={`block w-full px-5 py-3 text-center font-medium text-primary bg-gray-50 hover:bg-gray-100`}
               >
                 {mainHero.secondaryAction.text}
-              </Link>
+              </ScrollLink>
             </div>
           </Popover.Panel>
         </Transition>
