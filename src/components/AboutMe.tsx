@@ -27,10 +27,20 @@ const AboutMe = () => {
           </h1>
           <Divider />
           <p className="px-6 text-gray-600">
-            Sem delovna terapevtka z večletnimi izkušnjami na področju dela z
-            otroki in mladostniki. Sem tudi mama dveh otrok Tiana in Vide, ki so
-            mi v veliko veselje in ponos. V prostem času rada preživljam čas v
-            naravi, kjer z Aro čofotam po mlakužah. (created with AI)
+            V okviru delovne terapije delujemo na področju [re]habilitacije oseb
+            z nevrološkimi, mišično-skeletnimi težavami in izzivi na področju
+            duševnega zdravja. Cenimo znanje in modrosti, zato pri svojem delu
+            premišljeno vpeljujemo nove pristope in terapevtske pripomočke.
+            Povezujemo se tudi s strokovnjaki iz tujine [Anglije in Kanade].
+            ____ je vpisan v register zasebnih zdravstvenih delavcev pri
+            Ministrstvu za zdravje in ima uradno dovoljenje za izvajanje
+            storitev delovne terapije. Smo aktivni člani Zbornice delovnih
+            terapevtov Slovenije in Slovenskega združenja umetnostnih
+            terapevtov. Pod mislijo/sloganom ____ sem Tina Zadravec, magistra
+            umetnostne terapije ter diplomirana delovna terapevtka. Z
+            deseletnimi izkušnjami v delu povezujem različna znanja s šolanja in
+            dodatnih izobraževanj z namenom, da posameznik prejme individualni
+            pristop in obravnavo. Izobraževala sem se n
           </p>
         </div>
       </div>

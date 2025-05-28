@@ -8,7 +8,7 @@ class MyDocument extends Document {
     return (
       <Html lang={AppConfig.locale}>
         <Head>
-          <title>{AppConfig.title}</title>
+          {/* Removed <title> from _document Head as per Next.js recommendation */}
         </Head>
         <body>
           <Main />

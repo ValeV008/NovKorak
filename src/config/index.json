@@ -13,7 +13,7 @@
       "href": "features"
     },
     {
-      "name": "O meni",
+      "name": "O nas",
       "href": "aboutMe"
     },
     {
@@ -27,16 +27,16 @@
     "description": "Delovna terapija je poklic, osredotočen na stranke, ki se ukvarja s spodbujanjem zdravja in dobrega počutja skozi dejavnosti. Primarni cilj delovne terapije je omogočiti ljudem sodelovanje v vsakodnevnih aktivnostih.",
     "img": "/assets/images/happyTeam.jpeg",
     "primaryAction": {
-      "text": "O delovni terapiji",
+      "text": "Za otroke in mladostnike",
       "href": "product"
     },
     "secondaryAction": {
-      "text": "Pišite mi!",
+      "text": "Za odrasle",
       "href": "form"
     }
   },
   "aboutMe": {
-    "title": "O meni",
+    "title": "O nas",
     "highlighted_title": "Delovna terapevtka",
     "img": "/assets/images/aboutMe.png",
     "href": "aboutMe"
