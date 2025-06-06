@@ -39,7 +39,7 @@ export default function ContactForm2() {
           <h1
             className={`w-full my-2 text-5xl font-bold leading-tight text-center text-primary`}
           >
-            Pišite mi
+            Pišite nam
           </h1>
           <Divider />
           <form

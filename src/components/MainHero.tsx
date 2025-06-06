@@ -8,9 +8,9 @@ const MainHero = () => {
   const { mainHero } = config;
   const router = useRouter();
   return (
-    <main className="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
+    <main className="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-15">
       <div className="sm:text-center lg:text-left">
-        <div className="mb-4 flex justify-center lg:justify-center">
+        <div className="mb-2 flex justify-center lg:justify-center">
           <button
             className="px-6 py-3 rounded-md bg-primary text-white font-semibold hover:bg-secondary transition-colors duration-200 shadow-lg"
             type="button"
@@ -20,13 +20,21 @@ const MainHero = () => {
           </button>
         </div>
         <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
-          <span className="block xl:inline">{mainHero.title}</span>{" "}
-          <span className={`block text-primary xl:inline`}>
+          <span className="block xl:inline">
+            {/* {mainHero.title} */}
+            Delovna terapija
+          </span>{" "}
+          {/* <span className={`block text-primary xl:inline`}>
             {mainHero.subtitle}
-          </span>
+          </span> */}
         </h1>
+        <br />
         <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
-          {mainHero.description}
+          Kaj delovna terapija lahko ponudi vam?
+        </p>
+        <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
+          Delovna terapija omogoča ljudem vseh starosti, da so aktivno udeleženi
+          v vsakodnevnem življenju.
         </p>
         <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
           <div className="rounded-md shadow">

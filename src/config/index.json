@@ -46,13 +46,13 @@
     "items": [
       {
         "title": "Kaj je delovna terapija?",
-        "description": "Delovna terapija je zdravstvena stroka, ki pomaga ljudem vseh starosti živeti bolj polno in samostojno življenje. Osredotoča se na omogočanje izvajanja vsakodnevnih aktivnosti, kot so skrb zase, delo in prosti čas. Terapevti sodelujejo s posamezniki, da premagajo fizične, čustvene ali socialne ovire, ki jim preprečujejo sodelovanje v življenjskih aktivnostih.",
-        "img": "/assets/images/product1.jpg"
+        "description": " Delovna terapija je zdravstvena stroka, delovni terapevt pa je zdravstveni delavec, ki spodbuja posameznika k vključevanju v njemu/njej smiselne dejavnosti vsakodnevnega življenja. Osredotoča se na izboljševanje oz. ohranjanje zdravstvenega stanja na področju telesnih funkcij in struktur ter duševnega zdravja. Naši skupni cilji bodo izvajanje aktivnosti za spodbujanje zdravja, dobrega počutja in čimbolj uspešno opravljanje prioritetno postavljenih dejavnosti. Delovni terapevt je tukaj tudi zato, da vam ponudi komponente za izvajanje aktivnosti na področjih:\nizvajanje Osnovnih Dnevnih Aktivnosti, kot so umivanje, oblačenje in prehranjevanje ter Širših Dnevnih aktivnosti,\nocena okoljskih dejavnikov, preprečevanje padcev ter svetovanje glede prilagoditve doma za večjo varnost\nsvetovanje glede uporabe ortotskih in medicinsko tehničnih pripomočkov\nvrnitve v vsak dan: v šolo, na delo in druge prostočasne hobije,\nusposabljanje družinskih članov\ninformiranje o podporni tehnologiji, ki je posamezniku lahko v pomoč pri samostojnosti.\n\nDelovnoterapevtski proces običajno vključuje:\nIndividualno oceno, v kateri vas bomo vprašali po vaših željah, interesih, zgodovini in zdravljenju po mišično skeletni poškodbi ali bolezni živčevja.\nOblikovanje načrta [re]habilitacije, ki vam bodo pomagal doseči zastavljene cilje.\nObravnave delovne terapije (število srečanj je po dogovoru glede na stanje in želje posameznika).",
+        "img": "/assets/images/image_kaj_je_terapija.png"
       },
       {
         "title": "Kako poteka delovna terapija?",
-        "description": "Delovni terapevt najprej oceni posameznikove potrebe, sposobnosti in okolje. Na podlagi tega razvije individualiziran načrt obravnave, ki vključuje praktične aktivnosti in prilagoditve za doseganje zastavljenih ciljev. Terapija lahko vključuje učenje novih načinov izvajanja aktivnosti, uporabo pripomočkov, prilagajanje okolja ali razvijanje novih spretnosti. Cilj je vedno izboljšati kakovost življenja in omogočiti čim večjo samostojnost.",
-        "img": "/assets/images/product2.jpg"
+        "description": "Delovnoterapevtski proces običajno vključuje:\nIndividualno oceno, v kateri vas bomo vprašali po vaših željah, interesih, zgodovini in zdravljenju po mišično skeletni poškodbi ali bolezni živčevja.\nOblikovanje načrta [re]habilitacije, ki vam bodo pomagal doseči zastavljene cilje.\nObravnave delovne terapije (število srečanj je po dogovoru glede na stanje in želje posameznika).",
+        "img": "/assets/images/image_kako_poteka.png"
       }
     ]
   },
