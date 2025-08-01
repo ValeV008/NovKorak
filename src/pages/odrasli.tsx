@@ -1,9 +1,11 @@
 import React from "react";
 
 import Canvas from "../components/Canvas";
-import HeaderOdrasli from "../components/HeaderOdrasli";
+import Header from "../components/Header";
+import LazyShow from "../components/LazyShow";
 import MainHeroImageOdrasli from "../components/MainHeroImageOdrasli";
 import MainHeroOdrasli from "../components/MainHeroOdrasli";
+import SquaresOdrasli from "../components/SquaresOdrasli";
 
 const OdrasliPage = () => {
   return (
@@ -13,13 +15,18 @@ const OdrasliPage = () => {
           <div
             className={`relative z-10 pb-8 bg-background sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32 lg:h-screen`}
           >
-            <HeaderOdrasli />
+            <Header />
             <MainHeroOdrasli />
           </div>
         </div>
         <MainHeroImageOdrasli />
       </div>
       <Canvas />
+      <LazyShow>
+        <>
+          <SquaresOdrasli />
+        </>
+      </LazyShow>
     </div>
   );
 };

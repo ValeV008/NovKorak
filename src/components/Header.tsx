@@ -4,6 +4,7 @@ import { Popover, Transition } from "@headlessui/react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import { Link as ScrollLink } from "react-scroll";
 
 import config from "../config/index.json";
@@ -11,18 +12,22 @@ import config from "../config/index.json";
 const Menu = () => {
   const { mainHero, navigation, company } = config;
   const { name: companyName, logo } = company;
+  const router = useRouter();
+  const isHome = router.pathname === "/";
 
   return (
-    <>
-      <svg
-        className={`hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-background transform translate-x-1/2`}
-        fill="currentColor"
-        viewBox="0 0 100 100"
-        preserveAspectRatio="none"
-        aria-hidden="true"
-      >
-        <polygon points="50,0 100,0 50,100 0,100" />
-      </svg>
+    <div id="header">
+      {isHome && (
+        <svg
+          className={`hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-background transform translate-x-1/2`}
+          fill="currentColor"
+          viewBox="0 0 100 100"
+          preserveAspectRatio="none"
+          aria-hidden="true"
+        >
+          <polygon points="50,0 100,0 50,100 0,100" />
+        </svg>
+      )}
 
       <Popover>
         <div className="relative pt-6 px-4 sm:px-6 lg:px-8">
@@ -62,29 +67,58 @@ const Menu = () => {
               </div>
             </div>
             <div className="hidden md:flex md:ml-10 md:pr-4 md:space-x-8 items-center">
-              {navigation.map((item) => (
+              {navigation.map((item) =>
+                isHome ? (
+                  <ScrollLink
+                    spy={true}
+                    active="active"
+                    smooth={true}
+                    duration={1000}
+                    key={item.name}
+                    to={item.href.replace(/^#/, "")}
+                    className="font-medium text-gray-500 hover:text-gray-900 cursor-pointer"
+                  >
+                    {item.name}
+                  </ScrollLink>
+                ) : (
+                  <Link
+                    key={item.name}
+                    href={`/${
+                      item.href.startsWith("#") ? item.href : `#${item.href}`
+                    }`
+                      .replace("//#", "/#")
+                      .replace("//", "/")}
+                    className="font-medium text-gray-500 hover:text-gray-900 cursor-pointer"
+                  >
+                    {item.name}
+                  </Link>
+                )
+              )}
+              {isHome ? (
                 <ScrollLink
                   spy={true}
                   active="active"
                   smooth={true}
                   duration={1000}
-                  key={item.name}
-                  to={item.href}
-                  className="font-medium text-gray-500 hover:text-gray-900 cursor-pointer"
+                  to={mainHero.secondaryAction.href.replace(/^#/, "")}
+                  className={`font-medium text-primary hover:text-secondary cursor-pointer`}
                 >
-                  {item.name}
+                  Kontakt
                 </ScrollLink>
-              ))}
-              <ScrollLink
-                spy={true}
-                active="active"
-                smooth={true}
-                duration={1000}
-                to={mainHero.secondaryAction.href}
-                className={`font-medium text-primary hover:text-secondary cursor-pointer`}
-              >
-                Kontakt
-              </ScrollLink>
+              ) : (
+                <Link
+                  href={`/${
+                    mainHero.secondaryAction.href.startsWith("#")
+                      ? mainHero.secondaryAction.href
+                      : `#${mainHero.secondaryAction.href}`
+                  }`
+                    .replace("//#", "/#")
+                    .replace("//", "/")}
+                  className={`font-medium text-primary hover:text-secondary cursor-pointer`}
+                >
+                  Kontakt
+                </Link>
+              )}
             </div>
             {/* Button under the menu on desktop */}
           </nav>
@@ -126,35 +160,64 @@ const Menu = () => {
                 </div>
               </div>
               <div className="px-2 pt-2 pb-3 space-y-1">
-                {navigation.map((item) => (
-                  <ScrollLink
-                    spy={true}
-                    active="active"
-                    smooth={true}
-                    duration={1000}
-                    key={item.name}
-                    to={item.href}
-                    className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
-                  >
-                    {item.name}
-                  </ScrollLink>
-                ))}
+                {navigation.map((item) =>
+                  isHome ? (
+                    <ScrollLink
+                      spy={true}
+                      active="active"
+                      smooth={true}
+                      duration={1000}
+                      key={item.name}
+                      to={item.href.replace(/^#/, "")}
+                      className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
+                    >
+                      {item.name}
+                    </ScrollLink>
+                  ) : (
+                    <Link
+                      key={item.name}
+                      href={`/${
+                        item.href.startsWith("#") ? item.href : `#${item.href}`
+                      }`
+                        .replace("//#", "/#")
+                        .replace("//", "/")}
+                      className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
+                    >
+                      {item.name}
+                    </Link>
+                  )
+                )}
               </div>
-              <ScrollLink
-                spy={true}
-                active="active"
-                smooth={true}
-                duration={1000}
-                to={mainHero.secondaryAction.href}
-                className={`block w-full px-5 py-3 text-center font-medium text-primary bg-gray-50 hover:bg-gray-100`}
-              >
-                {mainHero.secondaryAction.text}
-              </ScrollLink>
+              {isHome ? (
+                <ScrollLink
+                  spy={true}
+                  active="active"
+                  smooth={true}
+                  duration={1000}
+                  to={mainHero.secondaryAction.href.replace(/^#/, "")}
+                  className={`block w-full px-5 py-3 text-center font-medium text-primary bg-gray-50 hover:bg-gray-100`}
+                >
+                  {mainHero.secondaryAction.text}
+                </ScrollLink>
+              ) : (
+                <Link
+                  href={`/${
+                    mainHero.secondaryAction.href.startsWith("#")
+                      ? mainHero.secondaryAction.href
+                      : `#${mainHero.secondaryAction.href}`
+                  }`
+                    .replace("//#", "/#")
+                    .replace("//", "/")}
+                  className={`block w-full px-5 py-3 text-center font-medium text-primary bg-gray-50 hover:bg-gray-100`}
+                >
+                  {mainHero.secondaryAction.text}
+                </Link>
+              )}
             </div>
           </Popover.Panel>
         </Transition>
       </Popover>
-    </>
+    </div>
   );
 };
 

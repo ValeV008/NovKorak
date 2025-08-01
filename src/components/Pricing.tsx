@@ -23,34 +23,34 @@ const Pricing = () => {
               <th className="px-4 py-2 border-b text-center">Cena</th>
             </tr>
           </thead>
-          <tbody>
+          <tbody className="text-gray-700">
             <tr>
               <td className="px-4 py-2 border-b">Terapevtska obravnava</td>
-              <td className="px-4 py-2 border-b text-center">60€</td>
+              <td className="px-4 py-2 border-b text-center">60 €</td>
             </tr>
             <tr className="bg-gray-50">
               <td className="px-4 py-2 border-b">Paket 6 obravnav</td>
-              <td className="px-4 py-2 border-b text-center">340€</td>
+              <td className="px-4 py-2 border-b text-center">340 €</td>
             </tr>
             <tr>
               <td className="px-4 py-2 border-b">Kinesiotaping</td>
-              <td className="px-4 py-2 border-b text-center">10€</td>
+              <td className="px-4 py-2 border-b text-center">10 €</td>
             </tr>
             <tr className="bg-gray-50">
               <td className="px-4 py-2 border-b">
                 Posvet prek daljave (30 min)
               </td>
-              <td className="px-4 py-2 border-b text-center">30€</td>
+              <td className="px-4 py-2 border-b text-center">30 €</td>
             </tr>
             <tr>
               <td className="px-4 py-2 border-b">
                 Posvet prek daljave (60 min)
               </td>
-              <td className="px-4 py-2 border-b text-center">60€</td>
+              <td className="px-4 py-2 border-b text-center">60 €</td>
             </tr>
             <tr className="bg-gray-50">
               <td className="px-4 py-2">Delovnoterapevtsko poročilo</td>
-              <td className="px-4 py-2 text-center">30€</td>
+              <td className="px-4 py-2 text-center">30 €</td>
             </tr>
           </tbody>
         </table>

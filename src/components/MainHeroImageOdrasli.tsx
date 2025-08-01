@@ -2,7 +2,7 @@ import React from "react";
 
 import Image from "next/image";
 
-import mainHeroImg from "../../public/assets/images/grandma.png";
+import mainHeroImg from "../../public/assets/images/grandma_rotated.png";
 
 const MainHeroImageOdrasli = () => {
   return (

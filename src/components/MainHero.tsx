@@ -14,7 +14,7 @@ const MainHero = () => {
           <button
             className="px-6 py-3 rounded-md bg-primary text-white font-semibold hover:bg-secondary transition-colors duration-200 shadow-lg"
             type="button"
-            onClick={() => router.push("/odrasli")}
+            // onClick={() => router.push("/odrasli")}
           >
             Kliknite za 10 min brezplačni posvet
           </button>
