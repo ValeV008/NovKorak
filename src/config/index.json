@@ -5,11 +5,11 @@
   },
   "navigation": [
     {
-      "name": "O delovni terapiji",
+      "name": "Domov",
       "href": "product"
     },
     {
-      "name": "Prednosti",
+      "name": "Storitve",
       "href": "features"
     },
     {
@@ -23,7 +23,7 @@
   ],
   "mainHero": {
     "title": "Delovna terapija",
-    "subtitle": "po vaši meri.",
+    "subtitle": "in rehabilitacija",
     "description": "Delovna terapija je poklic, osredotočen na stranke, ki se ukvarja s spodbujanjem zdravja in dobrega počutja skozi dejavnosti. Primarni cilj delovne terapije je omogočiti ljudem sodelovanje v vsakodnevnih aktivnostih.",
     "img": "/assets/images/happyTeam.jpeg",
     "primaryAction": {
@@ -31,7 +31,7 @@
       "href": "product"
     },
     "secondaryAction": {
-      "text": "Za odrasle",
+      "text": "Za odrasle starejše",
       "href": "form"
     }
   },
@@ -62,14 +62,14 @@
     "description": "Delovna terapija prinaša številne prednosti za vaše zdravje in kakovost življenja. Z individualno prilagojenim pristopom vam pomagamo doseči večjo samostojnost pri vsakodnevnih aktivnostih, izboljšati telesno in duševno počutje ter aktivno sodelovati v družbi. Spoznajte ključne prednosti, ki jih lahko prinese delovna terapija v vaše življenje.",
     "items": [
       {
-        "name": "Boljše zdravje",
-        "description": "Delovna terapija pomaga izboljšati vaše fizično zdravje skozi ciljane aktivnosti in vaje. Z rednim izvajanjem terapevtskih aktivnosti lahko okrepite mišice, izboljšate gibljivost in koordinacijo ter zmanjšate bolečine.",
-        "icon": "/assets/images/react.png"
+        "name": "Nevro-mišični taping",
+        "description": "Tehnika, prek katere vplivamo na mišično-skeletni, žilni, limfni in nevrološki sistem. Pri tem uporabljamo (de)kompresivne dražljaje z namestitvijo samolepilnega elastičnega traku za naravno zdravljenje telesa.",
+        "icon": "/assets/images/nevromisicni_taping.svg"
       },
       {
-        "name": "Boljše počutje",
-        "description": "Z delovno terapijo lahko izboljšate svoje duševno počutje in zmanjšate stres. Terapevtske aktivnosti vam pomagajo pri sproščanju, izboljšanju razpoloženja in krepitvi samozavesti.",
-        "icon": "/assets/images/tailwindcss.svg"
+        "name": "Montessori pristop",
+        "description": "Pri delu z osebami z demenco je ključno, da ne pozabimo na človeka za diagnozo. Namesto da se osredotočamo na omejitve, iščemo njihove sposobnosti, interese in edinstvene življenjske zgodbe. Spoštovanje njihovega ozadja, kulture in potreb omogoča oblikovanje okolja, ki spodbuja samostojnost in smiselno vključevanje. Pristop Montessori za demenco, invalidnost in staranje temelji na štirih temeljnih načelih, ki krepijo samospoštovanje, omogočajo izbiro ter spodbujajo prispevanje k skupnosti.",
+        "icon": "/assets/images/Picture2.png"
       },
       {
         "name": "Več aktivnosti",
