@@ -19,11 +19,17 @@
     {
       "name": "Cenik",
       "href": "pricing"
+    },
+    {
+      "name": "Spletna učilnica",
+      "href": ""
     }
   ],
   "mainHero": {
     "title": "Delovna terapija",
-    "subtitle": "in rehabilitacija",
+    "titleUpper": "na domu",
+    "subtitle": "za majhne in velike",
+    "additionalText": "Preko aktivnosti do samostojnosti v vsakdanjem življenju.",
     "description": "Delovna terapija je poklic, osredotočen na stranke, ki se ukvarja s spodbujanjem zdravja in dobrega počutja skozi dejavnosti. Primarni cilj delovne terapije je omogočiti ljudem sodelovanje v vsakodnevnih aktivnostih.",
     "img": "/assets/images/happyTeam.jpeg",
     "primaryAction": {
