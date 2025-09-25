@@ -6,7 +6,7 @@ const MainHero = () => {
   const { mainHero } = config;
 
   return (
-    <main className="mt-10 ml-10 max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-15">
+    <main className="mx-auto mt-10 lg:ml-10 lg:max-w-7xl max-w-[80%] sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-15">
       <div className="sm:text-center lg:text-left">
         <div className="mb-2 flex justify-center lg:justify-center">
           <button
