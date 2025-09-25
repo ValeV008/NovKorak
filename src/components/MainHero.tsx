@@ -32,13 +32,6 @@ const MainHero = () => {
         <p className="mt-3 text-base text-gray-700 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
           {mainHero.additionalText}
         </p>
-        <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
-          Kaj delovna terapija lahko ponudi vam?
-        </p>
-        <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
-          Delovna terapija omogoča ljudem vseh starosti, da so aktivno udeleženi
-          v vsakodnevnem življenju.
-        </p>
       </div>
     </main>
   );
