@@ -16,8 +16,11 @@ const Menu = () => {
   const isHome = router.pathname === "/";
 
   return (
-    <div id="header">
-      {isHome && (
+    <div
+      id="header"
+      className="sticky top-0 lg:fixed lg:top-0 lg:left-0 lg:right-0 z-50 w-full bg-background/90 backdrop-blur supports-[backdrop-filter]:bg-background/70"
+    >
+      {/* {isHome && (
         <svg
           className={`hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-background transform translate-x-1/2`}
           fill="currentColor"
@@ -27,7 +30,7 @@ const Menu = () => {
         >
           <polygon points="50,0 100,0 50,100 0,100" />
         </svg>
-      )}
+      )} */}
 
       <Popover>
         <div className="relative pt-6 px-4 sm:px-6 lg:px-8">

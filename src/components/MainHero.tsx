@@ -1,12 +1,27 @@
 import React from "react";
 
+import { useRouter } from "next/router";
+
 import config from "../config/index.json";
 
 const MainHero = () => {
   const { mainHero } = config;
+  const router = useRouter();
+  const isHome = router.pathname === "/";
 
   return (
     <main className="mx-auto mt-10 lg:ml-10 lg:max-w-7xl max-w-[80%] sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-15">
+      {isHome && (
+        <svg
+          className={`hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-gray-300 transform translate-x-1/2`}
+          fill="currentColor"
+          viewBox="0 0 100 100"
+          preserveAspectRatio="none"
+          aria-hidden="true"
+        >
+          <polygon points="50,0 100,0 50,100 0,100" />
+        </svg>
+      )}
       <div className="sm:text-center lg:text-left">
         <div className="mb-2 flex justify-center lg:justify-center">
           <button
