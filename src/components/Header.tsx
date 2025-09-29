@@ -18,7 +18,7 @@ const Menu = () => {
   return (
     <div
       id="header"
-      className="sticky top-0 lg:fixed lg:top-0 lg:left-0 lg:right-0 z-50 w-full bg-background/90 backdrop-blur supports-[backdrop-filter]:bg-background/70"
+      className="sticky top-0 lg:sticky lg:top-0 lg:left-0 lg:right-0 z-50 w-full bg-background/90 backdrop-blur supports-[backdrop-filter]:bg-background/70"
     >
       {/* {isHome && (
         <svg

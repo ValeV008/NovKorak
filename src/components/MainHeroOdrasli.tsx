@@ -24,20 +24,15 @@ const MainHero = () => {
           zaostanka, učnih težav, posledic staranja ali drugih zdravstvenih
           dejavnikov.
         </p>
-        {/* <div
+        <div
           className="w-full max-w-3xl mx-auto my-8"
           style={{ aspectRatio: "16/9" }}
         >
-          <iframe
-            width="100%"
-            height="100%"
-            src="https://www.youtube.com/embed/Pq3IxTY_2nA"
-            title="YouTube video player"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowFullScreen
-            className="rounded-lg shadow-lg min-h-[350px] h-[20vh]"
-          ></iframe>
-        </div> */}
+          <video className="w-full h-full rounded-lg shadow-lg" controls>
+            <source src="/assets/videos/OT_elderly_slo.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
       </div>
     </main>
   );

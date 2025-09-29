@@ -1,17 +1,17 @@
 import React from "react";
 
-import { useRouter } from "next/router";
+// import { useRouter } from "next/router";
 
 import config from "../config/index.json";
 
 const MainHero = () => {
   const { mainHero } = config;
-  const router = useRouter();
-  const isHome = router.pathname === "/";
+  // const router = useRouter();
+  // const isHome = router.pathname === "/";
 
   return (
-    <main className="mx-auto mt-10 lg:ml-10 lg:max-w-7xl max-w-[80%] sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-15">
-      {isHome && (
+    <main className="mx-auto mt-10 lg:max-w-screen-md max-w-[80%] sm:mt-12 sm:px-6 md:mt-16 lg:my-40 lg:px-8 xl:mt-15">
+      {/* {isHome && (
         <svg
           className={`hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-gray-300 transform translate-x-1/2`}
           fill="currentColor"
@@ -21,8 +21,8 @@ const MainHero = () => {
         >
           <polygon points="50,0 100,0 50,100 0,100" />
         </svg>
-      )}
-      <div className="sm:text-center lg:text-left">
+      )} */}
+      <div className="sm:text-center">
         <div className="mb-2 flex justify-center lg:justify-center">
           <button
             className="px-6 py-3 rounded-md bg-primary text-white font-semibold hover:bg-secondary transition-colors duration-200 shadow-lg"
@@ -44,7 +44,7 @@ const MainHero = () => {
           </span>
         </h1>
         <br />
-        <p className="mt-3 text-base text-gray-700 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
+        <p className="mt-3 text-base text-gray-700 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl">
           {mainHero.additionalText}
         </p>
       </div>

@@ -9,7 +9,7 @@ import SquaresOdrasli from "../components/SquaresOdrasli";
 
 const OdrasliPage = () => {
   return (
-    <div className={`bg-background grid gap-y-16`}>
+    <div className={`bg-background grid gap-y-8 xl:gap-y-16`}>
       <Header />
       <div className={`relative bg-background`}>
         <div className="max-w-7xl mx-auto lg:h-screen">
