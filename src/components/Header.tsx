@@ -11,27 +11,17 @@ import config from "../config/index.json";
 
 const Menu = () => {
   const { mainHero, navigation, company } = config;
-  const { name: companyName, logo } = company;
+  const { name: companyName, logoOrange, logoWhite } = company;
   const router = useRouter();
   const isHome = router.pathname === "/";
+
+  const logoSrc = isHome ? logoOrange : logoWhite;
 
   return (
     <div
       id="header"
       className="sticky top-0 lg:sticky lg:top-0 lg:left-0 lg:right-0 z-50 w-full bg-background/90 backdrop-blur supports-[backdrop-filter]:bg-background/70"
     >
-      {/* {isHome && (
-        <svg
-          className={`hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-background transform translate-x-1/2`}
-          fill="currentColor"
-          viewBox="0 0 100 100"
-          preserveAspectRatio="none"
-          aria-hidden="true"
-        >
-          <polygon points="50,0 100,0 50,100 0,100" />
-        </svg>
-      )} */}
-
       <Popover>
         <div className="relative pt-6 px-4 sm:px-6 lg:px-8">
           <nav
@@ -40,21 +30,12 @@ const Menu = () => {
           >
             <div className="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
               <div className="flex items-center md:space-x-6 w-full md:w-auto">
-                <div className="flex items-center mr-2 md:mr-4 whitespace-nowrap">
-                  <button className="text-sm font-semibold text-gray-700 hover:text-primary focus:outline-none mr-1">
-                    SLO
-                  </button>
-                  <span className="text-gray-400">/</span>
-                  <button className="text-sm font-semibold text-gray-700 hover:text-primary focus:outline-none ml-1">
-                    ENG
-                  </button>
-                </div>
                 <Link href="/" passHref>
                   <span className="sr-only">{companyName}</span>
                   <Image
                     alt="logo"
                     className="h-16 w-auto sm:h-16"
-                    src={logo}
+                    src={logoSrc}
                     width={64}
                     height={64}
                   />
@@ -69,61 +50,73 @@ const Menu = () => {
                 </div>
               </div>
             </div>
-            <div className="hidden md:flex md:ml-10 md:pr-4 md:space-x-8 items-center">
-              {navigation.map((item) =>
-                isHome ? (
+            <div className="hidden md:flex md:ml-10 md:pr-4 items-center w-full">
+              <div className="flex items-center space-x-8">
+                {navigation.map((item) =>
+                  isHome ? (
+                    <ScrollLink
+                      spy={true}
+                      active="active"
+                      smooth={true}
+                      duration={1000}
+                      key={item.name}
+                      to={item.href.replace(/^#/, "")}
+                      className="font-medium text-gray-500 hover:text-gray-900 cursor-pointer"
+                    >
+                      {item.name}
+                    </ScrollLink>
+                  ) : (
+                    <Link
+                      key={item.name}
+                      href={`/${
+                        item.href.startsWith("#") ? item.href : `#${item.href}`
+                      }`
+                        .replace("//#", "/#")
+                        .replace("//", "/")}
+                      className="font-medium text-gray-500 hover:text-gray-900 cursor-pointer"
+                    >
+                      {item.name}
+                    </Link>
+                  )
+                )}
+              </div>
+              <div className="flex items-center ml-auto pl-8 border-l border-gray-200 whitespace-nowrap space-x-4">
+                <div className="flex items-center">
+                  <button className="text-sm font-semibold text-gray-700 hover:text-primary focus:outline-none mr-1">
+                    SLO
+                  </button>
+                  <span className="text-gray-400">/</span>
+                  <button className="text-sm font-semibold text-gray-700 hover:text-primary focus:outline-none ml-1">
+                    ENG
+                  </button>
+                </div>
+                {isHome ? (
                   <ScrollLink
                     spy={true}
                     active="active"
                     smooth={true}
                     duration={1000}
-                    key={item.name}
-                    to={item.href.replace(/^#/, "")}
-                    className="font-medium text-gray-500 hover:text-gray-900 cursor-pointer"
+                    to={mainHero.secondaryAction.href.replace(/^#/, "")}
+                    className="px-6 py-3 rounded-md bg-primary text-white font-semibold hover:bg-secondary transition-colors duration-200 shadow-lg cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary"
                   >
-                    {item.name}
+                    Kontakt
                   </ScrollLink>
                 ) : (
                   <Link
-                    key={item.name}
                     href={`/${
-                      item.href.startsWith("#") ? item.href : `#${item.href}`
+                      mainHero.secondaryAction.href.startsWith("#")
+                        ? mainHero.secondaryAction.href
+                        : `#${mainHero.secondaryAction.href}`
                     }`
                       .replace("//#", "/#")
                       .replace("//", "/")}
-                    className="font-medium text-gray-500 hover:text-gray-900 cursor-pointer"
+                    className="px-6 py-3 rounded-md bg-primary text-white font-semibold hover:bg-secondary transition-colors duration-200 shadow-lg cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary"
                   >
-                    {item.name}
+                    Kontakt
                   </Link>
-                )
-              )}
-              {isHome ? (
-                <ScrollLink
-                  spy={true}
-                  active="active"
-                  smooth={true}
-                  duration={1000}
-                  to={mainHero.secondaryAction.href.replace(/^#/, "")}
-                  className={`font-medium text-primary hover:text-secondary cursor-pointer`}
-                >
-                  Kontakt
-                </ScrollLink>
-              ) : (
-                <Link
-                  href={`/${
-                    mainHero.secondaryAction.href.startsWith("#")
-                      ? mainHero.secondaryAction.href
-                      : `#${mainHero.secondaryAction.href}`
-                  }`
-                    .replace("//#", "/#")
-                    .replace("//", "/")}
-                  className={`font-medium text-primary hover:text-secondary cursor-pointer`}
-                >
-                  Kontakt
-                </Link>
-              )}
+                )}
+              </div>
             </div>
-            {/* Button under the menu on desktop */}
           </nav>
         </div>
 
@@ -147,7 +140,7 @@ const Menu = () => {
                 <div>
                   <Image
                     className="h-8 w-auto"
-                    src={logo}
+                    src={logoSrc}
                     alt=""
                     width={32}
                     height={32}

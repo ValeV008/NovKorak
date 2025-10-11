@@ -1,19 +1,16 @@
 {
   "company": {
     "name": "Nov Korak",
-    "logo": "/assets/images/logo.png"
+    "logoOrange": "/assets/images/logo/logo_orange.jpg",
+    "logoWhite": "/assets/images/logo/logo_white.jpg"
   },
   "navigation": [
     {
-      "name": "Domov",
-      "href": "home"
-    },
-    {
-      "name": "Storitve",
+      "name": "Otroci",
       "href": "features"
     },
     {
-      "name": "O nas",
+      "name": "Starostniki",
       "href": "aboutMe"
     },
     {
@@ -27,7 +24,6 @@
   ],
   "mainHero": {
     "title": "Delovna terapija",
-    "titleUpper": "na domu",
     "subtitle": "za majhne in velike",
     "additionalText": "Preko aktivnosti do samostojnosti v vsakdanjem življenju.",
     "description": "Delovna terapija je poklic, osredotočen na stranke, ki se ukvarja s spodbujanjem zdravja in dobrega počutja skozi dejavnosti. Primarni cilj delovne terapije je omogočiti ljudem sodelovanje v vsakodnevnih aktivnostih.",
