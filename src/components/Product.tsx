@@ -13,7 +13,7 @@ const Product = () => {
     <section className={`bg-background py-8`} id="product">
       <div className={`container max-w-5xl mx-auto m-8`}>
         <h1
-          className={`w-full my-2 text-5xl font-bold leading-tight text-center text-primary`}
+          className={`w-2/3 mx-auto md:w-full my-2 text-5xl font-bold leading-tight text-center text-primary`}
         >
           {product.title.split(" ").map((word, index) => (
             <span
@@ -58,7 +58,7 @@ const Product = () => {
               />
             )}
           </div>
-          <div className={`w-full sm:w-1/2 p-6 mt-20`}>
+          <div className={`w-full sm:w-1/2 p-6`}>
             <div className={`align-middle`}>
               <h3
                 className={`text-3xl text-gray-800 font-bold leading-none mb-3`}

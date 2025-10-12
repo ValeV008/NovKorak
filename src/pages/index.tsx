@@ -1,61 +1,51 @@
 import React from "react";
 
-import home_kolaz from "../../public/assets/images/home_kolaz.png";
-import About from "../components/About";
-import AboutMe from "../components/AboutMe";
 import Analytics from "../components/Analytics";
 import Canvas from "../components/Canvas";
 import ContactForm from "../components/ContactForm";
-import Features from "../components/Features";
 import Header from "../components/Header";
 import LazyShow from "../components/LazyShow";
 import MainHero from "../components/MainHero";
 import OtrociOdrasliSubpages from "../components/OtrociOdrasliSubpages";
-import Pricing from "../components/Pricing";
 import Product from "../components/Product";
 
 const App = () => {
   return (
-    <div className={`bg-background grid sm:gap-y-4 xl:gap-y-8`} id="home">
+    <div className={`bg-background grid sm:gap-y-4 xl:gap-y-8 mb-20`} id="home">
       <Header />
       <div className={`relative bg-background`}>
-        <div className="max-w-full h-100">
-          {/* <div
-            className={`relative z-10 bg-background lg:max-w-[40%] lg:w-full lg:my-auto `}
-          > */}
+        <div className="max-w-full md:h-[60vh]">
           <MainHero />
-          {/* </div> */}
         </div>
-        {/* <MainHeroImage /> */}
-        <img src={home_kolaz.src} alt="Kolaz" className="w-full" />
+        {/* <img src={home_kolaz.src} alt="Kolaz" className="w-full" /> */}
       </div>
       <OtrociOdrasliSubpages />
       <Canvas />
       <LazyShow>
         <>
-          <AboutMe />
+          {/* <AboutMe /> */}
           <Product />
           <Canvas />
         </>
       </LazyShow>
-      <LazyShow>
+      {/* <LazyShow>
         <>
           <Features />
           <Canvas />
         </>
-      </LazyShow>
-      <LazyShow>
+      </LazyShow> */}
+      {/* <LazyShow>
         <Pricing />
-      </LazyShow>
+      </LazyShow> */}
       <LazyShow>
         <ContactForm />
       </LazyShow>
-      <LazyShow>
+      {/* <LazyShow>
         <>
           <Canvas />
           <About />
         </>
-      </LazyShow>
+      </LazyShow> */}
       <Analytics />
     </div>
   );

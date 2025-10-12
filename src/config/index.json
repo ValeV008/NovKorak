@@ -7,11 +7,11 @@
   "navigation": [
     {
       "name": "Otroci",
-      "href": "features"
+      "href": "/otroci"
     },
     {
       "name": "Starostniki",
-      "href": "aboutMe"
+      "href": "/odrasli"
     },
     {
       "name": "Cenik",

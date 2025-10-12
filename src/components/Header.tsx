@@ -23,9 +23,9 @@ const Menu = () => {
       className="sticky top-0 lg:sticky lg:top-0 lg:left-0 lg:right-0 z-50 w-full bg-background/90 backdrop-blur supports-[backdrop-filter]:bg-background/70"
     >
       <Popover>
-        <div className="relative pt-6 px-4 sm:px-6 lg:px-8">
+        <div className="relative pt-6 px-4 sm:px-6 lg:px-8 pb-1">
           <nav
-            className="relative flex items-center justify-between sm:h-10 lg:justify-start"
+            className="relative flex items-center justify-between"
             aria-label="Global"
           >
             <div className="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
@@ -34,26 +34,39 @@ const Menu = () => {
                   <span className="sr-only">{companyName}</span>
                   <Image
                     alt="logo"
-                    className="h-16 w-auto sm:h-16"
+                    className=""
                     src={logoSrc}
                     width={64}
                     height={64}
                   />
                 </Link>
-                <div className="-mr-2 flex items-center md:hidden">
-                  <Popover.Button
-                    className={`bg-background rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-secondary`}
-                  >
-                    <span className="sr-only">Open main menu</span>
-                    <MenuIcon className="h-6 w-6" aria-hidden="true" />
-                  </Popover.Button>
-                </div>
               </div>
+            </div>
+            {/* Mobile hamburger button moved to the far right */}
+            <div className="flex md:hidden items-center ml-auto">
+              <Popover.Button
+                className={`bg-background rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-secondary`}
+              >
+                <span className="sr-only">Open main menu</span>
+                <MenuIcon className="h-6 w-6" aria-hidden="true" />
+              </Popover.Button>
             </div>
             <div className="hidden md:flex md:ml-10 md:pr-4 items-center w-full">
               <div className="flex items-center space-x-8">
-                {navigation.map((item) =>
-                  isHome ? (
+                {navigation.map((item) => {
+                  // If config supplies absolute route like "/odrasli", link directly
+                  if (item.href.startsWith("/")) {
+                    return (
+                      <Link
+                        key={item.name}
+                        href={item.href}
+                        className="font-medium text-gray-500 hover:text-gray-900 cursor-pointer"
+                      >
+                        {item.name}
+                      </Link>
+                    );
+                  }
+                  return isHome ? (
                     <ScrollLink
                       spy={true}
                       active="active"
@@ -77,8 +90,8 @@ const Menu = () => {
                     >
                       {item.name}
                     </Link>
-                  )
-                )}
+                  );
+                })}
               </div>
               <div className="flex items-center ml-auto pl-8 border-l border-gray-200 whitespace-nowrap space-x-4">
                 <div className="flex items-center">
@@ -97,7 +110,7 @@ const Menu = () => {
                     smooth={true}
                     duration={1000}
                     to={mainHero.secondaryAction.href.replace(/^#/, "")}
-                    className="px-6 py-3 rounded-md bg-primary text-white font-semibold hover:bg-secondary transition-colors duration-200 shadow-lg cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary"
+                    className="px-6 py-2 rounded-md bg-primary text-white font-semibold hover:bg-secondary transition-colors duration-200 shadow-lg cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary"
                   >
                     Kontakt
                   </ScrollLink>
@@ -131,7 +144,7 @@ const Menu = () => {
         >
           <Popover.Panel
             focus
-            className="absolute z-10 top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden"
+            className="fixed z-50 top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden"
           >
             <div
               className={`rounded-lg shadow-md bg-background ring-1 ring-black ring-opacity-5 overflow-hidden`}
@@ -156,8 +169,19 @@ const Menu = () => {
                 </div>
               </div>
               <div className="px-2 pt-2 pb-3 space-y-1">
-                {navigation.map((item) =>
-                  isHome ? (
+                {navigation.map((item) => {
+                  if (item.href.startsWith("/")) {
+                    return (
+                      <Link
+                        key={item.name}
+                        href={item.href}
+                        className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
+                      >
+                        {item.name}
+                      </Link>
+                    );
+                  }
+                  return isHome ? (
                     <ScrollLink
                       spy={true}
                       active="active"
@@ -181,8 +205,8 @@ const Menu = () => {
                     >
                       {item.name}
                     </Link>
-                  )
-                )}
+                  );
+                })}
               </div>
               {isHome ? (
                 <ScrollLink
