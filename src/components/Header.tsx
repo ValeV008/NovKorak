@@ -39,10 +39,10 @@ const Menu = () => {
                   <span className="sr-only">{companyName}</span>
                   <Image
                     alt="logo"
-                    className=""
+                    className="h-16 lg:h-16 w-auto"
                     src={logoSrc}
-                    width={64}
-                    height={64}
+                    width={128}
+                    height={128}
                   />
                 </Link>
               </div>
