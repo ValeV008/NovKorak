@@ -1,6 +1,11 @@
 import React, { Fragment } from "react";
 
-import { Popover, Transition } from "@headlessui/react";
+import {
+  Popover,
+  PopoverButton,
+  PopoverPanel,
+  Transition,
+} from "@headlessui/react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import Image from "next/image";
 import Link from "next/link";
@@ -44,12 +49,12 @@ const Menu = () => {
             </div>
             {/* Mobile hamburger button moved to the far right */}
             <div className="flex md:hidden items-center ml-auto">
-              <Popover.Button
+              <PopoverButton
                 className={`bg-background rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-secondary`}
               >
                 <span className="sr-only">Open main menu</span>
                 <MenuIcon className="h-6 w-6" aria-hidden="true" />
-              </Popover.Button>
+              </PopoverButton>
             </div>
             <div className="hidden md:flex md:ml-10 md:pr-4 items-center w-full">
               <div className="flex items-center space-x-8">
@@ -142,7 +147,7 @@ const Menu = () => {
           leaveFrom="opacity-100 scale-100"
           leaveTo="opacity-0 scale-95"
         >
-          <Popover.Panel
+          <PopoverPanel
             focus
             className="fixed z-50 top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden"
           >
@@ -160,12 +165,12 @@ const Menu = () => {
                   />
                 </div>
                 <div className="-mr-2">
-                  <Popover.Button
+                  <PopoverButton
                     className={`bg-background rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-secondary`}
                   >
                     <span className="sr-only">Close main menu</span>
                     <XIcon className="h-6 w-6" aria-hidden="true" />
-                  </Popover.Button>
+                  </PopoverButton>
                 </div>
               </div>
               <div className="px-2 pt-2 pb-3 space-y-1">
@@ -208,33 +213,8 @@ const Menu = () => {
                   );
                 })}
               </div>
-              {isHome ? (
-                <ScrollLink
-                  spy={true}
-                  active="active"
-                  smooth={true}
-                  duration={1000}
-                  to={mainHero.secondaryAction.href.replace(/^#/, "")}
-                  className={`block w-full px-5 py-3 text-center font-medium text-primary bg-gray-50 hover:bg-gray-100`}
-                >
-                  {mainHero.secondaryAction.text}
-                </ScrollLink>
-              ) : (
-                <Link
-                  href={`/${
-                    mainHero.secondaryAction.href.startsWith("#")
-                      ? mainHero.secondaryAction.href
-                      : `#${mainHero.secondaryAction.href}`
-                  }`
-                    .replace("//#", "/#")
-                    .replace("//", "/")}
-                  className={`block w-full px-5 py-3 text-center font-medium text-primary bg-gray-50 hover:bg-gray-100`}
-                >
-                  {mainHero.secondaryAction.text}
-                </Link>
-              )}
             </div>
-          </Popover.Panel>
+          </PopoverPanel>
         </Transition>
       </Popover>
     </div>
