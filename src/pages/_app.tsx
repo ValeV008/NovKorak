@@ -1,6 +1,6 @@
-import { appWithTranslation } from "next-i18next";
 import { AppProps } from "next/app";
 import Head from "next/head";
+import { appWithTranslation } from "next-i18next";
 
 import "../styles/main.css";
 

@@ -7,10 +7,10 @@ import {
   Transition,
 } from "@headlessui/react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
-import { useTranslation } from "next-i18next";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import { useTranslation } from "next-i18next";
 import { Link as ScrollLink } from "react-scroll";
 
 const Menu = () => {
