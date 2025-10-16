@@ -2,9 +2,9 @@ import React from "react";
 
 import Image from "next/image";
 
+import Divider from "./Divider";
 import aboutMePic from "../../public/assets/images/aboutMe.png";
 import config from "../config/index.json";
-import Divider from "./Divider";
 
 const { aboutMe } = config;
 
