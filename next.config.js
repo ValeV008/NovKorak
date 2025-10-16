@@ -1,3 +1,5 @@
+const path = require("path");
+
 /* eslint-disable import/no-extraneous-dependencies */
 const withBundleAnalyzer = require("@next/bundle-analyzer")({
   enabled: process.env.ANALYZE === "true",
@@ -25,4 +27,5 @@ module.exports = withBundleAnalyzer({
     ...i18n,
     localeDetection: false, // Disable checking Accept-Language header
   },
+  localesPath: path.resolve("./public/locales"),
 });

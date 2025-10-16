@@ -1,3 +1,5 @@
+const path = require("path");
+
 module.exports = {
   i18n: {
     defaultLocale: "sl",
@@ -5,5 +7,5 @@ module.exports = {
   },
   localeDetection: false, // Disable checking Accept-Language header
   reloadOnPrerender: process.env.NODE_ENV === "development",
-  localesPath: "./public/locales",
+  localesPath: path.resolve("./public/locales"),
 };
