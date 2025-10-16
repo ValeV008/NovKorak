@@ -19,7 +19,7 @@ const Menu = () => {
   // navigation should be an array in translation JSON. Guard in case namespace not loaded yet.
   const navigationRaw = t("navigation", { returnObjects: true });
   const navigation: Array<{ name: string; href: string }> = Array.isArray(
-    navigationRaw
+    navigationRaw,
   )
     ? (navigationRaw as any)
     : [];

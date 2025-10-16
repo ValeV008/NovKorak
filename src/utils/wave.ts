@@ -13,7 +13,7 @@ class Wave {
     context: CanvasRenderingContext2D,
     width: number,
     height: number,
-    frequency: number
+    frequency: number,
   ): void => {
     context.beginPath();
     context.moveTo(0, height);

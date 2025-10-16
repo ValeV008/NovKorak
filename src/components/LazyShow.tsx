@@ -4,7 +4,7 @@ import { motion, useAnimation } from "framer-motion";
 
 function useOnScreen(
   ref: MutableRefObject<HTMLDivElement | null>,
-  rootMargin = "0px"
+  rootMargin = "0px",
 ) {
   const [isIntersecting, setIntersecting] = useState(false);
 
@@ -16,7 +16,7 @@ function useOnScreen(
       },
       {
         rootMargin,
-      }
+      },
     );
     if (ref && ref?.current) {
       currentRef = ref.current;
