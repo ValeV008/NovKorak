@@ -1,13 +1,10 @@
 import React from "react";
 
-// import { useRouter } from "next/router";
-
-import config from "../config/index.json";
+import { useTranslation } from "next-i18next";
 
 const MainHero = () => {
-  const { mainHero } = config;
-  // const router = useRouter();
-  // const isHome = router.pathname === "/";
+  const { t } = useTranslation("common");
+  const mainHero = t("mainHero", { returnObjects: true }) as any;
 
   return (
     <main className="mx-6 my-6 sm:text-center grid gap-y-8">
@@ -21,12 +18,14 @@ const MainHero = () => {
       <p className="text-base text-gray-700 sm:text-lg sm:mx-auto md:text-xl">
         {mainHero.additionalText}
       </p>
-      <button
-        className="px-6 py-3 rounded-md bg-primary text-white font-semibold hover:bg-secondary transition-colors duration-200 shadow-lg mx-auto"
-        type="button"
-      >
-        Kliknite za 10 min brezplačni posvet
-      </button>
+      {mainHero.ctaText && (
+        <button
+          className="px-6 py-3 rounded-md bg-primary text-white font-semibold hover:bg-secondary transition-colors duration-200 shadow-lg mx-auto"
+          type="button"
+        >
+          {mainHero.ctaText}
+        </button>
+      )}
     </main>
   );
 };

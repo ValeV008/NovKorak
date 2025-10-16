@@ -1,11 +1,36 @@
 "use client";
 
-import React, { FormEvent, useState } from "react";
+import React, { FormEvent, useEffect, useRef, useState } from "react";
+
+import { useTranslation } from "next-i18next";
 
 import Divider from "./Divider";
 
 export default function ContactForm2() {
+  const { t, i18n } = useTranslation("common");
   const [submitted, setSubmitted] = useState(false);
+  // Controlled message field so initial text (translation) is editable by user
+  const initialTemplate = t("contact.messagePlaceholder") as string;
+  const [message, setMessage] = useState<string>(initialTemplate);
+  const userModifiedRef = useRef(false);
+
+  // Detect user modification
+  const handleMessageChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
+    if (!userModifiedRef.current && e.target.value !== initialTemplate) {
+      userModifiedRef.current = true;
+    }
+    setMessage(e.target.value);
+  };
+
+  // When language changes, update template only if user hasn't modified yet OR field is still exactly old template
+  useEffect(() => {
+    const newTemplate = t("contact.messagePlaceholder") as string;
+    if (!userModifiedRef.current || message.trim() === initialTemplate.trim()) {
+      setMessage(newTemplate);
+      userModifiedRef.current = false; // Still unmodified relative to new language
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [i18n.language]);
 
   const handleSubmit = async (event: FormEvent) => {
     event.preventDefault();
@@ -21,7 +46,7 @@ export default function ContactForm2() {
       setSubmitted(true);
     } else {
       // alert("Form submission failed.");
-      console.error("Form submission failed.");
+      // console.error("Form submission failed.");
     }
   };
 
@@ -32,14 +57,14 @@ export default function ContactForm2() {
     >
       {submitted ? (
         <p className="text-green-600 text-center text-lg font-semibold">
-          Hvala! Sporočilo je bilo poslano.
+          {t("contact.success")}
         </p>
       ) : (
         <>
           <h1
             className={`w-full my-2 text-5xl font-bold leading-tight text-center text-primary`}
           >
-            Pišite nam
+            {t("contact.title")}
           </h1>
           <Divider />
           <form
@@ -49,9 +74,10 @@ export default function ContactForm2() {
             className="space-y-4"
           >
             <input type="hidden" name="form-name" value="contact" />
-
             <div>
-              <label className="block text-gray-700 font-medium">Ime</label>
+              <label className="block text-gray-700 font-medium">
+                {t("contact.nameLabel")}
+              </label>
               <input
                 type="text"
                 name="name"
@@ -62,7 +88,7 @@ export default function ContactForm2() {
 
             <div>
               <label className="block text-gray-700 font-medium">
-                Elektronski naslov
+                {t("contact.emailLabel")}
               </label>
               <input
                 type="email"
@@ -74,28 +100,23 @@ export default function ContactForm2() {
 
             <div>
               <label className="block text-gray-700 font-medium">
-                Sporočilo
+                {t("contact.messageLabel")}
               </label>
               <textarea
                 name="message"
                 required
                 rows={10}
                 className="mt-1 w-full p-2 border rounded-lg focus:ring focus:ring-blue-300"
-                defaultValue={`Pozdravljeni,
-
-zanima me/nas več informacij o vaših storitvah delovne terapije in možnostih obravnave. Prosim za podrobnosti glede terminov in prispevka za terapijo oz. obravnavo. 
-
-Hvala!
-
-Lepo vas pozdravljam/o.`}
-              ></textarea>
+                value={message}
+                onChange={handleMessageChange}
+              />
             </div>
 
             <button
               type="submit"
               className="w-full bg-primary text-white py-2 rounded-lg hover:bg-blue-700 transition"
             >
-              Send
+              {t("contact.submit")}
             </button>
           </form>
         </>

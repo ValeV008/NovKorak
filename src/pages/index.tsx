@@ -1,5 +1,8 @@
 import React from "react";
 
+import { GetStaticProps } from "next";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+
 import Analytics from "../components/Analytics";
 import Canvas from "../components/Canvas";
 import ContactForm from "../components/ContactForm";
@@ -49,6 +52,14 @@ const App = () => {
       <Analytics />
     </div>
   );
+};
+
+export const getStaticProps: GetStaticProps = async ({ locale }) => {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale || "sl", ["common"])),
+    },
+  };
 };
 
 export default App;

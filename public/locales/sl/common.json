@@ -1,0 +1,171 @@
+{
+  "company": {
+    "name": "Nov Korak",
+    "logoOrange": "/assets/images/logo/logo_orange.jpg",
+    "logoWhite": "/assets/images/logo/logo_white.jpg"
+  },
+  "navigation": [
+    {
+      "name": "Otroci",
+      "href": "/otroci"
+    },
+    {
+      "name": "Starostniki",
+      "href": "/odrasli"
+    },
+    {
+      "name": "Cenik",
+      "href": "/"
+    },
+    {
+      "name": "Spletna učilnica",
+      "href": "/"
+    }
+  ],
+  "mainHero": {
+    "title": "Delovna terapija",
+    "subtitle": "za majhne in velike",
+    "additionalText": "Preko aktivnosti do samostojnosti v vsakdanjem življenju.",
+    "description": "Delovna terapija je poklic, osredotočen na stranke, ki se ukvarja s spodbujanjem zdravja in dobrega počutja skozi dejavnosti. Primarni cilj delovne terapije je omogočiti ljudem sodelovanje v vsakodnevnih aktivnostih.",
+    "img": "/assets/images/happyTeam.jpeg",
+    "ctaText": "Kliknite za 10 min brezplačni posvet",
+    "primaryAction": {
+      "text": "Za otroke in mladostnike",
+      "href": "product"
+    },
+    "secondaryAction": {
+      "text": "Za odrasle starejše",
+      "href": "form"
+    }
+  },
+  "aboutMe": {
+    "title": "O nas",
+    "highlighted_title": "Delovna terapevtka",
+    "img": "/assets/images/aboutMe.png",
+    "href": "aboutMe"
+  },
+  "product": {
+    "title": "O delovni terapiji",
+    "items": [
+      {
+        "title": "Kaj je delovna terapija?",
+        "description": " Delovna terapija je zdravstvena stroka, delovni terapevt pa je zdravstveni delavec, ki spodbuja posameznika k vključevanju v njemu/njej smiselne dejavnosti vsakodnevnega življenja. Osredotoča se na izboljševanje oz. ohranjanje zdravstvenega stanja na področju telesnih funkcij in struktur ter duševnega zdravja. Naši skupni cilji bodo izvajanje aktivnosti za spodbujanje zdravja, dobrega počutja in čimbolj uspešno opravljanje prioritetno postavljenih dejavnosti. Delovni terapevt je tukaj tudi zato, da vam ponudi komponente za izvajanje aktivnosti na področjih:\nizvajanje Osnovnih Dnevnih Aktivnosti, kot so umivanje, oblačenje in prehranjevanje ter Širših Dnevnih aktivnosti,\nocena okoljskih dejavnikov, preprečevanje padcev ter svetovanje glede prilagoditve doma za večjo varnost\nsvetovanje glede uporabe ortotskih in medicinsko tehničnih pripomočkov\nvrnitve v vsak dan: v šolo, na delo in druge prostočasne hobije,\nusposabljanje družinskih članov\ninformiranje o podporni tehnologiji, ki je posamezniku lahko v pomoč pri samostojnosti.\n\nDelovnoterapevtski proces običajno vključuje:\nIndividualno oceno, v kateri vas bomo vprašali po vaših željah, interesih, zgodovini in zdravljenju po mišično skeletni poškodbi ali bolezni živčevja.\nOblikovanje načrta [re]habilitacije, ki vam bodo pomagal doseči zastavljene cilje.\nObravnave delovne terapije (število srečanj je po dogovoru glede na stanje in želje posameznika).",
+        "img": "/assets/images/image_kaj_je_terapija.png"
+      },
+      {
+        "title": "Kako poteka delovna terapija?",
+        "description": "Delovnoterapevtski proces običajno vključuje:\nIndividualno oceno, v kateri vas bomo vprašali po vaših željah, interesih, zgodovini in zdravljenju po mišično skeletni poškodbi ali bolezni živčevja.\nOblikovanje načrta [re]habilitacije, ki vam bodo pomagal doseči zastavljene cilje.\nObravnave delovne terapije (število srečanj je po dogovoru glede na stanje in želje posameznika).",
+        "img": "/assets/images/image_kako_poteka.png"
+      }
+    ]
+  },
+  "elderlyHero": {
+    "subtitle": "za odrasle starejše",
+    "description": "V polnosti izkusimo življenje skozi stvari, ki jih vsak dan radi počnemo – v vrtcu ali šoli, pri delu, v domačem okolju ali v skupnostih. Delovna terapija je zdravstvena stroka, ki vam ali vašemu družinskemu članu pomaga razviti spretnosti, potrebne za vsakodnevne dejavnosti, kadar so te sposobnosti zmanjšane ali izgubljene zaradi poškodbe, (kronične) bolezni, težav z duševnim zdravjem, razvojnega zaostanka, učnih težav, posledic staranja ali drugih zdravstvenih dejavnikov.",
+    "videoAlt": "Video predstavitev delovne terapije za starejše"
+  },
+  "features": {
+    "title": "Ne spreglejte ...",
+    "subtitle": "Prednosti delovne terapije",
+    "description": "Delovna terapija prinaša številne prednosti za vaše zdravje in kakovost življenja. Z individualno prilagojenim pristopom vam pomagamo doseči večjo samostojnost pri vsakodnevnih aktivnostih, izboljšati telesno in duševno počutje ter aktivno sodelovati v družbi. Spoznajte ključne prednosti, ki jih lahko prinese delovna terapija v vaše življenje.",
+    "items": [
+      {
+        "name": "Nevro-mišični taping",
+        "description": "Tehnika, prek katere vplivamo na mišično-skeletni, žilni, limfni in nevrološki sistem. Pri tem uporabljamo (de)kompresivne dražljaje z namestitvijo samolepilnega elastičnega traku za naravno zdravljenje telesa.",
+        "icon": "/assets/images/nevromisicni_taping.svg"
+      },
+      {
+        "name": "Montessori pristop",
+        "description": "Pri delu z osebami z demenco je ključno, da ne pozabimo na človeka za diagnozo. Namesto da se osredotočamo na omejitve, iščemo njihove sposobnosti, interese in edinstvene življenjske zgodbe. Spoštovanje njihovega ozadja, kulture in potreb omogoča oblikovanje okolja, ki spodbuja samostojnost in smiselno vključevanje. Pristop Montessori za demenco, invalidnost in staranje temelji na štirih temeljnih načelih, ki krepijo samospoštovanje, omogočajo izbiro ter spodbujajo prispevanje k skupnosti.",
+        "icon": "/assets/images/Picture2.png"
+      },
+      {
+        "name": "Več aktivnosti",
+        "description": "Delovna terapija vam pomaga ponovno vzpostaviti rutino vsakodnevnih aktivnosti in vam omogoča, da se vrnete k svojim najljubšim dejavnostim. Naučite se novih načinov izvajanja aktivnosti in odkrijete nove interese.",
+        "icon": "/assets/images/nextjs.svg"
+      },
+      {
+        "name": "Več samostojnosti",
+        "description": "S pomočjo delovne terapije lahko dosežete večjo samostojnost pri vsakodnevnih opravilih. Naučite se novih strategij in uporabe pripomočkov, ki vam olajšajo izvajanje aktivnosti in zmanjšajo odvisnost od pomoči drugih.",
+        "icon": "/assets/images/ts.png"
+      }
+    ]
+  },
+  "pricing": {
+    "title": "Cenik",
+    "items": [
+      {
+        "name": "Osnovna obravnava",
+        "price": "45€",
+        "priceDetails": "na obravnavo",
+        "features": [
+          "Začetna ocena stanja",
+          "Individualni načrt terapije",
+          "45-minutna obravnava",
+          "Osnovni terapevtski pripomočki",
+          "Nasveti za domačo vadbo"
+        ]
+      },
+      {
+        "name": "Paket 5 obravnav",
+        "price": "200€",
+        "priceDetails": "prihranek 25€",
+        "features": [
+          "5 terapevtskih obravnav",
+          "Poglobljena začetna ocena",
+          "Prilagojen program vadbe",
+          "Napredni terapevtski pripomočki",
+          "Redna evalvacija napredka"
+        ]
+      },
+      {
+        "name": "Paket 10 obravnav",
+        "price": "380€",
+        "priceDetails": "prihranek 70€",
+        "features": [
+          "10 terapevtskih obravnav",
+          "Celostna ocena stanja",
+          "Intenziven program rehabilitacije",
+          "Vsi terapevtski pripomočki",
+          "Podrobno spremljanje napredka"
+        ]
+      }
+    ]
+  },
+  "about": {
+    "sections": [
+      {
+        "name": "Product",
+        "href": "#product",
+        "content": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
+      },
+      {
+        "name": "Something2",
+        "href": "#",
+        "content": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
+      },
+      {
+        "name": "Something3",
+        "href": "#",
+        "content": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
+      },
+      {
+        "name": "Something4",
+        "href": "#",
+        "content": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
+      }
+    ],
+    "socialMedia": {
+      "linkedin": "https://si.linkedin.com/in/tina-zadravec-034140152"
+    }
+  },
+  "contact": {
+    "title": "Pišite nam",
+    "nameLabel": "Ime",
+    "emailLabel": "Elektronski naslov",
+    "messageLabel": "Sporočilo",
+    "messagePlaceholder": "Pozdravljeni,\n\nzanima me/nas več informacij o vaših storitvah delovne terapije in možnostih obravnave. Prosim za podrobnosti glede terminov in prispevka za terapijo oz. obravnavo. \n\nHvala!\n\nLepo vas pozdravljam/o.",
+    "submit": "Pošlji",
+    "success": "Hvala! Sporočilo je bilo poslano."
+  }
+}

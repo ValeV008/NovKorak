@@ -3,6 +3,8 @@ const withBundleAnalyzer = require("@next/bundle-analyzer")({
   enabled: process.env.ANALYZE === "true",
 });
 
+const { i18n } = require("./next-i18next.config");
+
 module.exports = withBundleAnalyzer({
   poweredByHeader: false,
   trailingSlash: true,
@@ -18,5 +20,9 @@ module.exports = withBundleAnalyzer({
     domains: [], // Don't need to specify external domains since you use local images
     path: "/_next/image", // This ensures Next.js uses the right path for image optimization
     unoptimized: false, // Default to enable optimization
+  },
+  i18n: {
+    ...i18n,
+    localeDetection: false, // Disable checking Accept-Language header
   },
 });

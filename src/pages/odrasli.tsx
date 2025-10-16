@@ -1,5 +1,8 @@
 import React from "react";
 
+import { GetStaticProps } from "next";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+
 import Canvas from "../components/Canvas";
 import Header from "../components/Header";
 import LazyShow from "../components/LazyShow";
@@ -32,3 +35,11 @@ const OdrasliPage = () => {
 };
 
 export default OdrasliPage;
+
+export const getStaticProps: GetStaticProps = async ({ locale }) => {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale || "sl", ["common"])),
+    },
+  };
+};

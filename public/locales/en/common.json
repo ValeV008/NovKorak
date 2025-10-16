@@ -1,0 +1,171 @@
+{
+  "company": {
+    "name": "Nov Korak",
+    "logoOrange": "/assets/images/logo/logo_orange.jpg",
+    "logoWhite": "/assets/images/logo/logo_white.jpg"
+  },
+  "navigation": [
+    {
+      "name": "Children",
+      "href": "/otroci"
+    },
+    {
+      "name": "Elderly",
+      "href": "/odrasli"
+    },
+    {
+      "name": "Pricing",
+      "href": "/"
+    },
+    {
+      "name": "E-classroom",
+      "href": "/"
+    }
+  ],
+  "mainHero": {
+    "title": "Occupational Therapy",
+    "subtitle": "for young and old",
+    "additionalText": "Through activities to independence in everyday life.",
+    "description": "Occupational therapy is a client-centered profession focused on promoting health and well-being through activities. The primary goal of occupational therapy is to enable people to participate in everyday activities.",
+    "img": "/assets/images/happyTeam.jpeg",
+    "ctaText": "Click for a 10 min free consultation",
+    "primaryAction": {
+      "text": "For children and adolescents",
+      "href": "product"
+    },
+    "secondaryAction": {
+      "text": "For older adults",
+      "href": "form"
+    }
+  },
+  "aboutMe": {
+    "title": "About us",
+    "highlighted_title": "Occupational Therapist",
+    "img": "/assets/images/aboutMe.png",
+    "href": "aboutMe"
+  },
+  "product": {
+    "title": "About Occupational Therapy",
+    "items": [
+      {
+        "title": "What is occupational therapy?",
+        "description": "Occupational therapy is a healthcare profession, and an occupational therapist is a healthcare worker who encourages individuals to engage in meaningful everyday activities. It focuses on improving or maintaining health in terms of bodily functions and structures as well as mental health. Our common goals will be to carry out activities to promote health, well-being, and the most successful performance of prioritized activities. The occupational therapist is also here to offer components for performing activities in the areas of:\nperforming Basic Daily Activities, such as washing, dressing, and eating, as well as Extended Daily Activities,\nenvironmental assessment, fall prevention, and advice on home adaptations for greater safety\nadvice on the use of orthotic and medical technical aids\nreturning to everyday life: to school, work, and other leisure hobbies,\ntraining family members\ninformation about assistive technology that can help the individual achieve independence.\n\nThe occupational therapy process usually includes:\nIndividual assessment, where we will ask about your wishes, interests, history, and treatment after musculoskeletal injury or nervous system disease.\nDevelopment of a [re]habilitation plan to help you achieve set goals.\nOccupational therapy sessions (the number of sessions is agreed upon according to the individual's condition and wishes).",
+        "img": "/assets/images/image_kaj_je_terapija.png"
+      },
+      {
+        "title": "How does occupational therapy work?",
+        "description": "The occupational therapy process usually includes:\nIndividual assessment, where we will ask about your wishes, interests, history, and treatment after musculoskeletal injury or nervous system disease.\nDevelopment of a [re]habilitation plan to help you achieve set goals.\nOccupational therapy sessions (the number of sessions is agreed upon according to the individual's condition and wishes).",
+        "img": "/assets/images/image_kako_poteka.png"
+      }
+    ]
+  },
+  "elderlyHero": {
+    "subtitle": "for older adults",
+    "description": "We fully experience life through the things we love doing every day – in kindergarten or school, at work, at home, or in communities. Occupational therapy is a healthcare profession that helps you or your family member develop the skills needed for daily activities when these abilities are reduced or lost due to injury, (chronic) illness, mental health challenges, developmental delay, learning difficulties, the effects of aging, or other health factors.",
+    "videoAlt": "Video presentation of occupational therapy for older adults"
+  },
+  "features": {
+    "title": "Don't miss ...",
+    "subtitle": "Benefits of occupational therapy",
+    "description": "Occupational therapy brings many benefits to your health and quality of life. With an individually tailored approach, we help you achieve greater independence in everyday activities, improve physical and mental well-being, and actively participate in society. Discover the key benefits that occupational therapy can bring to your life.",
+    "items": [
+      {
+        "name": "Neuro-muscular taping",
+        "description": "A technique through which we influence the musculoskeletal, vascular, lymphatic, and neurological systems. We use (de)compressive stimuli by applying a self-adhesive elastic tape for natural body healing.",
+        "icon": "/assets/images/nevromisicni_taping.svg"
+      },
+      {
+        "name": "Montessori approach",
+        "description": "When working with people with dementia, it is crucial not to forget the person behind the diagnosis. Instead of focusing on limitations, we look for their abilities, interests, and unique life stories. Respecting their background, culture, and needs allows for the creation of an environment that encourages independence and meaningful involvement. The Montessori approach for dementia, disability, and aging is based on four fundamental principles that strengthen self-esteem, enable choice, and encourage contribution to the community.",
+        "icon": "/assets/images/Picture2.png"
+      },
+      {
+        "name": "More activities",
+        "description": "Occupational therapy helps you re-establish a routine of daily activities and enables you to return to your favorite activities. Learn new ways of performing activities and discover new interests.",
+        "icon": "/assets/images/nextjs.svg"
+      },
+      {
+        "name": "More independence",
+        "description": "With the help of occupational therapy, you can achieve greater independence in daily tasks. Learn new strategies and use aids that make activities easier and reduce dependence on others.",
+        "icon": "/assets/images/ts.png"
+      }
+    ]
+  },
+  "pricing": {
+    "title": "Price list",
+    "items": [
+      {
+        "name": "Basic session",
+        "price": "45€",
+        "priceDetails": "per session",
+        "features": [
+          "Initial assessment",
+          "Individual therapy plan",
+          "45-minute session",
+          "Basic therapeutic aids",
+          "Home exercise advice"
+        ]
+      },
+      {
+        "name": "Package of 5 sessions",
+        "price": "200€",
+        "priceDetails": "save 25€",
+        "features": [
+          "5 therapy sessions",
+          "In-depth initial assessment",
+          "Customized exercise program",
+          "Advanced therapeutic aids",
+          "Regular progress evaluation"
+        ]
+      },
+      {
+        "name": "Package of 10 sessions",
+        "price": "380€",
+        "priceDetails": "save 70€",
+        "features": [
+          "10 therapy sessions",
+          "Comprehensive assessment",
+          "Intensive rehabilitation program",
+          "All therapeutic aids",
+          "Detailed progress monitoring"
+        ]
+      }
+    ]
+  },
+  "about": {
+    "sections": [
+      {
+        "name": "Product",
+        "href": "#product",
+        "content": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
+      },
+      {
+        "name": "Something2",
+        "href": "#",
+        "content": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
+      },
+      {
+        "name": "Something3",
+        "href": "#",
+        "content": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
+      },
+      {
+        "name": "Something4",
+        "href": "#",
+        "content": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
+      }
+    ],
+    "socialMedia": {
+      "linkedin": "https://si.linkedin.com/in/tina-zadravec-034140152"
+    }
+  },
+  "contact": {
+    "title": "Contact Us",
+    "nameLabel": "Name",
+    "emailLabel": "Email address",
+    "messageLabel": "Message",
+    "messagePlaceholder": "Hello,\n\nI/we would like more information about your occupational therapy services and possible treatment options. Please provide details regarding available appointments and the fee for therapy / sessions.\n\nThank you!\n\nKind regards.",
+    "submit": "Send",
+    "success": "Thank you! Your message has been sent."
+  }
+}

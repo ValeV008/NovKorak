@@ -7,18 +7,31 @@ import {
   Transition,
 } from "@headlessui/react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
+import { useTranslation } from "next-i18next";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { Link as ScrollLink } from "react-scroll";
 
-import config from "../config/index.json";
+// import config from "../config/index.json"; // Replaced by i18n translations
 
 const Menu = () => {
-  const { mainHero, navigation, company } = config;
+  const { t } = useTranslation("common");
+  // Pull structured data from translation JSON (returnObjects preserves arrays/objects)
+  // navigation should be an array in translation JSON. Guard in case namespace not loaded yet.
+  const navigationRaw = t("navigation", { returnObjects: true });
+  const navigation: Array<{ name: string; href: string }> = Array.isArray(
+    navigationRaw
+  )
+    ? (navigationRaw as any)
+    : [];
+
+  const mainHero = t("mainHero", { returnObjects: true }) as any;
+  const company = t("company", { returnObjects: true }) as any;
   const { name: companyName, logoOrange, logoWhite } = company;
   const router = useRouter();
   const isHome = router.pathname === "/";
+  const { locale, asPath } = router;
 
   const logoSrc = isHome ? logoOrange : logoWhite;
 
@@ -100,11 +113,33 @@ const Menu = () => {
               </div>
               <div className="flex items-center ml-auto pl-8 border-l border-gray-200 whitespace-nowrap space-x-4">
                 <div className="flex items-center">
-                  <button className="text-sm font-semibold text-gray-700 hover:text-primary focus:outline-none mr-1">
+                  <button
+                    type="button"
+                    onClick={() =>
+                      router.push(asPath, asPath, { locale: "sl" })
+                    }
+                    className={`text-sm font-semibold focus:outline-none mr-1 ${
+                      locale === "sl"
+                        ? "text-primary"
+                        : "text-gray-700 hover:text-primary"
+                    }`}
+                    aria-pressed={locale === "sl"}
+                  >
                     SLO
                   </button>
                   <span className="text-gray-400">/</span>
-                  <button className="text-sm font-semibold text-gray-700 hover:text-primary focus:outline-none ml-1">
+                  <button
+                    type="button"
+                    onClick={() =>
+                      router.push(asPath, asPath, { locale: "en" })
+                    }
+                    className={`text-sm font-semibold focus:outline-none ml-1 ${
+                      locale === "en"
+                        ? "text-primary"
+                        : "text-gray-700 hover:text-primary"
+                    }`}
+                    aria-pressed={locale === "en"}
+                  >
                     ENG
                   </button>
                 </div>
@@ -117,7 +152,7 @@ const Menu = () => {
                     to={mainHero.secondaryAction.href.replace(/^#/, "")}
                     className="px-6 py-2 rounded-md bg-primary text-white font-semibold hover:bg-secondary transition-colors duration-200 shadow-lg cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary"
                   >
-                    Kontakt
+                    {locale === "sl" ? "Kontakt" : "Contact"}
                   </ScrollLink>
                 ) : (
                   <Link
@@ -130,7 +165,7 @@ const Menu = () => {
                       .replace("//", "/")}
                     className="px-6 py-3 rounded-md bg-primary text-white font-semibold hover:bg-secondary transition-colors duration-200 shadow-lg cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary"
                   >
-                    Kontakt
+                    {locale === "sl" ? "Kontakt" : "Contact"}
                   </Link>
                 )}
               </div>

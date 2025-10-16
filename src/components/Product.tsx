@@ -1,13 +1,14 @@
 import React from "react";
 
+import { useTranslation } from "next-i18next";
 import Image from "next/image";
 
-import config from "../config/index.json";
 import Divider from "./Divider";
 
 const Product = () => {
-  const { product } = config;
-  const [firstItem, secondItem] = product.items;
+  const { t } = useTranslation("common");
+  const product = t("product", { returnObjects: true }) as any;
+  const [firstItem, secondItem] = (product.items || []) as any[];
 
   return (
     <section className={`bg-background py-8`} id="product">
@@ -15,7 +16,7 @@ const Product = () => {
         <h1
           className={`w-2/3 mx-auto md:w-full my-2 text-5xl font-bold leading-tight text-center text-primary`}
         >
-          {product.title.split(" ").map((word, index) => (
+          {product.title.split(" ").map((word: string, index: number) => (
             <span
               key={index}
               className={index % 2 ? "text-primary" : "text-border"}
