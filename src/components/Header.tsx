@@ -13,8 +13,6 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import { Link as ScrollLink } from "react-scroll";
 
-// import config from "../config/index.json"; // Replaced by i18n translations
-
 const Menu = () => {
   const { t } = useTranslation("common");
   // Pull structured data from translation JSON (returnObjects preserves arrays/objects)
