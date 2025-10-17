@@ -38,7 +38,7 @@ const About = () => {
             smooth={true}
             duration={1000}
             to={mainHero.secondaryAction.href}
-            className={`font-medium text-primary hover:text-secondary cursor-pointer`}
+            className={"font-medium text-primary hover:text-secondary cursor-pointer"}
           >
             Kontakt
           </Link>

@@ -11,7 +11,7 @@ const MainHero = () => {
       <h1 className="relative text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl xl:mt-10">
         <span className="relative inline-block">{mainHero.title}</span>
         <br />
-        <span className={`block text-primary xl:inline`}>
+        <span className={"block text-primary xl:inline"}>
           {mainHero.subtitle}
         </span>
       </h1>

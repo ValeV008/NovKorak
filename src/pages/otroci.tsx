@@ -1,6 +1,7 @@
 import React from "react";
 
 import { GetStaticProps } from "next";
+
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
 import Canvas from "../components/Canvas";
@@ -12,12 +13,12 @@ import SquaresOdrasli from "../components/SquaresOdrasli";
 
 const OtrociPage = () => {
   return (
-    <div className={`bg-background grid gap-y-8 xl:gap-y-16`}>
+    <div className={"bg-background grid gap-y-8 xl:gap-y-16"}>
       <Header />
-      <div className={`relative bg-background`}>
+      <div className={"relative bg-background"}>
         <div className="max-w-7xl mx-auto lg:h-screen">
           <div
-            className={`relative z-10 pb-8 bg-background sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32 lg:h-screen`}
+            className={"relative z-10 pb-8 bg-background sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32 lg:h-screen"}
           >
             <MainHeroOdrasli />
           </div>

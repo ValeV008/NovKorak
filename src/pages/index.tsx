@@ -1,6 +1,7 @@
 import React from "react";
 
 import { GetStaticProps } from "next";
+
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
 import Analytics from "../components/Analytics";
@@ -14,9 +15,9 @@ import Product from "../components/Product";
 
 const App = () => {
   return (
-    <div className={`bg-background grid sm:gap-y-4 xl:gap-y-8 mb-20`} id="home">
+    <div className={"bg-background grid sm:gap-y-4 xl:gap-y-8 mb-20"} id="home">
       <Header />
-      <div className={`relative bg-background`}>
+      <div className={"relative bg-background"}>
         <div className="max-w-full md:h-[60vh]">
           <MainHero />
         </div>

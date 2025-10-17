@@ -2,18 +2,18 @@ import React from "react";
 
 const Pricing = () => {
   return (
-    <section className={`bg-background py-8`} id="pricing">
+    <section className={"bg-background py-8"} id="pricing">
       <div
-        className={`container max-w-5xl mx-auto px-2 pt-4 pb-12 text-primary`}
+        className={"container max-w-5xl mx-auto px-2 pt-4 pb-12 text-primary"}
       >
         <h1
-          className={`w-full my-2 text-5xl font-bold leading-tight text-center text-primary`}
+          className={"w-full my-2 text-5xl font-bold leading-tight text-center text-primary"}
         >
           Cenik
         </h1>
-        <div className={`w-full mb-10`}>
+        <div className={"w-full mb-10"}>
           <div
-            className={`h-1 mx-auto bg-primary w-64 opacity-25 my-0 py-0 rounded-t`}
+            className={"h-1 mx-auto bg-primary w-64 opacity-25 my-0 py-0 rounded-t"}
           ></div>
         </div>
         <table className="w-full table-fixed border border-gray-300 rounded-lg overflow-hidden mb-8">

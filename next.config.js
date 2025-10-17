@@ -13,7 +13,6 @@ module.exports = withBundleAnalyzer({
   // So, the source code is "basePath-ready".
   // You can remove `basePath` if you don't need it.
   reactStrictMode: true,
-  output: "standalone",
   images: {
     // Enable optimization for images from the public directory
     loader: "default",

@@ -2,9 +2,9 @@ import React from "react";
 
 import Image from "next/image";
 
+import Divider from "./Divider";
 import aboutMePic from "../../public/assets/images/aboutMe.png";
 import config from "../config/index.json";
-import Divider from "./Divider";
 
 const { aboutMe } = config;
 
@@ -23,7 +23,7 @@ const AboutMe = () => {
           <h1 className="my-2 text-5xl tracking-tight font-bold text-gray-800 text-center lg:text-right">
             {aboutMe.title}
             <br />
-            <span className={` text-primary`}>{aboutMe.highlighted_title}</span>
+            <span className={" text-primary"}>{aboutMe.highlighted_title}</span>
           </h1>
           <Divider />
           <p className="px-6 text-gray-600">

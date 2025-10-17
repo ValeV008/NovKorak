@@ -33,7 +33,7 @@ const FlipCard: React.FC<FlipCardProps> = ({
     <div className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl h-72 perspective">
       <div
         className={
-          `relative w-full h-full duration-700 transform-style-preserve-3d ` +
+          "relative w-full h-full duration-700 transform-style-preserve-3d " +
           `${isTouch && flipped ? "rotate-y-180" : ""} ${
             !isTouch ? "hover:rotate-y-180" : ""
           }`
@@ -95,8 +95,8 @@ const flipCardsData = [
 
 const SquaresOdrasli = () => {
   return (
-    <section className={`bg-background py-8`} id="product">
-      <div className={`container max-w-7xl mx-auto`}>
+    <section className={"bg-background py-8"} id="product">
+      <div className={"container max-w-7xl mx-auto"}>
         <div>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 md:gap-10 p-4 sm:p-6 md:p-8 justify-items-center">
             {flipCardsData.map((card, idx) => (
