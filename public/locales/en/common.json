@@ -31,10 +31,12 @@
     "ctaText": "Click for a 10 min free consultation",
     "primaryAction": {
       "text": "For children and adolescents",
+      "cta_text": "More about children",
       "href": "product"
     },
     "secondaryAction": {
-      "text": "For older adults",
+      "text": "For elders",
+      "cta_text": "More about elders",
       "href": "form"
     }
   },
@@ -167,5 +169,20 @@
     "messagePlaceholder": "Hello,\n\nI/we would like more information about your occupational therapy services and possible treatment options. Please provide details regarding available appointments and the fee for therapy / sessions.\n\nThank you!\n\nKind regards.",
     "submit": "Send",
     "success": "Thank you! Your message has been sent."
+  },
+  "odrasliFor": {
+    "header": "Occupational therapy is for those, who:",
+    "list": [
+      "Are recovering from musculoskeletal injuries or surgeries (e.g. hip, shoulder or arm fractures) and want to regain or maintain muscle function.",
+      "Are facing central nervous system injuries (e.g. stroke, cerebral palsy, spinal cord or brain injuries, meningitis, ALS).",
+      "Are experiencing movement challenges due to age-related changes (e.g. reduced strength, mobility and balance).",
+      "Live with chronic illnesses (e.g. Parkinson's disease, multiple sclerosis, Huntington's disease).",
+      "Experience cognitive changes (e.g. dementia, Alzheimer's disease, mild cognitive impairment), where the goal is to maintain daily independence.",
+      "Have difficulties with daily activities (e.g. dressing, personal hygiene, cooking and shopping).",
+      "Need adjustments to their home environment (e.g. aids, safe room layouts to prevent falls, bathroom modifications).",
+      "Want to use medical-technical aids but are looking for ideas on how to use them.",
+      "Live in a home environment and want to maintain as much independence and quality of life as possible.",
+      "Face social and psychological challenges (loneliness, loss of motivation or depression), where occupational therapy can offer meaningful activities and support."
+    ]
   }
 }

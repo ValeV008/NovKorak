@@ -31,10 +31,12 @@
     "ctaText": "Kliknite za 10 min brezplačni posvet",
     "primaryAction": {
       "text": "Za otroke in mladostnike",
+      "cta_text": "Več o otrocih",
       "href": "product"
     },
     "secondaryAction": {
       "text": "Za odrasle starejše",
+      "cta_text": "Več o odraslih",
       "href": "form"
     }
   },
@@ -167,5 +169,20 @@
     "messagePlaceholder": "Pozdravljeni,\n\nzanima me/nas več informacij o vaših storitvah delovne terapije in možnostih obravnave. Prosim za podrobnosti glede terminov in prispevka za terapijo oz. obravnavo. \n\nHvala!\n\nLepo vas pozdravljam/o.",
     "submit": "Pošlji",
     "success": "Hvala! Sporočilo je bilo poslano."
+  },
+  "odrasliFor": {
+    "header": "Delovna terapija je za tistega, ki:",
+    "list": [
+      "Se okreva po poškodbah mišično-skeletnega sistema ali operacijah (npr. zlomih kolka, rame ali roke) in želi obnoviti ali ohraniti mišično funkcijo.",
+      "Se sooča s poškodbami centralnega živčnega sistema (npr. kap, cerebralna paraliza, poškodbe hrbtenjače ali možganov, meningitis, ALS).",
+      "Se sooča z izzivi gibanja zaradi starostnih sprememb (npr. zmanjšana moč, gibljivost in ravnotežje).",
+      "Živi s kroničnimi boleznimi (npr. Parkinsonova bolezen, multipla skleroza, Huntingtonova bolezen).",
+      "Se sooča s kognitivnimi spremembami (npr. demenca, Alzheimerjeva bolezen, blaga kognitivna okvara), kjer je cilj ohraniti dnevno neodvisnost.",
+      "Ima težave z vsakodnevnimi aktivnostmi (npr. oblačenje, osebna higiena, kuhanje in nakupovanje).",
+      "Potrebujete prilagoditve svojega domačega okolja (npr. pripomočke, varne postavitve prostorov za preprečevanje padcev, prilagoditve kopalnice).",
+      "Želi uporabljati medicinsko-tehnične pripomočke, vendar išče ideje, kako jih uporabiti.",
+      "Živi v domačem okolju in želi ohraniti čim več neodvisnosti in kakovosti življenja.",
+      "Se sooča s socialnimi in psihološkimi izzivi (osamljenost, izguba motivacije ali depresija), kjer lahko delovna terapija ponudi smiselne aktivnosti in podporo."
+    ]
   }
 }

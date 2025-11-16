@@ -9,7 +9,7 @@ import Header from "../components/Header";
 import LazyShow from "../components/LazyShow";
 import MainHeroImageOdrasli from "../components/MainHeroImageOdrasli";
 import MainHeroOdrasli from "../components/MainHeroOdrasli";
-import SquaresOdrasli from "../components/SquaresOdrasli";
+import OdrasliFor from "../components/OdrasliFor";
 
 const OdrasliPage = () => {
   return (
@@ -28,7 +28,7 @@ const OdrasliPage = () => {
       <Canvas />
       <LazyShow>
         <>
-          <SquaresOdrasli />
+          <OdrasliFor />
         </>
       </LazyShow>
     </div>

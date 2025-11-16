@@ -2,6 +2,9 @@ import React from "react";
 
 import { useTranslation } from "next-i18next";
 
+import { Link as ScrollLink } from "react-scroll";
+
+
 const MainHero = () => {
   const { t } = useTranslation("common");
   const mainHero = t("mainHero", { returnObjects: true }) as any;
@@ -18,14 +21,16 @@ const MainHero = () => {
       <p className="text-base text-gray-700 sm:text-lg sm:mx-auto md:text-xl">
         {mainHero.additionalText}
       </p>
-      {mainHero.ctaText && (
-        <button
-          className="px-6 py-3 rounded-md bg-primary text-white font-semibold hover:bg-secondary transition-colors duration-200 shadow-lg mx-auto"
-          type="button"
-        >
-          {mainHero.ctaText}
-        </button>
-      )}
+      <ScrollLink
+        spy={true}
+        active="active"
+        smooth={true}
+        duration={1000}
+        to={mainHero.secondaryAction.href.replace(/^#/, "")}
+        className="px-6 py-3 rounded-md bg-primary text-white font-semibold hover:bg-secondary transition-colors duration-200 shadow-lg mx-auto cursor-pointer"
+      >
+        {mainHero.ctaText}
+      </ScrollLink>
     </main>
   );
 };
