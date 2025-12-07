@@ -112,7 +112,7 @@ const Menu = () => {
                   );
                 })}
               </div>
-              <div className="flex items-center ml-auto pl-8 border-l border-gray-200 whitespace-nowrap space-x-4">
+              <div className="flex items-center ml-auto pl-8 border-l border-gray-200 whitespace-nowrap space-x-6">
                 <div className="flex items-center">
                   <button
                     type="button"

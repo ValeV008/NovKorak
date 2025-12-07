@@ -5,12 +5,10 @@ import { GetStaticProps } from "next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
 import Analytics from "../components/Analytics";
-import Canvas from "../components/Canvas";
 import ContactForm from "../components/ContactForm";
 import Header from "../components/Header";
 import LazyShow from "../components/LazyShow";
 import MainHero from "../components/MainHero";
-import OtrociOdrasliSubpages from "../components/OtrociOdrasliSubpages";
 import Product from "../components/Product";
 
 const App = () => {
@@ -23,13 +21,13 @@ const App = () => {
         </div>
         {/* <img src={home_kolaz.src} alt="Kolaz" className="w-full" /> */}
       </div>
-      <OtrociOdrasliSubpages />
-      <Canvas />
+      {/* <OtrociOdrasliSubpages /> */}
+      {/* <Canvas /> */}
       <LazyShow>
         <>
           {/* <AboutMe /> */}
           <Product />
-          <Canvas />
+          {/* <Canvas /> */}
         </>
       </LazyShow>
       {/* <LazyShow>

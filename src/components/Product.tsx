@@ -3,8 +3,7 @@ import React from "react";
 import { useTranslation } from "next-i18next";
 
 import Image from "next/image";
-
-import Divider from "./Divider";
+import Link from "next/link";
 
 const Product = () => {
   const { t } = useTranslation("common");
@@ -14,7 +13,7 @@ const Product = () => {
   return (
     <section className={"bg-background py-8"} id="product">
       <div className={"container max-w-5xl mx-auto m-8"}>
-        <h1
+        {/* <h1
           className={"w-2/3 mx-auto md:w-full my-2 text-5xl font-bold leading-tight text-center text-primary"}
         >
           {product.title.split(" ").map((word: string, index: number) => (
@@ -26,15 +25,21 @@ const Product = () => {
             </span>
           ))}
         </h1>
-        <Divider />
-        <div className={"flex flex-wrap"}>
+        <Divider /> */}
+        <div className={"flex flex-wrap mb-20"}>
           <div className={"w-full sm:w-1/2 p-6"}>
             <h3
-              className={"text-3xl text-gray-800 font-bold leading-none mb-3"}
+              className={"text-3xl text-gray-800 font-bold leading-none mb-3 mt-10"}
             >
               {firstItem?.title}
             </h3>
-            <p className={"text-gray-600"}>{firstItem?.description}</p>
+            <p className={"text-gray-600 mb-8"}>{firstItem?.description}</p>
+            <Link
+              href={"/odrasli"}
+              className="inline-block mt-2 px-6 py-3 rounded-md bg-primary text-white font-semibold hover:bg-secondary transition-colors duration-200 shadow-lg cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary"
+            >
+              {firstItem?.gumbText}
+            </Link>
           </div>
           <div className={"w-full sm:w-1/2 p-6"}>
             {firstItem?.img && (
@@ -63,11 +68,17 @@ const Product = () => {
           <div className={"w-full sm:w-1/2 p-6"}>
             <div className={"align-middle"}>
               <h3
-                className={"text-3xl text-gray-800 font-bold leading-none mb-3"}
+                className={"text-3xl text-gray-800 font-bold leading-none mb-3 mt-10"}
               >
                 {secondItem?.title}
               </h3>
               <p className={"text-gray-600 mb-8"}>{secondItem?.description}</p>
+              <Link
+                href={"/odrasli"}
+                  className="inline-block mt-2 px-6 py-3 rounded-md bg-primary text-white font-semibold hover:bg-secondary transition-colors duration-200 shadow-lg cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary"
+                >
+                {secondItem?.gumbText}
+              </Link>
             </div>
           </div>
         </div>

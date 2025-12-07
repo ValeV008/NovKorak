@@ -1,16 +1,16 @@
 {
   "company": {
-    "name": "Nov Korak",
+    "name": "RUA",
     "logoOrange": "/assets/images/logo/logo_orange.jpg",
     "logoWhite": "/assets/images/logo/logo_white.jpg"
   },
   "navigation": [
     {
-      "name": "Otroci",
+      "name": "Otroci in mladostniki",
       "href": "/otroci"
     },
     {
-      "name": "Starostniki",
+      "name": "Starejši odrasli",
       "href": "/odrasli"
     },
     {

@@ -1,19 +1,41 @@
 import React from "react";
 
-import Image from "next/image";
-
-import mainHeroImg from "../../public/assets/images/grandma_rotated.png";
+import { useTranslation } from "next-i18next";
 
 const MainHeroImageOdrasli = () => {
+  const { i18n, t } = useTranslation("common");
+  const locale = i18n.language;
+  const elderlyHero = t("elderlyHero", { returnObjects: true }) as any;
+  const videoSrc =
+    locale === "sl"
+      ? "/assets/videos/OT_elderly_slo.mp4"
+      : "/assets/videos/OT_elderly_eng.mp4";
+
+  const videoRef = React.useRef<HTMLVideoElement | null>(null);
+  React.useEffect(() => {
+    const v = videoRef.current;
+    if (v) {
+      try {
+        v.pause();
+      } catch {
+        // ignore
+      }
+      v.load();
+    }
+  }, [videoSrc]);
+
   return (
-    <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 relative h-72 sm:h-96 md:h-full">
-      <Image
-        className="h-56 w-full object-contain sm:h-72 md:h-96"
-        src={mainHeroImg}
-        alt="happy team image"
-        layout="fill"
-        priority={true}
-      />
+    <div className="h-72 sm:h-96 md:h-full">
+      <video
+        ref={videoRef}
+        className="w-full object-cover"
+        controls
+        aria-label={elderlyHero.videoAlt}
+        preload="metadata"
+      >
+        <source src={videoSrc} type="video/mp4" />
+        {elderlyHero.videoAlt || "Your browser does not support the video tag."}
+      </video>
     </div>
   );
 };

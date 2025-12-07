@@ -6,20 +6,20 @@
   },
   "navigation": [
     {
-      "name": "Otroci",
+      "name": "Otroci in mladostniki",
       "href": "/otroci"
     },
     {
-      "name": "Starostniki",
+      "name": "Starejši odrasli",
       "href": "/odrasli"
     },
     {
       "name": "Cenik",
-      "href": "/"
+      "href": "/cenik"
     },
     {
-      "name": "Spletna učilnica",
-      "href": "/"
+      "name": "O nas",
+      "href": "/o-nas"
     }
   ],
   "mainHero": {
@@ -46,24 +46,29 @@
     "img": "/assets/images/aboutMe.png",
     "href": "aboutMe"
   },
+  "aboutMePage": {
+    "paragraph": "Pod sloganom RUA sem Tina Zadravec, magistra umetnostne terapije ter diplomirana delovna terapevtka. Z deseletnimi izkušnjami v delu povezujem različna znanja s študija in dodatnih strokovnih izobraževanj z namenom, da posameznik prejme individualni pristop in obravnavo.\n\nSoustvarjam trenutke, ob katerih uporabniki rečejo: \"Že dolgo nisem imela toliko idej in informacij glede možnosti, ki obstajajo!\"\nLjudem pomagamo, da znova zgradijo v sebi misel, da tudi oni zmorejo opravljati tiste vsakdanje stvari, ki že dolgo niso bile mogoče.\n \nV okviru delovne terapije delujemo na področju [re]habilitacije oseb z nevrološkimi, mišično-skeletnimi težavami in izzivi na področju duševnega zdravja. Cenimo znanje in modrosti, zato pri svojem delu premišljeno vpeljujemo nove pristope in terapevtske pripomočke. Povezujemo se tudi s strokovnjaki iz tujine.\nSmo aktivni člani Zbornice delovnih terapevtov Slovenije in Slovenskega združenja umetnostnih terapevtov."
+  },
   "product": {
     "title": "O delovni terapiji",
     "items": [
       {
-        "title": "Kaj je delovna terapija?",
-        "description": " Delovna terapija je zdravstvena stroka, delovni terapevt pa je zdravstveni delavec, ki spodbuja posameznika k vključevanju v njemu/njej smiselne dejavnosti vsakodnevnega življenja. Osredotoča se na izboljševanje oz. ohranjanje zdravstvenega stanja na področju telesnih funkcij in struktur ter duševnega zdravja. Naši skupni cilji bodo izvajanje aktivnosti za spodbujanje zdravja, dobrega počutja in čimbolj uspešno opravljanje prioritetno postavljenih dejavnosti. Delovni terapevt je tukaj tudi zato, da vam ponudi komponente za izvajanje aktivnosti na področjih:\nizvajanje Osnovnih Dnevnih Aktivnosti, kot so umivanje, oblačenje in prehranjevanje ter Širših Dnevnih aktivnosti,\nocena okoljskih dejavnikov, preprečevanje padcev ter svetovanje glede prilagoditve doma za večjo varnost\nsvetovanje glede uporabe ortotskih in medicinsko tehničnih pripomočkov\nvrnitve v vsak dan: v šolo, na delo in druge prostočasne hobije,\nusposabljanje družinskih članov\ninformiranje o podporni tehnologiji, ki je posamezniku lahko v pomoč pri samostojnosti.\n\nDelovnoterapevtski proces običajno vključuje:\nIndividualno oceno, v kateri vas bomo vprašali po vaših željah, interesih, zgodovini in zdravljenju po mišično skeletni poškodbi ali bolezni živčevja.\nOblikovanje načrta [re]habilitacije, ki vam bodo pomagal doseči zastavljene cilje.\nObravnave delovne terapije (število srečanj je po dogovoru glede na stanje in želje posameznika).",
-        "img": "/assets/images/image_kaj_je_terapija.png"
+        "title": "Delovna terapija za otroke in mladostnike",
+        "description": "neko besedilo, na desno bo šou video",
+        "img": "/assets/images/image_kaj_je_terapija.png",
+        "gumbText": "Več o otrocih"
       },
       {
-        "title": "Kako poteka delovna terapija?",
-        "description": "Delovnoterapevtski proces običajno vključuje:\nIndividualno oceno, v kateri vas bomo vprašali po vaših željah, interesih, zgodovini in zdravljenju po mišično skeletni poškodbi ali bolezni živčevja.\nOblikovanje načrta [re]habilitacije, ki vam bodo pomagal doseči zastavljene cilje.\nObravnave delovne terapije (število srečanj je po dogovoru glede na stanje in želje posameznika).",
-        "img": "/assets/images/image_kako_poteka.png"
+        "title": "Delovna terapija za starejše odrasle",
+        "description": "neko besedilo, na levo bo šou video",
+        "img": "/assets/images/image_kako_poteka.png",
+        "gumbText": "Več o odraslih"
       }
     ]
   },
   "elderlyHero": {
-    "subtitle": "za odrasle starejše",
-    "description": "V polnosti izkusimo življenje skozi stvari, ki jih vsak dan radi počnemo – v vrtcu ali šoli, pri delu, v domačem okolju ali v skupnostih. Delovna terapija je zdravstvena stroka, ki vam ali vašemu družinskemu članu pomaga razviti spretnosti, potrebne za vsakodnevne dejavnosti, kadar so te sposobnosti zmanjšane ali izgubljene zaradi poškodbe, (kronične) bolezni, težav z duševnim zdravjem, razvojnega zaostanka, učnih težav, posledic staranja ali drugih zdravstvenih dejavnikov.",
+    "subtitle": "za starejše odrasle",
+    "description": "Delovna terapija je zdravstvena stroka, delovni terapevt pa je zdravstveni delavec, ki spodbuja posameznika k vključevanju v njemu/njej smiselne dejavnosti vsakodnevnega življenja. V okviru delovne terapije se osredotočamo na izboljševanje oz. ohranjanje zdravstvenega stanja na področju telesnih funkcij in struktur ter duševnega zdravja.\n\nNaši skupni cilji so izvajanje aktivnosti za spodbujanje zdravja, dobrega počutja in čimbolj uspešno opravljanje prioritetno postavljenih dejavnosti. Delovna terapevta sem tukaj tudi zato, da vas vodim skozi komponente za izvajanje aktivnosti na področjih osnovnih dnevnih aktivnosti, kot so samostojno umivanje, oblačenje in prehranjevanje.\n\nPogledali bomo tudi sodelovanje v širših dnevnih aktivnosti, oceno okoljskih dejavnikov tveganja, preprečevanje padcev ter svetovanje glede prilagoditve doma za večjo varnost. Z dotično osebo se bomo pogovarjali  o uporabi ortotskih in medicinsko tehničnih pripomočkih, s svojci pa o podporni tehnologiji, ki je posamezniku lahko v pomoč pri samostojnosti.",
     "videoAlt": "Video predstavitev delovne terapije za starejše"
   },
   "features": {
@@ -72,24 +77,24 @@
     "description": "Delovna terapija prinaša številne prednosti za vaše zdravje in kakovost življenja. Z individualno prilagojenim pristopom vam pomagamo doseči večjo samostojnost pri vsakodnevnih aktivnostih, izboljšati telesno in duševno počutje ter aktivno sodelovati v družbi. Spoznajte ključne prednosti, ki jih lahko prinese delovna terapija v vaše življenje.",
     "items": [
       {
+        "name": "Pomoč z umetnostjo",
+        "description": "Umetnostna terapija vodi osebo skozi proces izražanja in ustvarjanja. Prek pristopa glasbene, gledališke/dramske ali likovne terapije prihaja do samoizražanja, telesnega in duševnega zdravja ter osebnostni rasti. Naš cilj bo proces doživljanja in ne končni izdelek.",
+        "icon": "/assets/images/odrasli/starejsi_ikona1.png"
+      },
+      {
         "name": "Nevro-mišični taping",
         "description": "Tehnika, prek katere vplivamo na mišično-skeletni, žilni, limfni in nevrološki sistem. Pri tem uporabljamo (de)kompresivne dražljaje z namestitvijo samolepilnega elastičnega traku za naravno zdravljenje telesa.",
-        "icon": "/assets/images/nevromisicni_taping.svg"
+        "icon": "/assets/images/odrasli/nevromisicni_taping.svg"
       },
       {
-        "name": "Montessori pristop",
+        "name": "Delovna terapija z elementi Montessori pedagogike",
         "description": "Pri delu z osebami z demenco je ključno, da ne pozabimo na človeka za diagnozo. Namesto da se osredotočamo na omejitve, iščemo njihove sposobnosti, interese in edinstvene življenjske zgodbe. Spoštovanje njihovega ozadja, kulture in potreb omogoča oblikovanje okolja, ki spodbuja samostojnost in smiselno vključevanje. Pristop Montessori za demenco, invalidnost in staranje temelji na štirih temeljnih načelih, ki krepijo samospoštovanje, omogočajo izbiro ter spodbujajo prispevanje k skupnosti.",
-        "icon": "/assets/images/Picture2.png"
+        "icon": "/assets/images/odrasli/starejsi_ikona1.png"
       },
       {
-        "name": "Več aktivnosti",
-        "description": "Delovna terapija vam pomaga ponovno vzpostaviti rutino vsakodnevnih aktivnosti in vam omogoča, da se vrnete k svojim najljubšim dejavnostim. Naučite se novih načinov izvajanja aktivnosti in odkrijete nove interese.",
-        "icon": "/assets/images/nextjs.svg"
-      },
-      {
-        "name": "Več samostojnosti",
-        "description": "S pomočjo delovne terapije lahko dosežete večjo samostojnost pri vsakodnevnih opravilih. Naučite se novih strategij in uporabe pripomočkov, ki vam olajšajo izvajanje aktivnosti in zmanjšajo odvisnost od pomoči drugih.",
-        "icon": "/assets/images/ts.png"
+        "name": "Bobath koncept",
+        "description": "Terapevtski pristop (re)habilitacije nevroloških stanj, ki temelji na kvaliteti izvedbe giba in aktivnosti. Poudarek je na tem, da oseba naučeno prenaša v vsakdanje dnevne aktivnosti in okupacije.",
+        "icon": "/assets/images/odrasli/starejsi_ikona1.png"
       }
     ]
   },
@@ -184,5 +189,21 @@
       "Živi v domačem okolju in želi ohraniti čim več neodvisnosti in kakovosti življenja.",
       "Se sooča s socialnimi in psihološkimi izzivi (osamljenost, izguba motivacije ali depresija), kjer lahko delovna terapija ponudi smiselne aktivnosti in podporo."
     ]
+  },
+  "cenikPage": {
+    "title": "Cenik",
+    "headers": {
+      "service": "Storitev",
+      "price": "Cena"
+    },
+    "items": [
+      { "name": "Prva obravnava (pregled dokumentacija in obravnava)", "price": "65 €" },
+      { "name": "Paket 6 obravnav", "price": "340 €" },
+      { "name": "Kinesiotaping", "price": "10 €" },
+      { "name": "Posvet prek daljave (30 min)", "price": "30 €" },
+      { "name": "Posvet prek daljave (60 min)", "price": "60 €" },
+      { "name": "Delovnoterapevtsko poročilo", "price": "30 €" }
+    ],
+    "note": "*Terapije potekajo na domu uporabnika. Za kraje izven našega rednega delovanja se obračunajo potni stroški po uradni kilometrini."
   }
 }

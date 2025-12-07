@@ -6,20 +6,20 @@
   },
   "navigation": [
     {
-      "name": "Children",
+      "name": "Children and adolescents",
       "href": "/otroci"
     },
     {
-      "name": "Elderly",
+      "name": "Older adults",
       "href": "/odrasli"
     },
     {
       "name": "Pricing",
-      "href": "/"
+      "href": "/cenik"
     },
     {
-      "name": "E-classroom",
-      "href": "/"
+      "name": "About us",
+      "href": "/o-nas"
     }
   ],
   "mainHero": {
@@ -46,6 +46,9 @@
     "img": "/assets/images/aboutMe.png",
     "href": "aboutMe"
   },
+  "aboutMePage": {
+    "paragraph": "Under the slogan RUA, I am Tina Zadravec, Master of Art Therapy and a graduate occupational therapist. With decades of experience, I connect knowledge from university studies and additional professional training to ensure an individualized approach and treatment for each person.\n\nI co-create moments when users say: \"I haven’t had so many ideas and information about the possibilities that exist in a long time!\"\nWe help people rebuild the belief that they, too, can perform everyday activities that have long seemed impossible.\n \nWithin occupational therapy, we work in the field of [re]habilitation of individuals with neurological and musculoskeletal difficulties, as well as challenges in mental health. We value knowledge and wisdom and thoughtfully introduce new approaches and therapeutic tools into our work. We also collaborate with professionals from abroad.\nWe are active members of the Chamber of Occupational Therapists of Slovenia and the Slovenian Association of Art Therapists."
+  },
   "product": {
     "title": "About Occupational Therapy",
     "items": [
@@ -63,7 +66,7 @@
   },
   "elderlyHero": {
     "subtitle": "for older adults",
-    "description": "We fully experience life through the things we love doing every day – in kindergarten or school, at work, at home, or in communities. Occupational therapy is a healthcare profession that helps you or your family member develop the skills needed for daily activities when these abilities are reduced or lost due to injury, (chronic) illness, mental health challenges, developmental delay, learning difficulties, the effects of aging, or other health factors.",
+    "description": "Occupational therapy is a healthcare profession, and an occupational therapist is a healthcare professional who encourages individuals to engage in meaningful everyday activities. Within occupational therapy, we focus on improving or maintaining health in the areas of bodily functions and structures, as well as mental health.\n\nOur shared goals are to carry out activities that promote health, well-being, and the most successful performance of prioritized activities. As an occupational therapist, I am also here to guide you through the components needed to perform activities in the areas of basic daily living — such as independent washing, dressing, and eating.\n\nWe will also look at participation in broader daily activities, assess environmental risk factors, work on fall prevention, and provide advice on adapting the home for greater safety. With the individual, we will discuss the use of orthotic and medical-technical aids, and with family members, we will talk about supportive technology that can help the person maintain independence.",
     "videoAlt": "Video presentation of occupational therapy for older adults"
   },
   "features": {
@@ -72,24 +75,24 @@
     "description": "Occupational therapy brings many benefits to your health and quality of life. With an individually tailored approach, we help you achieve greater independence in everyday activities, improve physical and mental well-being, and actively participate in society. Discover the key benefits that occupational therapy can bring to your life.",
     "items": [
       {
-        "name": "Neuro-muscular taping",
-        "description": "A technique through which we influence the musculoskeletal, vascular, lymphatic, and neurological systems. We use (de)compressive stimuli by applying a self-adhesive elastic tape for natural body healing.",
-        "icon": "/assets/images/nevromisicni_taping.svg"
+        "name": "Art therapy support",
+        "description": "Art therapy guides a person through the process of expression and creation. Through music, theater/drama, or visual art therapy approaches, it encourages self-expression, physical and mental well-being, and personal growth. Our focus is on the experience itself, not the final product.",
+        "icon": "/assets/images/odrasli/starejsi_ikona1.png"
       },
       {
-        "name": "Montessori approach",
-        "description": "When working with people with dementia, it is crucial not to forget the person behind the diagnosis. Instead of focusing on limitations, we look for their abilities, interests, and unique life stories. Respecting their background, culture, and needs allows for the creation of an environment that encourages independence and meaningful involvement. The Montessori approach for dementia, disability, and aging is based on four fundamental principles that strengthen self-esteem, enable choice, and encourage contribution to the community.",
-        "icon": "/assets/images/Picture2.png"
+        "name": "Neuromuscular taping",
+        "description": "A technique that influences the musculoskeletal, vascular, lymphatic, and neurological systems. It uses (de)compressive stimuli by applying a self-adhesive elastic tape to support the body’s natural healing.",
+        "icon": "/assets/images/odrasli/nevromisicni_taping.svg"
       },
       {
-        "name": "More activities",
-        "description": "Occupational therapy helps you re-establish a routine of daily activities and enables you to return to your favorite activities. Learn new ways of performing activities and discover new interests.",
-        "icon": "/assets/images/nextjs.svg"
+        "name": "Occupational therapy with Montessori elements",
+        "description": "When working with people with dementia, it is essential to see the person beyond the diagnosis. Rather than focusing on limitations, we seek their abilities, interests, and unique life stories. Respecting their background, culture, and needs helps create an environment that fosters independence and meaningful engagement. The Montessori approach to dementia, disability, and aging is based on four key principles that strengthen self-esteem, enable choice, and encourage contribution to the community.",
+        "icon": "/assets/images/odrasli/starejsi_ikona1.png"
       },
       {
-        "name": "More independence",
-        "description": "With the help of occupational therapy, you can achieve greater independence in daily tasks. Learn new strategies and use aids that make activities easier and reduce dependence on others.",
-        "icon": "/assets/images/ts.png"
+        "name": "Bobath concept",
+        "description": "A therapeutic approach to the (re)habilitation of neurological conditions, focused on the quality of movement and activity performance. The emphasis is on transferring learned skills into everyday activities and occupations.",
+        "icon": "/assets/images/odrasli/starejsi_ikona1.png"
       }
     ]
   },
@@ -184,5 +187,21 @@
       "Live in a home environment and want to maintain as much independence and quality of life as possible.",
       "Face social and psychological challenges (loneliness, loss of motivation or depression), where occupational therapy can offer meaningful activities and support."
     ]
+  },
+  "cenikPage": {
+    "title": "Price list",
+    "headers": {
+      "service": "Service",
+      "price": "Price"
+    },
+    "items": [
+      { "name": "First session (documentation review and session)", "price": "65 €" },
+      { "name": "Package of 6 sessions", "price": "340 €" },
+      { "name": "Kinesiotaping", "price": "10 €" },
+      { "name": "Online consultation (30 min)", "price": "30 €" },
+      { "name": "Online consultation (60 min)", "price": "60 €" },
+      { "name": "Occupational therapy report", "price": "30 €" }
+    ],
+    "note": "*Therapies are performed at the client's home. For locations outside our regular operation area, travel costs are charged according to the official mileage rate."
   }
 }
