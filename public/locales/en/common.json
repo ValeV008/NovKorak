@@ -53,14 +53,16 @@
     "title": "About Occupational Therapy",
     "items": [
       {
-        "title": "What is occupational therapy?",
-        "description": "Occupational therapy is a healthcare profession, and an occupational therapist is a healthcare worker who encourages individuals to engage in meaningful everyday activities. It focuses on improving or maintaining health in terms of bodily functions and structures as well as mental health. Our common goals will be to carry out activities to promote health, well-being, and the most successful performance of prioritized activities. The occupational therapist is also here to offer components for performing activities in the areas of:\nperforming Basic Daily Activities, such as washing, dressing, and eating, as well as Extended Daily Activities,\nenvironmental assessment, fall prevention, and advice on home adaptations for greater safety\nadvice on the use of orthotic and medical technical aids\nreturning to everyday life: to school, work, and other leisure hobbies,\ntraining family members\ninformation about assistive technology that can help the individual achieve independence.\n\nThe occupational therapy process usually includes:\nIndividual assessment, where we will ask about your wishes, interests, history, and treatment after musculoskeletal injury or nervous system disease.\nDevelopment of a [re]habilitation plan to help you achieve set goals.\nOccupational therapy sessions (the number of sessions is agreed upon according to the individual's condition and wishes).",
-        "img": "/assets/images/image_kaj_je_terapija.png"
+        "title": "Occupational therapy for children and adolescents",
+        "description": "Introductory content; a video will appear on the right",
+        "img": "/assets/images/image_kaj_je_terapija.png",
+        "gumbText": "More about children"
       },
       {
-        "title": "How does occupational therapy work?",
-        "description": "The occupational therapy process usually includes:\nIndividual assessment, where we will ask about your wishes, interests, history, and treatment after musculoskeletal injury or nervous system disease.\nDevelopment of a [re]habilitation plan to help you achieve set goals.\nOccupational therapy sessions (the number of sessions is agreed upon according to the individual's condition and wishes).",
-        "img": "/assets/images/image_kako_poteka.png"
+        "title": "Occupational therapy for older adults",
+        "description": "Introductory content; a video will appear on the left",
+        "img": "/assets/images/image_kako_poteka.png",
+        "gumbText": "More about adults"
       }
     ]
   },
