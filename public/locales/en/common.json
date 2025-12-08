@@ -54,13 +54,13 @@
     "items": [
       {
         "title": "Occupational therapy for children and adolescents",
-        "description": "Introductory content; a video will appear on the right",
+        "description": "Neuro-developmental treatment helps children develop fine motor, social, motor, cognitive, and emotional-social skills they need for play and everyday life.",
         "img": "/assets/images/image_kaj_je_terapija.png",
         "gumbText": "More about children"
       },
       {
         "title": "Occupational therapy for older adults",
-        "description": "Introductory content; a video will appear on the left",
+        "description": "Healthcare professionals - OTs help individuals who have experienced central nervous system disease or musculoskeletal system injuries. We are involved in cognitive and psychosocial rehabilitation and assistance with neurodegenerative disease.",
         "img": "/assets/images/image_kako_poteka.png",
         "gumbText": "More about adults"
       }

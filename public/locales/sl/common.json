@@ -54,13 +54,13 @@
     "items": [
       {
         "title": "Delovna terapija za otroke in mladostnike",
-        "description": "neko besedilo, na desno bo šou video",
+        "description": "Razvojno-nevrološka obravnava pomaga otrokom razvijati fino-motorične, socialne, gibalne, kognitivne, čustveno-socialne spretnosti, ki jih potrebujejo za igro in vsakdanje življenje.",
         "img": "/assets/images/image_kaj_je_terapija.png",
         "gumbText": "Več o otrocih"
       },
       {
         "title": "Delovna terapija za starejše odrasle",
-        "description": "neko besedilo, na levo bo šou video",
+        "description": "Zdravstveni delavci - delovni terapevti, pomagamo posameznikom, ki so doživeli bolezen osrednjega živčnega sistema ali poškodbe mišično-skeletnega sistema. Sodelujemo pri kognitivni in psihosocialni rehabilitaciji ter pomoči pri nevrodegenerativnih boleznih.",
         "img": "/assets/images/image_kako_poteka.png",
         "gumbText": "Več o odraslih"
       }
