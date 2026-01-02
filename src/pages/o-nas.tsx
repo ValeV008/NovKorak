@@ -10,12 +10,10 @@ import aboutMePic from "../../public/assets/images/aboutMe.png";
 import Divider from "../components/Divider";
 import Header from "../components/Header";
 import LazyShow from "../components/LazyShow";
-import config from "../config/index.json";
-
-const { aboutMe } = config;
 
 const ONasPage = () => {
   const { t } = useTranslation("common");
+  const aboutMe = t("aboutMe", { returnObjects: true }) as any;
   const aboutMePage = t("aboutMePage", { returnObjects: true }) as any;
   const trainingItems = (aboutMePage?.trainingList ?? []) as string[];
 

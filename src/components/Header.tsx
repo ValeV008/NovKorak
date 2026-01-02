@@ -29,12 +29,12 @@ const Menu = () => {
 
   const mainHero = t("mainHero", { returnObjects: true }) as any;
   const company = t("company", { returnObjects: true }) as any;
-  const { name: companyName, logoOrange, logoWhite } = company;
+  const { name: companyName, logoOrange, logoOrangeSubtext } = company;
   const router = useRouter();
   const isHome = router.pathname === "/";
   const { locale, asPath } = router;
 
-  const logoSrc = isHome ? logoOrange : logoWhite;
+  const logoSrc = logoOrangeSubtext || logoOrange;
 
   return (
     <div

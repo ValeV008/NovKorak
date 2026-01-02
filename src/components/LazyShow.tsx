@@ -1,57 +1,15 @@
-import React, { MutableRefObject, useEffect, useRef, useState } from "react";
+import React from "react";
 
-import { motion, useAnimation } from "framer-motion";
+import { motion } from "framer-motion";
 
-function useOnScreen(
-  ref: MutableRefObject<HTMLDivElement | null>,
-  rootMargin = "0px"
-) {
-  const [isIntersecting, setIntersecting] = useState(false);
-
-  useEffect(() => {
-    let currentRef: any = null;
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry?.isIntersecting) setIntersecting(entry?.isIntersecting);
-      },
-      {
-        rootMargin,
-      }
-    );
-    if (ref && ref?.current) {
-      currentRef = ref.current;
-      observer.observe(currentRef);
-    }
-    return () => {
-      observer.unobserve(currentRef);
-    };
-  }, [ref, rootMargin]); // Empty array ensures that effect is only run on mount and unmount
-
-  return isIntersecting;
-}
-
-const LazyShow = ({ children }: { children: React.ReactChild }) => {
-  const controls = useAnimation();
-  const rootRef = useRef<HTMLDivElement>(null);
-  const onScreen = useOnScreen(rootRef);
-  useEffect(() => {
-    if (onScreen) {
-      controls.start({
-        x: 0,
-        opacity: 1,
-        transition: {
-          duration: 1,
-          ease: "easeOut",
-        },
-      });
-    }
-  }, [onScreen, controls]);
+const LazyShow = ({ children }: { children: React.ReactNode }) => {
   return (
     <motion.div
       className="lazy-div"
-      ref={rootRef}
       initial={{ opacity: 0, x: -50 }}
-      animate={controls}
+      whileInView={{ opacity: 1, x: 0 }}
+      viewport={{ once: true, amount: 0.2 }}
+      transition={{ duration: 0.8, ease: "easeOut" }}
     >
       {children}
     </motion.div>

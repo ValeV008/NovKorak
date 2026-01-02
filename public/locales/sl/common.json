@@ -2,7 +2,9 @@
   "company": {
     "name": "Nov Korak",
     "logoOrange": "/assets/images/logo/logo_orange.jpg",
-    "logoWhite": "/assets/images/logo/logo_white.jpg"
+    "logoOrangeSubtext": "/assets/images/logo/logo_orange_subtext.jpg",
+    "logoWhite": "/assets/images/logo/logo_white.jpg",
+    "collageImage": "/assets/images/homepage_kolaz.png"
   },
   "navigation": [
     {

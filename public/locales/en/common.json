@@ -2,7 +2,9 @@
   "company": {
     "name": "Nov Korak",
     "logoOrange": "/assets/images/logo/logo_orange.jpg",
-    "logoWhite": "/assets/images/logo/logo_white.jpg"
+    "logoOrangeSubtext": "/assets/images/logo/logo_orange_subtext.jpg",
+    "logoWhite": "/assets/images/logo/logo_white.jpg",
+    "collageImage": "/assets/images/homepage_kolaz.png"
   },
   "navigation": [
     {
@@ -47,7 +49,30 @@
     "href": "aboutMe"
   },
   "aboutMePage": {
-    "paragraph": "Under the slogan RUA, I am Tina Zadravec, Master of Art Therapy and a graduate occupational therapist. With decades of experience, I connect knowledge from university studies and additional professional training to ensure an individualized approach and treatment for each person.\n\nI co-create moments when users say: \"I haven’t had so many ideas and information about the possibilities that exist in a long time!\"\nWe help people rebuild the belief that they, too, can perform everyday activities that have long seemed impossible.\n \nWithin occupational therapy, we work in the field of [re]habilitation of individuals with neurological and musculoskeletal difficulties, as well as challenges in mental health. We value knowledge and wisdom and thoughtfully introduce new approaches and therapeutic tools into our work. We also collaborate with professionals from abroad.\nWe are active members of the Chamber of Occupational Therapists of Slovenia and the Slovenian Association of Art Therapists."
+    "paragraph": "Under the slogan RUA, I am Tina Zadravec, Master of Art Therapy and a graduate occupational therapist. With decades of experience, I connect knowledge from university studies and additional professional training to ensure an individualized approach and treatment for each person.\n\nI co-create moments when users say: \"I haven’t had so many ideas and information about the possibilities that exist in a long time!\"\nWe help people rebuild the belief that they, too, can perform everyday activities that have long seemed impossible.\n \nWithin occupational therapy, we work in the field of [re]habilitation of individuals with neurological and musculoskeletal difficulties, as well as challenges in mental health. We value knowledge and wisdom and thoughtfully introduce new approaches and therapeutic tools into our work. We also collaborate with professionals from abroad.\nWe are active members of the Chamber of Occupational Therapists of Slovenia and the Slovenian Association of Art Therapists.",
+    "trainingTitle": "Completed trainings and courses",
+    "trainingList": [
+      "Participation at the international Ontario Society of Occupational Therapists (OSOT) Conference I [Oct 23, 2025 – Oct 24, 2025]",
+      "Pediatric palliative care | University Children's Hospital Ljubljana, facilitators: POO PEK [Nov 17 – Nov 21, 2025]",
+      "Workshop: Nervous system mobilization | Gibanje d.o.o., instructor: Borut Vrhovnik [Nov 15, 2025]",
+      "Bobath – RNO basic course for work with children and adults | RN Terapija, instructor: Neda Rotar [Sep 16, 2024 – Feb 7, 2025]",
+      "Specific interests of children with autism – How to address and include them in the learning process? | IC Pika, instructor: Nastja Oder [May 28, 2024]",
+      "Hand development and function | Sensoland, instructors: Lea Šuc and Simona Korelc Primc [Sep 22, 2023]",
+      "Assessment of graphomotor skills in children with the WRITIC instrument | URI Soča [Oct 24, 2022]",
+      "Everything you wanted to know about swallowing disorders but didn’t dare to ask — Part II | Slovenian Pediatric Medical Association [Dec 1, 2022]",
+      "Active participation at the international conference ‘In the Rhythm of the Human Brain’ | Spominčica [Jun 2, 2022]",
+      "Active participation in the project event ‘Comprehensive dementia care in local communities’ | Franc Salamon Retirement Home [June 2022]",
+      "Kamishibai theatre seminar | House of Children and Art [Mar – Apr 2022]",
+      "Anatomy, functional biomechanics and myofascial principles | Peti Element Studio [May 2021]",
+      "Normal movement | Chamber of Occupational Therapists of Slovenia, instructor: Tinka Rajhner Boštjan [Aug 2020]",
+      "Bobath course with neurological symptomatology | Ljubljana Physiotherapy Center [Mar 2019 – May 2019]",
+      "Introduction to clinical aromatherapy | School of Aromatherapy [Jan 28, 2018]",
+      "Certificate: Neuromuscular Taping in pediatrics and sports traumatology | NMT NeuroMuscular Taping Institute, Ljubljana and Koper [Jun 5, 2017 – Jun 8, 2017]",
+      "Basic (paraprofessional) training in Montessori pedagogy | Montessori Institute, Sojerjeva 9, 1000 Ljubljana [Mar 2016 – Apr 2016]",
+      "Theatre school: Speech apparatus training | JSKD Ljubljana [Jan 19, 2015 – Mar 16, 2015]",
+      "Storytelling school | Cultural Society Pripovedovalski Variete [Jan 31, 2015 – Apr 18, 2015]",
+      "School of contemporary performative and street arts | Ana Monro Theatre Association [Mar 2014 – Aug 2014]"
+    ]
   },
   "product": {
     "title": "About Occupational Therapy",
