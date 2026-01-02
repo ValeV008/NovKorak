@@ -9,12 +9,16 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import aboutMePic from "../../public/assets/images/aboutMe.png";
 import Divider from "../components/Divider";
 import Header from "../components/Header";
+import LazyShow from "../components/LazyShow";
 import config from "../config/index.json";
 
 const { aboutMe } = config;
 
 const ONasPage = () => {
   const { t } = useTranslation("common");
+  const aboutMePage = t("aboutMePage", { returnObjects: true }) as any;
+  const trainingItems = (aboutMePage?.trainingList ?? []) as string[];
+
   return (
     <div className="bg-background">
       <Header />
@@ -39,6 +43,19 @@ const ONasPage = () => {
             </p>
           </div>
         </div>
+        <LazyShow>
+        <div className="mt-12">
+            <h3 className="my-2 text-5xl tracking-tight font-bold text-gray-800 text-center lg:text-center">
+              {aboutMePage.trainingTitle}
+          </h3>
+          <Divider />
+          <ul className="list-disc px-6 sm:px-0 sm:pl-6 space-y-2 text-gray-700">
+              {trainingItems.map((item: string, idx: number) => (
+                <li key={idx}>{item}</li>
+              ))}
+          </ul>
+        </div>
+        </LazyShow>
       </main>
     </div>
   );
