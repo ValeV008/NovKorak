@@ -96,7 +96,11 @@
     "description": "Delovna terapija je zdravstvena stroka, delovni terapevt pa je zdravstveni delavec, ki spodbuja posameznika k vključevanju v njemu/njej smiselne dejavnosti vsakodnevnega življenja. V okviru delovne terapije se osredotočamo na izboljševanje oz. ohranjanje zdravstvenega stanja na področju telesnih funkcij in struktur ter duševnega zdravja.\n\nNaši skupni cilji so izvajanje aktivnosti za spodbujanje zdravja, dobrega počutja in čimbolj uspešno opravljanje prioritetno postavljenih dejavnosti. Delovna terapevta sem tukaj tudi zato, da vas vodim skozi komponente za izvajanje aktivnosti na področjih osnovnih dnevnih aktivnosti, kot so samostojno umivanje, oblačenje in prehranjevanje.\n\nPogledali bomo tudi sodelovanje v širših dnevnih aktivnosti, oceno okoljskih dejavnikov tveganja, preprečevanje padcev ter svetovanje glede prilagoditve doma za večjo varnost. Z dotično osebo se bomo pogovarjali  o uporabi ortotskih in medicinsko tehničnih pripomočkih, s svojci pa o podporni tehnologiji, ki je posamezniku lahko v pomoč pri samostojnosti.",
     "videoAlt": "Video predstavitev delovne terapije za starejše"
   },
-  "features": {
+  "youngerHero": {
+    "subtitle": "za otroke in mladostnike",
+    "description": "Delovna terapevtka spodbuja otroka k samostojnosti na različnih področjih.\n\nOkupacije so tiste stvari, ki so otroku všeč in jih rad dela ali pa so pomembne za njegovo delovanje v vsakdanjem življenju. Da bo lahko preizkušal kako hitro gredo lahko sanke po snegu, se mora najprej obleči.\n\nOsredotoča se na spretnosti, kjer otrok potrebuje usmerjanje, da jih bo lahko vnesel v igro.\n\nPediatrična delovna terapija se usmerja na različne starostne skupine otrok in mladostnikov.  V prvem letu pomaga dojenčkom pri handlingu, samostojnem hranjenju in požiranju, razvoju igre in fine motorike in razvijanju kvalitete gibanja v obliki grobe motorike."
+  },
+  "featuresOdrasli": {
     "title": "Ne spreglejte ...",
     "subtitle": "Prednosti delovne terapije",
     "description": "Delovna terapija prinaša številne prednosti za vaše zdravje in kakovost življenja. Z individualno prilagojenim pristopom vam pomagamo doseči večjo samostojnost pri vsakodnevnih aktivnostih, izboljšati telesno in duševno počutje ter aktivno sodelovati v družbi. Spoznajte ključne prednosti, ki jih lahko prinese delovna terapija v vaše življenje.",
@@ -120,6 +124,33 @@
         "name": "Bobath koncept",
         "description": "Terapevtski pristop (re)habilitacije nevroloških stanj, ki temelji na kvaliteti izvedbe giba in aktivnosti. Poudarek je na tem, da oseba naučeno prenaša v vsakdanje dnevne aktivnosti in okupacije.",
         "icon": "/assets/images/odrasli/starejsi_ikona4.png"
+      }
+    ]
+  },
+  "featuresOtroci": {
+    "title": "Ne spreglejte ...",
+    "subtitle": "Prednosti delovne terapije",
+    "description": "Delovna terapija prinaša številne prednosti za vaše zdravje in kakovost življenja. Z individualno prilagojenim pristopom vam pomagamo doseči večjo samostojnost pri vsakodnevnih aktivnostih, izboljšati telesno in duševno počutje ter aktivno sodelovati v družbi. Spoznajte ključne prednosti, ki jih lahko prinese delovna terapija v vaše življenje.",
+    "items": [
+      {
+        "name": "Pomoč z umetnostjo",
+        "description": "Umetnostna terapija vodi otroka skozi proces izražanja in ustvarjanja. Prek pristopa glasbene, gledališke/dramske ali likovne terapije prihaja do samoizražanja, telesnega in duševnega zdravja ter osebnostni rasti.",
+        "icon": "/assets/images/otroci/otroci_ikona1.png"
+      },
+      {
+        "name": "Nevro-mišični taping",
+        "description": "Tehnika, prek katere vplivamo na mišično-skeletni, žilni, limfni in nevrološki sistem. Pri tem uporabljamo (de)kompresivne dražljaje z namestitvijo samolepilnega elastičnega traku za naravno zdravljenje telesa.",
+        "icon": "/assets/images/otroci/nevromisicni_taping.svg"
+      },
+      {
+        "name": "Delovna terapija z elementi Montessori pedagogike",
+        "description": "Z vodilom »Pomagaj mi, da naredim sam.« otrok pridobiva nova spoznanja in razvija sposobnosti ter spretnosti. S skladno pripravljenimi materiali otrok aktivno razvija svoje čute ter pridobiva veselje do učenja ter dela. Prek učenja »iz napak« se uči zaznati napako in jo popraviti.",
+        "icon": "/assets/images/otroci/otroci_ikona3.png"
+      },
+      {
+        "name": "Bobath koncept",
+        "description": "Terapevtski pristop (re)habilitacije nevroloških stanj, ki temelji na kvaliteti izvedbe giba in aktivnosti. Poudarek je na tem, da otrok naučeno prenaša v vsakdanje dnevne aktivnosti in okupacije.",
+        "icon": "/assets/images/otroci/otroci_ikona4.png"
       }
     ]
   },
@@ -215,6 +246,18 @@
       "Se sooča s socialnimi in psihološkimi izzivi (osamljenost, izguba motivacije ali depresija), kjer lahko delovna terapija ponudi smiselne aktivnosti in podporo."
     ]
   },
+  "otrociFor": {
+    "header": "Z delovno terapijo v RUA, otroci lahko:",
+    "list": [
+      "Razvijajo kvalitetne gibalne vzorce.",
+      "Razvijajo intrinzične mišice dlani za fino motoriko, manipulacijo predmetov ter koordinacijo zgornjih udov.",
+      "Razvijajo finomotorične spretnosti za prijem in izpust igrač, razvoj pincetnega prijema ter risanja, pisanja oz. grafomotorike.",
+      "Krepijo koordinacijo oko-roka (za namen igre ali šolskih spretnosti).",
+      "Osvojijo Osnovne Dnevne Aktivnosti, kot so oblačenje, umivanje zob, hranjenje.",
+      "Prejmejo informacije o uporabi specifičnih pripomočkov za gibanje, držanje pisala, obuvanja nogavic …"
+    ],
+    "extra": "Srečanja dajejo spodbude za razvoj na fizičnem in kognitivnem razvoju. Z elementi senzorne integracije prepoznamo, uravnavamo  organiziramo in integriramo občutke in čutila v telesu za učinkovito delovanje v okolju.\nV terapijo aktivno vključujemo tudi starše oz. skrbnike, da videno prenesejo v domače okolje. Zavedamo se pomembnosti 24urnega placinga.\nSvetujemo glede potencialnih prilagoditev vrtčevskega/šolskega/domačega okolja in uporabe terapevtskih pripomočkov."
+  },
   "cenikPage": {
     "title": "Cenik",
     "headers": {
@@ -225,8 +268,8 @@
       { "name": "Prva obravnava (pregled dokumentacija in obravnava)", "price": "65 €" },
       { "name": "Paket 6 obravnav", "price": "340 €" },
       { "name": "Kinesiotaping", "price": "10 €" },
-      { "name": "Posvet prek daljave (30 min)", "price": "30 €" },
-      { "name": "Posvet prek daljave (60 min)", "price": "60 €" },
+      { "name": "Posvet prek daljave / telerehabilitacija (30 min)", "price": "30 €" },
+      { "name": "Posvet prek daljave / telerehabilitacija (60 min)", "price": "60 €" },
       { "name": "Delovnoterapevtsko poročilo", "price": "30 €" }
     ],
     "note": "*Terapije potekajo na domu uporabnika. Za kraje izven našega rednega delovanja se obračunajo potni stroški po uradni kilometrini."

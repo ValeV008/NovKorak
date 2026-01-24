@@ -2,7 +2,7 @@ import React from "react";
 
 import { useTranslation } from "next-i18next";
 
-const MainHero = () => {
+const MainHeroOdrasli = () => {
   const { t } = useTranslation("common");
   const elderlyHero = t("elderlyHero", { returnObjects: true }) as any;
 
@@ -17,4 +17,4 @@ const MainHero = () => {
   );
 };
 
-export default MainHero;
+export default MainHeroOdrasli;

@@ -45,7 +45,7 @@ const OdrasliPage = () => {
         </>
       </LazyShow>
       <LazyShow>
-        <Features />
+        <Features translationKey="featuresOdrasli" />
       </LazyShow>
     </div>
   );

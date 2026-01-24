@@ -6,7 +6,6 @@ import Image from "next/image";
 import { Link as ScrollLink } from "react-scroll";
 
 
-
 const MainHero = () => {
   const { t } = useTranslation("common");
   const mainHero = t("mainHero", { returnObjects: true }) as any;

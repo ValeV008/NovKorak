@@ -19,35 +19,15 @@ const App = () => {
         <div className="max-w-full md:min-h-[60vh]">
           <MainHero />
         </div>
-        {/* <img src={home_kolaz.src} alt="Kolaz" className="w-full" /> */}
       </div>
-      {/* <OtrociOdrasliSubpages /> */}
-      {/* <Canvas /> */}
       <LazyShow>
         <>
-          {/* <AboutMe /> */}
           <Product />
-          {/* <Canvas /> */}
         </>
       </LazyShow>
-      {/* <LazyShow>
-        <>
-          <Features />
-          <Canvas />
-        </>
-      </LazyShow> */}
-      {/* <LazyShow>
-        <Pricing />
-      </LazyShow> */}
       <LazyShow>
         <ContactForm />
       </LazyShow>
-      {/* <LazyShow>
-        <>
-          <Canvas />
-          <About />
-        </>
-      </LazyShow> */}
       <Analytics />
     </div>
   );

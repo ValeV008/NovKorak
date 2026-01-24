@@ -13,19 +13,6 @@ const Product = () => {
   return (
     <section className={"bg-background py-8"} id="product">
       <div className={"container max-w-5xl mx-auto m-8"}>
-        {/* <h1
-          className={"w-2/3 mx-auto md:w-full my-2 text-5xl font-bold leading-tight text-center text-primary"}
-        >
-          {product.title.split(" ").map((word: string, index: number) => (
-            <span
-              key={index}
-              className={index % 2 ? "text-primary" : "text-border"}
-            >
-              {word}{" "}
-            </span>
-          ))}
-        </h1>
-        <Divider /> */}
         <div className={"flex flex-wrap mb-20"}>
           <div className={"w-full sm:w-1/2 p-6"}>
             <h3
@@ -35,7 +22,7 @@ const Product = () => {
             </h3>
             <p className={"text-gray-600 mb-8"}>{firstItem?.description}</p>
             <Link
-              href={"/odrasli"}
+              href={"/otroci"}
               className="inline-block mt-2 px-6 py-3 rounded-md bg-primary text-white font-semibold hover:bg-secondary transition-colors duration-200 shadow-lg cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary"
             >
               {firstItem?.gumbText}

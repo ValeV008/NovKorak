@@ -96,7 +96,11 @@
     "description": "Occupational therapy is a healthcare profession, and an occupational therapist is a healthcare professional who encourages individuals to engage in meaningful everyday activities. Within occupational therapy, we focus on improving or maintaining health in the areas of bodily functions and structures, as well as mental health.\n\nOur shared goals are to carry out activities that promote health, well-being, and the most successful performance of prioritized activities. As an occupational therapist, I am also here to guide you through the components needed to perform activities in the areas of basic daily living — such as independent washing, dressing, and eating.\n\nWe will also look at participation in broader daily activities, assess environmental risk factors, work on fall prevention, and provide advice on adapting the home for greater safety. With the individual, we will discuss the use of orthotic and medical-technical aids, and with family members, we will talk about supportive technology that can help the person maintain independence.",
     "videoAlt": "Video presentation of occupational therapy for older adults"
   },
-  "features": {
+  "youngerHero": {
+    "subtitle": "for children and adolescents",
+    "description": "The occupational therapist encourages the child to be independent in various areas.\n\nOccupations are the things that the child enjoys and likes to do, or that are important for their functioning in everyday life. In order to try how fast the sled can go down the snow, they must first get dressed.\n\nIt focuses on the skills where the child needs guidance so they can bring them into play.\n\nPediatric occupational therapy targets different age groups of children and adolescents. In the first year, it helps infants with handling, independent feeding and swallowing, the development of play and fine motor skills, and the development of quality movement in the form of gross motor skills."
+  },
+  "featuresOdrasli": {
     "title": "Don't miss ...",
     "subtitle": "Benefits of occupational therapy",
     "description": "Occupational therapy brings many benefits to your health and quality of life. With an individually tailored approach, we help you achieve greater independence in everyday activities, improve physical and mental well-being, and actively participate in society. Discover the key benefits that occupational therapy can bring to your life.",
@@ -120,6 +124,33 @@
         "name": "Bobath concept",
         "description": "A therapeutic approach to the (re)habilitation of neurological conditions, focused on the quality of movement and activity performance. The emphasis is on transferring learned skills into everyday activities and occupations.",
         "icon": "/assets/images/odrasli/starejsi_ikona4.png"
+      }
+    ]
+  },
+  "featuresOtroci": {
+    "title": "Don't miss ...",
+    "subtitle": "Benefits of occupational therapy",
+    "description": "Occupational therapy offers many advantages for a child's health and quality of life. With an individually tailored approach, we help them gain greater independence in daily activities, boost physical and emotional well-being, and participate more confidently in their surroundings. Discover the key benefits occupational therapy can bring to your child.",
+    "items": [
+      {
+        "name": "Art therapy support",
+        "description": "Art therapy guides the child through a process of expression and creation. Using music, theatre/drama, or visual art approaches, it encourages self-expression, emotional balance, and personal growth.",
+        "icon": "/assets/images/otroci/otroci_ikona1.png"
+      },
+      {
+        "name": "Neuromuscular taping",
+        "description": "A technique that supports the musculoskeletal, vascular, lymphatic, and neurological systems. By applying gentle (de)compressive stimuli with elastic tape, we promote the body's natural healing and alignment.",
+        "icon": "/assets/images/otroci/nevromisicni_taping.svg"
+      },
+      {
+        "name": "Occupational therapy with Montessori elements",
+        "description": "Guided by the principle \"Help me do it myself,\" the child gains confidence, develops sensory awareness, and discovers joy in learning. Purposeful materials encourage independence, while learning from mistakes shows them how to recognise and correct missteps.",
+        "icon": "/assets/images/otroci/otroci_ikona3.png"
+      },
+      {
+        "name": "Bobath concept",
+        "description": "A therapeutic approach to the (re)habilitation of neurological conditions that focuses on quality of movement and activity. It emphasises helping the child transfer newly learned skills into everyday routines and meaningful play.",
+        "icon": "/assets/images/otroci/otroci_ikona4.png"
       }
     ]
   },
@@ -214,6 +245,18 @@
       "Live in a home environment and want to maintain as much independence and quality of life as possible.",
       "Face social and psychological challenges (loneliness, loss of motivation or depression), where occupational therapy can offer meaningful activities and support."
     ]
+  },
+  "otrociFor": {
+    "header": "With occupational therapy at RUA, children can:",
+    "list": [
+      "Develop quality movement patterns.",
+      "Strengthen the intrinsic muscles of the hand for fine motor skills, object manipulation, and upper limb coordination.",
+      "Build fine motor abilities for grasping and releasing toys, developing pincer grasp, and improving drawing, writing, and graphomotor skills.",
+      "Improve eye-hand coordination for play or school skills.",
+      "Master basic daily activities such as dressing, tooth brushing, and eating independently.",
+      "Receive guidance on specific aids that support movement, handwriting, putting on socks, and more."
+    ],
+    "extra": "Sessions encourage progress in both physical and cognitive development. With elements of sensory integration we recognize, regulate, organize, and integrate sensations in the body for effective participation in the environment.\nWe actively involve parents or guardians in therapy so they can transfer what they observe to the home environment. We understand the importance of 24-hour positioning.\nWe advise on possible adjustments in preschool, school, or home settings and on the use of therapeutic aids."
   },
   "cenikPage": {
     "title": "Price list",
