@@ -23,7 +23,7 @@ const Product = () => {
             <p className={"text-gray-600 mb-8"}>{firstItem?.description}</p>
             <Link
               href={"/otroci"}
-              className="inline-block mt-2 px-6 py-3 rounded-md bg-primary text-white font-semibold hover:bg-secondary transition-colors duration-200 shadow-lg cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary"
+              className="inline-block px-6 py-3 rounded-md bg-primary text-white font-semibold hover:bg-secondary transition-colors duration-200 shadow-lg cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary"
             >
               {firstItem?.gumbText}
             </Link>
@@ -31,7 +31,7 @@ const Product = () => {
           <div className={"w-full sm:w-1/2 p-6"}>
             {firstItem?.img && (
               <Image
-                className="h-6/6"
+                className="h-6/6 rounded-lg"
                 src={firstItem.img}
                 alt={firstItem?.title}
                 width={500}
@@ -40,11 +40,11 @@ const Product = () => {
             )}
           </div>
         </div>
-        <div className={"flex flex-wrap flex-col-reverse sm:flex-row"}>
-          <div className={"w-full sm:w-1/2 p-6"}>
+        <div className={"flex flex-wrap flex-col-reverse sm:flex-row sm:items-stretch"}>
+          <div className={"w-full sm:w-1/2 p-6 sm:flex sm:items-end"}>
             {secondItem?.img && (
               <Image
-                className="h-6/6"
+                className="h-6/6 rounded-lg sm:self-end"
                 src={secondItem.img}
                 alt={secondItem.title}
                 width={500}
@@ -52,8 +52,8 @@ const Product = () => {
               />
             )}
           </div>
-          <div className={"w-full sm:w-1/2 p-6"}>
-            <div className={"align-middle"}>
+          <div className={"w-full sm:w-1/2 p-6 flex flex-col"}>
+            <div className={"flex flex-col h-full"}>
               <h3
                 className={"text-3xl text-gray-800 font-bold leading-none mb-3 mt-10"}
               >
@@ -62,8 +62,8 @@ const Product = () => {
               <p className={"text-gray-600 mb-8"}>{secondItem?.description}</p>
               <Link
                 href={"/odrasli"}
-                  className="inline-block mt-2 px-6 py-3 rounded-md bg-primary text-white font-semibold hover:bg-secondary transition-colors duration-200 shadow-lg cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary"
-                >
+                className="inline-block px-6 py-3 rounded-md bg-primary text-white font-semibold hover:bg-secondary transition-colors duration-200 shadow-lg cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary mt-6 sm:mt-auto sm:self-start"
+              >
                 {secondItem?.gumbText}
               </Link>
             </div>

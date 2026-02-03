@@ -28,11 +28,11 @@ const OtrociPage = () => {
               {youngerHero.subtitle}
             </span>
           </h1>
-          <div className="flex flex-col lg:flex-row">
-            <div className="relative z-10 pb-8 bg-background sm:pb-16 md:pb-20 lg:pb-28 xl:pb-32 w-full lg:w-1/2">
+          <div className="pt-10 flex flex-col lg:flex-row lg:items-stretch">
+            <div className="relative z-10 bg-background w-full lg:w-1/2 lg:flex lg:flex-col lg:justify-end">
               <MainHeroOtroci />
             </div>
-            <div className="w-full lg:w-1/2 my-auto">
+            <div className="w-full lg:w-1/2 lg:flex lg:flex-col lg:justify-end">
               <MainHeroImageOtroci />
             </div>
           </div>
