@@ -1,36 +1,14 @@
 "use client";
 
-import React, { FormEvent, useEffect, useRef, useState } from "react";
+import React, { FormEvent, useState } from "react";
 
 import { useTranslation } from "next-i18next";
 
 import Divider from "./Divider";
 
 export default function ContactForm2() {
-  const { t, i18n } = useTranslation("common");
+  const { t } = useTranslation("common");
   const [submitted, setSubmitted] = useState(false);
-  // Controlled message field so initial text (translation) is editable by user
-  const initialTemplate = t("contact.messagePlaceholder") as string;
-  const [message, setMessage] = useState<string>(initialTemplate);
-  const userModifiedRef = useRef(false);
-
-  // Detect user modification
-  const handleMessageChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
-    if (!userModifiedRef.current && e.target.value !== initialTemplate) {
-      userModifiedRef.current = true;
-    }
-    setMessage(e.target.value);
-  };
-
-  // When language changes, update template only if user hasn't modified yet OR field is still exactly old template
-  useEffect(() => {
-    const newTemplate = t("contact.messagePlaceholder") as string;
-    if (!userModifiedRef.current || message.trim() === initialTemplate.trim()) {
-      setMessage(newTemplate);
-      userModifiedRef.current = false; // Still unmodified relative to new language
-    }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [i18n.language]);
 
   const handleSubmit = async (event: FormEvent) => {
     event.preventDefault();
@@ -107,8 +85,6 @@ export default function ContactForm2() {
                 required
                 rows={10}
                 className="mt-1 w-full p-2 border rounded-lg focus:ring focus:ring-blue-300"
-                value={message}
-                onChange={handleMessageChange}
               />
             </div>
 

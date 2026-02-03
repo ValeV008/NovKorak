@@ -31,6 +31,7 @@
     "description": "Delovna terapija je poklic, osredotočen na stranke, ki se ukvarja s spodbujanjem zdravja in dobrega počutja skozi dejavnosti. Primarni cilj delovne terapije je omogočiti ljudem sodelovanje v vsakodnevnih aktivnostih.",
     "img": "/assets/images/happyTeam.jpeg",
     "ctaText": "Kliknite za 10 min brezplačni posvet",
+    "bookButton": "Rezerviraj termin",
     "primaryAction": {
       "text": "Za otroke in mladostnike",
       "cta_text": "Več o otrocih",
@@ -44,7 +45,7 @@
   },
   "aboutMe": {
     "title": "O nas",
-    "highlighted_title": "Delovna terapevtka",
+    "highlighted_title": "Delovna terapevtka in terapevtka pomoči z umetnostjo",
     "img": "/assets/images/aboutMe.png",
     "href": "aboutMe"
   },
@@ -117,7 +118,7 @@
       },
       {
         "name": "Delovna terapija z elementi Montessori pedagogike",
-        "description": "Pri delu z osebami z demenco je ključno, da ne pozabimo na človeka za diagnozo. Namesto da se osredotočamo na omejitve, iščemo njihove sposobnosti, interese in edinstvene življenjske zgodbe. Spoštovanje njihovega ozadja, kulture in potreb omogoča oblikovanje okolja, ki spodbuja samostojnost in smiselno vključevanje. Pristop Montessori za demenco, invalidnost in staranje temelji na štirih temeljnih načelih, ki krepijo samospoštovanje, omogočajo izbiro ter spodbujajo prispevanje k skupnosti.",
+        "description": "Pri delu z osebami z demenco je bistveno celostno razumevanje posameznika, ki presega diagnozo in vključuje njegove sposobnosti, interese ter življenjsko izkušnjo. Spoštovanje osebnega, kulturnega in socialnega ozadja omogoča ustvarjanje podpornega okolja, ki spodbuja samostojnost in smiselno sodelovanje. Montessori pristop za demenco in staranje temelji na načelih samospoštovanja, izbire in aktivnega prispevanja k skupnosti.",
         "icon": "/assets/images/odrasli/starejsi_ikona3.png"
       },
       {
@@ -227,19 +228,18 @@
     "nameLabel": "Ime",
     "emailLabel": "Elektronski naslov",
     "messageLabel": "Sporočilo",
-    "messagePlaceholder": "Pozdravljeni,\n\nzanima me/nas več informacij o vaših storitvah delovne terapije in možnostih obravnave. Prosim za podrobnosti glede terminov in prispevka za terapijo oz. obravnavo. \n\nHvala!\n\nLepo vas pozdravljam/o.",
     "submit": "Pošlji",
     "success": "Hvala! Sporočilo je bilo poslano."
   },
   "odrasliFor": {
     "header": "Delovna terapija je za tistega, ki:",
     "list": [
-      "Se okreva po poškodbah mišično-skeletnega sistema ali operacijah (npr. zlomih kolka, rame ali roke) in želi obnoviti ali ohraniti mišično funkcijo.",
-      "Se sooča s poškodbami centralnega živčnega sistema (npr. kap, cerebralna paraliza, poškodbe hrbtenjače ali možganov, meningitis, ALS).",
-      "Se sooča z izzivi gibanja zaradi starostnih sprememb (npr. zmanjšana moč, gibljivost in ravnotežje).",
+      "Okreva po poškodbah mišično-skeletnega sistema ali operacijah (npr. zlomih kolka, operacija ramenskega obroča ali zgornjega uda/roke) in želi obnoviti ali ohraniti mišično funkcijo.",
+      "Se sooča s poškodbami centralnega živčnega sistema (npr. Možgansko-žilni dogodek/možganska kap, cerebralna paraliza, poškodbe hrbtenjače ali možganov …).",
+      "Se sooča z izzivi gibanja zaradi starostnih sprememb (npr. zmanjšana moč, gibljivost ali statično/dinamično ravnotežje).",
       "Živi s kroničnimi boleznimi (npr. Parkinsonova bolezen, multipla skleroza, Huntingtonova bolezen).",
-      "Se sooča s kognitivnimi spremembami (npr. demenca, Alzheimerjeva bolezen, blaga kognitivna okvara), kjer je cilj ohraniti dnevno neodvisnost.",
-      "Ima težave z vsakodnevnimi aktivnostmi (npr. oblačenje, osebna higiena, kuhanje in nakupovanje).",
+      "Se sooča s kognitivnimi spremembami (npr. različne vrste demence, blaga kognitivna okvara), kjer je cilj ohraniti dnevno neodvisnost.",
+      "Ima težave s vsakodnevnimi aktivnostmi (npr. oblačenje, osebna higiena, kuhanje in nakupovanje).",
       "Potrebujete prilagoditve svojega domačega okolja (npr. pripomočke, varne postavitve prostorov za preprečevanje padcev, prilagoditve kopalnice).",
       "Želi uporabljati medicinsko-tehnične pripomočke, vendar išče ideje, kako jih uporabiti.",
       "Živi v domačem okolju in želi ohraniti čim več neodvisnosti in kakovosti življenja.",
@@ -265,8 +265,8 @@
       "price": "Cena"
     },
     "items": [
-      { "name": "Prva obravnava (pregled dokumentacija in obravnava)", "price": "65 €" },
-      { "name": "Paket 6 obravnav", "price": "340 €" },
+      { "name": "Prva obravnava (pregled dokumentacija in obravnava)", "price": "75 €" },
+      { "name": "Obravnava", "price": "60 €" },
       { "name": "Kinesiotaping", "price": "10 €" },
       { "name": "Posvet prek daljave / telerehabilitacija (30 min)", "price": "30 €" },
       { "name": "Posvet prek daljave / telerehabilitacija (60 min)", "price": "60 €" },

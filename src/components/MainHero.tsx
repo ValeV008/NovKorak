@@ -22,9 +22,21 @@ const MainHero = () => {
           {mainHero.subtitle}
         </span>
       </h1>
-      <p className="text-base text-gray-700 sm:text-lg sm:mx-auto md:text-xl">
-        {mainHero.additionalText}
-      </p>
+      <div className="flex flex-col gap-4 mx-auto max-w-3xl text-center sm:flex-row sm:items-center sm:gap-6 sm:text-left">
+        <p className="text-base text-gray-700 sm:text-lg md:text-xl sm:max-w-2xl">
+          {mainHero.additionalText}
+        </p>
+        <ScrollLink
+          spy={true}
+          active="active"
+          smooth={true}
+          duration={1000}
+          to={mainHero.secondaryAction.href.replace(/^#/, "")}
+          className="px-6 py-3 rounded-md bg-primary text-white font-semibold hover:bg-secondary transition-colors duration-200 shadow-lg mx-auto cursor-pointer"
+        >
+          {mainHero.bookButton || "Rezerviraj termin"}
+        </ScrollLink>
+      </div>
       <Image
         alt="collage image"
         className="w-auto align-middle mx-auto rounded-lg"

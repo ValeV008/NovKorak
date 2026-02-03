@@ -29,7 +29,7 @@ const ONasPage = () => {
               className="rounded-lg shadow-lg object-cover w-full h-auto sm:mx-0 mx-auto"
             />
           </div>
-          <div className="w-full sm:w-1/2 lg:text-justify">
+          <div className="w-full sm:w-1/2 lg:text-left">
             <h1 className="my-2 text-5xl tracking-tight font-bold text-gray-800 text-center lg:text-right">
               {aboutMe.title}
               <br />

@@ -31,6 +31,7 @@
     "description": "Occupational therapy is a client-centered profession focused on promoting health and well-being through activities. The primary goal of occupational therapy is to enable people to participate in everyday activities.",
     "img": "/assets/images/happyTeam.jpeg",
     "ctaText": "Click for a 10 min free consultation",
+    "bookButton": "Book an appointment",
     "primaryAction": {
       "text": "For children and adolescents",
       "cta_text": "More about children",
@@ -44,7 +45,7 @@
   },
   "aboutMe": {
     "title": "About us",
-    "highlighted_title": "Occupational Therapist",
+    "highlighted_title": "Occupational Therapist and Art Therapy Practitioner",
     "img": "/assets/images/aboutMe.png",
     "href": "aboutMe"
   },
@@ -117,7 +118,7 @@
       },
       {
         "name": "Occupational therapy with Montessori elements",
-        "description": "When working with people with dementia, it is essential to see the person beyond the diagnosis. Rather than focusing on limitations, we seek their abilities, interests, and unique life stories. Respecting their background, culture, and needs helps create an environment that fosters independence and meaningful engagement. The Montessori approach to dementia, disability, and aging is based on four key principles that strengthen self-esteem, enable choice, and encourage contribution to the community.",
+        "description": "When working with people with dementia, it is crucial to understand the individual beyond the diagnosis, including their abilities, interests, and life experience. Respecting their personal, cultural, and social background enables a supportive environment that nurtures independence and meaningful participation. The Montessori approach to dementia and ageing is grounded in the principles of self-respect, choice, and active contribution to the community.",
         "icon": "/assets/images/odrasli/starejsi_ikona3.png"
       },
       {
@@ -227,7 +228,6 @@
     "nameLabel": "Name",
     "emailLabel": "Email address",
     "messageLabel": "Message",
-    "messagePlaceholder": "Hello,\n\nI/we would like more information about your occupational therapy services and possible treatment options. Please provide details regarding available appointments and the fee for therapy / sessions.\n\nThank you!\n\nKind regards.",
     "submit": "Send",
     "success": "Thank you! Your message has been sent."
   },
@@ -265,8 +265,8 @@
       "price": "Price"
     },
     "items": [
-      { "name": "First session (documentation review and session)", "price": "65 €" },
-      { "name": "Package of 6 sessions", "price": "340 €" },
+      { "name": "First session (documentation review and session)", "price": "75 €" },
+      { "name": "Session", "price": "60 €" },
       { "name": "Kinesiotaping", "price": "10 €" },
       { "name": "Online consultation (30 min)", "price": "30 €" },
       { "name": "Online consultation (60 min)", "price": "60 €" },
