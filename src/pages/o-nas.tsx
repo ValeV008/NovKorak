@@ -21,8 +21,8 @@ const ONasPage = () => {
     <div className="bg-background">
       <Header />
       <main className="max-w-5xl mx-auto py-8" id="aboutMe">
-        <div className="flex flex-col-reverse sm:flex-row sm:items-center sm:space-x-10">
-          <div className="w-full sm:w-1/2 my-6">
+        <div className="flex flex-col-reverse sm:flex-row sm:items-end sm:space-x-10">
+          <div className="w-full sm:w-1/2">
             <Image
               src={aboutMePic}
               alt="My picture"
@@ -30,24 +30,24 @@ const ONasPage = () => {
             />
           </div>
           <div className="w-full sm:w-1/2 lg:text-left">
-            <h1 className="my-2 text-5xl tracking-tight font-bold text-gray-800 text-center lg:text-right">
+            <h1 className="my-2 text-5xl tracking-tight font-bold text-gray-900 text-center lg:text-right">
               {aboutMe.title}
               <br />
               <span className={" text-primary"}>{aboutMe.highlighted_title}</span>
             </h1>
             <Divider />
-            <p className="px-6 text-gray-600 whitespace-pre-line">
+            <p className="px-6 whitespace-pre-line">
               {t("aboutMePage.paragraph")}
             </p>
           </div>
         </div>
         <LazyShow>
         <div className="mt-12">
-            <h3 className="my-2 text-5xl tracking-tight font-bold text-gray-800 text-center lg:text-center">
+            <h3 className="my-2 text-5xl tracking-tight font-bold text-gray-900 text-center lg:text-center">
               {aboutMePage.trainingTitle}
           </h3>
           <Divider />
-          <ul className="list-disc px-6 sm:px-0 sm:pl-6 space-y-2 text-gray-700">
+          <ul className="list-disc px-6 sm:px-0 sm:pl-6 space-y-2">
               {trainingItems.map((item: string, idx: number) => (
                 <li key={idx}>{item}</li>
               ))}

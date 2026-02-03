@@ -15,15 +15,15 @@ const MainHero = () => {
 
   return (
     <main className="mx-6 my-6 sm:text-center grid gap-y-8">
-      <h1 className="relative text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl xl:mt-10">
-        <span className="relative inline-block">{mainHero.title}</span>
+      <h1 className="relative text-4xl tracking-tight font-extrabold sm:text-5xl md:text-6xl xl:mt-10">
+        <span className="relative inline-block text-gray-900">{mainHero.title}</span>
         <br />
         <span className={"block text-primary xl:inline"}>
           {mainHero.subtitle}
         </span>
       </h1>
       <div className="flex flex-col gap-4 mx-auto max-w-3xl text-center sm:flex-row sm:items-center sm:gap-6 sm:text-left">
-        <p className="text-base text-gray-700 sm:text-lg md:text-xl sm:max-w-2xl">
+        <p className="text-base sm:text-lg md:text-xl sm:max-w-2xl">
           {mainHero.additionalText}
         </p>
         <ScrollLink

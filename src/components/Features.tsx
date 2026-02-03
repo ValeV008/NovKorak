@@ -54,7 +54,7 @@ const Features = ({ translationKey = "features" }: FeaturesProps) => {
                     {feature.name}
                   </p>
                 </dt>
-                <dd className="mt-2 ml-16 text-base text-gray-500 text-justify">
+                <dd className="mt-2 ml-16 text-base text-justify">
                   {feature.description}
                 </dd>
               </div>

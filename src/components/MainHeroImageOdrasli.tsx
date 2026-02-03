@@ -29,7 +29,7 @@ const MainHeroImageOdrasli = () => {
   }, [videoSrc]);
 
   return (
-    <div className="h-72 sm:h-96 md:h-full lg:h-auto lg:self-end w-full">
+    <div className="sm:h-72 sm:h-96 md:h-full lg:h-auto lg:self-end w-full">
       <video
         ref={videoRef}
         className="w-full object-cover"

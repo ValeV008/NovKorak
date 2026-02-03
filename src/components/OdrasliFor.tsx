@@ -16,7 +16,7 @@ const OdrasliFor = () => {
           {odrasliForTexts.header.split(" ").map((word: string, index: number) => (
             <span
               key={index}
-              className={word == "tistega," || word == "those," ? "text-primary" : "text-border"}
+              className={word == "tistega," || word == "those," ? "text-primary" : ""}
             >
               {word}{" "}
             </span>
@@ -25,7 +25,7 @@ const OdrasliFor = () => {
         <Divider />
       <ul className="list-disc list-inside space-y-3  px-3 lg:px-[10%]">
         {odrasliForTexts.list.map((item: string, index: number) => (
-          <li key={index} className="text-gray-600">
+          <li key={index}>
             {item}
           </li>
         ))}

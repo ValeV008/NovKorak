@@ -10,6 +10,11 @@
 
 a {
   @apply text-red-700;
+@layer base {
+  body {
+    @apply text-base text-gray-600;
+  }
+}
 }
 
 a:hover {

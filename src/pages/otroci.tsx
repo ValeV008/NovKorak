@@ -22,8 +22,8 @@ const OtrociPage = () => {
       <Header />
       <div className={"relative bg-background"}>
         <div className="max-w-7xl mx-auto">
-          <h1 className="text-4xl font-extrabold text-gray-900 sm:text-5xl md:text-6xl mx-auto text-center">
-            <span className="block xl:inline">{mainHero.title}</span>{" "}
+          <h1 className="text-4xl font-extrabold sm:text-5xl md:text-6xl mx-auto text-center">
+            <span className="block xl:inline text-gray-900">{mainHero.title}</span>{" "}
             <span className={"block text-primary xl:inline"}>
               {youngerHero.subtitle}
             </span>

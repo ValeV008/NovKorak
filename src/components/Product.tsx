@@ -16,11 +16,11 @@ const Product = () => {
         <div className={"flex flex-wrap mb-20"}>
           <div className={"w-full sm:w-1/2 p-6"}>
             <h3
-              className={"text-3xl text-gray-800 font-bold leading-none mb-3 mt-10"}
+              className={"text-3xl text-gray-900 font-bold leading-none mb-3 mt-10"}
             >
               {firstItem?.title}
             </h3>
-            <p className={"text-gray-600 mb-8"}>{firstItem?.description}</p>
+            <p className={"mb-8"}>{firstItem?.description}</p>
             <Link
               href={"/otroci"}
               className="inline-block px-6 py-3 rounded-md bg-primary text-white font-semibold hover:bg-secondary transition-colors duration-200 shadow-lg cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary"
@@ -55,11 +55,11 @@ const Product = () => {
           <div className={"w-full sm:w-1/2 p-6 flex flex-col"}>
             <div className={"flex flex-col h-full"}>
               <h3
-                className={"text-3xl text-gray-800 font-bold leading-none mb-3 mt-10"}
+                className={"text-3xl text-gray-900 font-bold leading-none mb-3 mt-10"}
               >
                 {secondItem?.title}
               </h3>
-              <p className={"text-gray-600 mb-8"}>{secondItem?.description}</p>
+              <p className={"mb-8"}>{secondItem?.description}</p>
               <Link
                 href={"/odrasli"}
                 className="inline-block px-6 py-3 rounded-md bg-primary text-white font-semibold hover:bg-secondary transition-colors duration-200 shadow-lg cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary mt-6 sm:mt-auto sm:self-start"

@@ -18,7 +18,7 @@ const CenikPage = () => {
       <Header />
       <section className={"bg-background py-8"} id="pricing">
         <div
-          className={"container max-w-5xl mx-auto px-2 pt-4 pb-12 text-primary"}
+          className={"container max-w-5xl mx-auto px-2 pt-4 pb-12"}
         >
           <h1
             className={"w-full my-2 text-5xl font-bold leading-tight text-center text-primary"}
@@ -37,7 +37,7 @@ const CenikPage = () => {
                 <th className="px-4 py-2 border-b text-center">{t("cenikPage.headers.price")}</th>
               </tr>
             </thead>
-            <tbody className="text-gray-700">
+            <tbody className="text-gray-900">
               {items.map((item, idx) => (
                 <tr key={item.name} className={idx % 2 === 1 ? "bg-gray-50" : undefined}>
                   <td className="px-4 py-2 border-b">{item.name}</td>
@@ -46,7 +46,7 @@ const CenikPage = () => {
               ))}
             </tbody>
           </table>
-          <p className="text-sm text-gray-700 italic mt-2">{t("cenikPage.note")}</p>
+          <p className="text-sm italic mt-2">{t("cenikPage.note")}</p>
         </div>
       </section>
     </div>
