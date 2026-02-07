@@ -57,7 +57,38 @@ const Menu = () => {
                 </Link>
               </div>
             </div>
-            <div className="flex md:hidden items-center ml-auto">
+            <div className="flex md:hidden items-center ml-auto space-x-3">
+              <div className="flex items-center">
+                <button
+                  type="button"
+                  onClick={() =>
+                    router.push(asPath, asPath, { locale: "sl" })
+                  }
+                  className={`text-sm font-semibold focus:outline-none mr-1 ${
+                    locale === "sl"
+                      ? "text-primary"
+                      : "text-gray-700 hover:text-primary"
+                  }`}
+                  aria-pressed={locale === "sl"}
+                >
+                  SLO
+                </button>
+                <span className="text-gray-400">/</span>
+                <button
+                  type="button"
+                  onClick={() =>
+                    router.push(asPath, asPath, { locale: "en" })
+                  }
+                  className={`text-sm font-semibold focus:outline-none ml-1 ${
+                    locale === "en"
+                      ? "text-primary"
+                      : "text-gray-700 hover:text-primary"
+                  }`}
+                  aria-pressed={locale === "en"}
+                >
+                  ENG
+                </button>
+              </div>
               <PopoverButton
                 className={"bg-background rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-secondary"}
               >
