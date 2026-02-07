@@ -22,9 +22,6 @@ export default function ContactForm2() {
 
     if (response.ok) {
       setSubmitted(true);
-    } else {
-      // alert("Form submission failed.");
-      // console.error("Form submission failed.");
     }
   };
 

@@ -8,13 +8,14 @@
   --color-tertiaty: #99a0a3;
 }
 
-a {
-  @apply text-red-700;
 @layer base {
   body {
     @apply text-base text-gray-600;
   }
 }
+
+a {
+  @apply text-red-700;
 }
 
 a:hover {

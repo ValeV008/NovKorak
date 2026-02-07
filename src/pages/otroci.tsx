@@ -14,7 +14,7 @@ import OtrociFor from "../components/OtrociFor";
 
 const OtrociPage = () => {
   const { t } = useTranslation("common");
-  const mainHero = t("mainHero", { returnObjects: true }) as any; // reuse base hero title
+  const mainHero = t("mainHero", { returnObjects: true }) as any;
   const youngerHero = t("youngerHero", { returnObjects: true }) as any;
 
   return (
@@ -38,7 +38,6 @@ const OtrociPage = () => {
           </div>
         </div>
       </div>
-      {/* <Canvas /> */}
       <LazyShow>
         <>
           <OtrociFor />

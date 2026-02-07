@@ -22,7 +22,7 @@ const MainHeroImageOtroci = () => {
       try {
         v.pause();
       } catch {
-        // ignore
+        // Ignore pause errors (e.g., autoplay restrictions).
       }
       v.load();
     }

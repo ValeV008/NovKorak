@@ -16,8 +16,6 @@ import { Link as ScrollLink } from "react-scroll";
 
 const Menu = () => {
   const { t } = useTranslation("common");
-  // Pull structured data from translation JSON (returnObjects preserves arrays/objects)
-  // navigation should be an array in translation JSON. Guard in case namespace not loaded yet.
   const navigationRaw = t("navigation", { returnObjects: true });
   const navigation: Array<{ name: string; href: string }> = Array.isArray(
     navigationRaw
@@ -59,7 +57,6 @@ const Menu = () => {
                 </Link>
               </div>
             </div>
-            {/* Mobile hamburger button moved to the far right */}
             <div className="flex md:hidden items-center ml-auto">
               <PopoverButton
                 className={"bg-background rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-secondary"}
@@ -71,7 +68,6 @@ const Menu = () => {
             <div className="hidden md:flex md:ml-10 md:pr-4 items-center w-full">
               <div className="flex items-center space-x-8">
                 {navigation.map((item) => {
-                  // If config supplies absolute route like "/odrasli", link directly
                   if (item.href.startsWith("/")) {
                     return (
                       <Link

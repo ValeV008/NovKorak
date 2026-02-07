@@ -4,7 +4,6 @@ import { GetStaticProps } from "next";
 
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
-import Analytics from "../components/Analytics";
 import ContactForm from "../components/ContactForm";
 import Header from "../components/Header";
 import LazyShow from "../components/LazyShow";
@@ -28,7 +27,6 @@ const App = () => {
       <LazyShow>
         <ContactForm />
       </LazyShow>
-      <Analytics />
     </div>
   );
 };

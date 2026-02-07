@@ -14,7 +14,7 @@ import OdrasliFor from "../components/OdrasliFor";
 
 const OdrasliPage = () => {
   const { t } = useTranslation("common");
-  const mainHero = t("mainHero", { returnObjects: true }) as any; // reuse base hero title
+  const mainHero = t("mainHero", { returnObjects: true }) as any;
   const elderlyHero = t("elderlyHero", { returnObjects: true }) as any;
 
   return (
@@ -38,7 +38,6 @@ const OdrasliPage = () => {
           </div>
         </div>
       </div>
-      {/* <Canvas /> */}
       <LazyShow>
         <>
           <OdrasliFor />
