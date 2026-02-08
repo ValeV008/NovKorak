@@ -1,3 +1,5 @@
+import React from "react";
+
 import { GetStaticProps } from "next";
 
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";

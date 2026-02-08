@@ -1,8 +1,8 @@
-import { ReactNode } from "react";
+import React from "react";
 
 import { motion } from "framer-motion";
 
-const LazyShow = ({ children }: { children: ReactNode }) => {
+const LazyShow = ({ children }: { children: React.ReactNode }) => {
   return (
     <motion.div
       className="lazy-div"
