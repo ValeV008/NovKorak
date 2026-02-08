@@ -1,4 +1,4 @@
-import React from "react";
+import { useEffect, useRef } from "react";
 
 import { useTranslation } from "next-i18next";
 
@@ -15,8 +15,8 @@ const MainHeroImageOtroci = () => {
       ? "/assets/images/odrasli/video_placeholder_slo.png"
       : "/assets/images/odrasli/video_placeholder_eng.png";
 
-  const videoRef = React.useRef<HTMLVideoElement | null>(null);
-  React.useEffect(() => {
+  const videoRef = useRef<HTMLVideoElement | null>(null);
+  useEffect(() => {
     const v = videoRef.current;
     if (v) {
       try {
