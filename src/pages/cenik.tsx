@@ -30,18 +30,18 @@ const CenikPage = () => {
               className={"h-1 mx-auto bg-primary w-64 opacity-25 my-0 py-0 rounded-t"}
             ></div>
           </div>
-          <table className="w-full table-fixed border border-gray-300 rounded-lg overflow-hidden mb-8">
+          <table className="w-full table-fixed border border-gray-200 rounded-lg overflow-hidden mb-8">
             <thead className="bg-primary text-background">
               <tr>
-                <th className="px-4 py-2 border-b text-center">{t("cenikPage.headers.service")}</th>
-                <th className="px-4 py-2 border-b text-center">{t("cenikPage.headers.price")}</th>
+                <th className="px-4 py-2 border-b border-gray-200 text-center">{t("cenikPage.headers.service")}</th>
+                <th className="px-4 py-2 border-b border-gray-200 text-center">{t("cenikPage.headers.price")}</th>
               </tr>
             </thead>
             <tbody className="text-gray-900">
               {items.map((item, idx) => (
                 <tr key={item.name} className={idx % 2 === 1 ? "bg-gray-50" : undefined}>
-                  <td className="px-4 py-2 border-b">{item.name}</td>
-                  <td className="px-4 py-2 border-b text-center">{item.price}</td>
+                  <td className="px-4 py-2 border-b border-gray-200">{item.name}</td>
+                  <td className="px-4 py-2 border-b border-gray-200 text-center">{item.price}</td>
                 </tr>
               ))}
             </tbody>

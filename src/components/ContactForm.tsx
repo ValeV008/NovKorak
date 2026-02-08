@@ -57,7 +57,7 @@ export default function ContactForm2() {
                 type="text"
                 name="name"
                 required
-                className="mt-1 w-full p-2 border rounded-lg focus:ring focus:ring-blue-300"
+                className="mt-1 w-full p-2 border border-gray-300 rounded-lg focus:border-gray-400 focus:ring-1 focus:ring-blue-200"
               />
             </div>
 
@@ -69,7 +69,7 @@ export default function ContactForm2() {
                 type="email"
                 name="email"
                 required
-                className="mt-1 w-full p-2 border rounded-lg focus:ring focus:ring-blue-300"
+                className="mt-1 w-full p-2 border border-gray-300 rounded-lg focus:border-gray-400 focus:ring-1 focus:ring-blue-200"
               />
             </div>
 
@@ -81,7 +81,7 @@ export default function ContactForm2() {
                 name="message"
                 required
                 rows={10}
-                className="mt-1 w-full p-2 border rounded-lg focus:ring focus:ring-blue-300"
+                className="mt-1 w-full p-2 border border-gray-300 rounded-lg focus:border-gray-400 focus:ring-1 focus:ring-blue-200"
               />
             </div>
 

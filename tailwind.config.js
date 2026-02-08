@@ -1,8 +1,5 @@
-const plugin = require("tailwindcss/plugin");
-
 module.exports = {
-  mode: "jit",
-  purge: ["./src/**/*.{js,ts,jsx,tsx}"],
+  content: ["./src/**/*.{js,ts,jsx,tsx}"],
   darkMode: false,
   theme: {
     fontSize: {
@@ -43,26 +40,5 @@ module.exports = {
       },
     },
   },
-  variants: {},
-  plugins: [
-    plugin(function ({ addUtilities }) {
-      addUtilities({
-        ".perspective": {
-          perspective: "1000px",
-        },
-        ".transform-style-preserve-3d": {
-          transformStyle: "preserve-3d",
-        },
-        ".backface-hidden": {
-          backfaceVisibility: "hidden",
-        },
-        ".rotate-y-180": {
-          transform: "rotateY(180deg)",
-        },
-        ".hover\\:rotate-y-180:hover": {
-          transform: "rotateY(180deg)",
-        },
-      });
-    }),
-  ],
+  plugins: [],
 };
