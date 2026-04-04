@@ -8,12 +8,12 @@ const MainHeroImageOtroci = () => {
   const elderlyHero = t("elderlyHero", { returnObjects: true }) as any;
   const videoSrc =
     locale === "sl"
-      ? "/assets/videos/OT_elderly_slo.mp4"
-      : "/assets/videos/OT_elderly_eng.mp4";
+      ? "/assets/videos/OT_children_slo.mp4"
+      : "/assets/videos/OT_children_slo.mp4";
   const posterSrc =
     locale === "sl"
-      ? "/assets/images/odrasli/video_placeholder_slo.png"
-      : "/assets/images/odrasli/video_placeholder_eng.png";
+      ? "/assets/images/otroci/children_video_placeholder_slo.png"
+      : "/assets/images/otroci/children_video_placeholder_slo.png";
 
   const videoRef = useRef<HTMLVideoElement | null>(null);
   useEffect(() => {
