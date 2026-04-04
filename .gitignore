@@ -39,3 +39,17 @@ package-lock.json
 
 # Local Netlify folder
 .netlify
+
+# Playwright
+node_modules/
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+/playwright/.auth/
+
+# Claude local config
+.claude/
+
+# Playwright CLI local artifacts
+.playwright-cli/
