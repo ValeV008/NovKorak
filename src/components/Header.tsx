@@ -1,6 +1,7 @@
-import { Fragment } from "react";
+import { Fragment, useCallback, useState } from "react";
 
 import { useTranslation } from "next-i18next";
+import { useTopLoader } from "nextjs-toploader";
 
 import {
   Popover,
@@ -27,10 +28,31 @@ const Menu = () => {
   const company = t("company", { returnObjects: true }) as any;
   const { name: companyName, logoOrange, logoOrangeSubtext } = company;
   const router = useRouter();
+  const topLoader = useTopLoader();
+  const [isLanguageLoading, setIsLanguageLoading] = useState(false);
   const isHome = router.pathname === "/";
   const { locale, asPath } = router;
 
   const logoSrc = logoOrangeSubtext || logoOrange;
+
+  const handleLanguageChange = useCallback(
+    async (nextLocale: "sl" | "en") => {
+      if (isLanguageLoading || locale === nextLocale) {
+        return;
+      }
+
+      setIsLanguageLoading(true);
+      topLoader.start();
+
+      try {
+        await router.push(asPath, asPath, { locale: nextLocale });
+      } finally {
+        topLoader.done(true);
+        setIsLanguageLoading(false);
+      }
+    },
+    [asPath, isLanguageLoading, locale, router, topLoader]
+  );
 
   return (
     <div
@@ -61,33 +83,39 @@ const Menu = () => {
               <div className="flex items-center">
                 <button
                   type="button"
-                  onClick={() =>
-                    router.push(asPath, asPath, { locale: "sl" })
-                  }
-                  className={`text-sm font-semibold focus:outline-none mr-1 ${
+                  onClick={() => handleLanguageChange("sl")}
+                  disabled={isLanguageLoading}
+                  className={`text-sm font-semibold focus:outline-none mr-1 disabled:opacity-60 disabled:cursor-not-allowed ${
                     locale === "sl"
                       ? "text-primary"
                       : "text-gray-700 hover:text-primary"
                   }`}
                   aria-pressed={locale === "sl"}
+                  aria-busy={isLanguageLoading}
                 >
                   SLO
                 </button>
                 <span className="text-gray-400">/</span>
                 <button
                   type="button"
-                  onClick={() =>
-                    router.push(asPath, asPath, { locale: "en" })
-                  }
-                  className={`text-sm font-semibold focus:outline-none ml-1 ${
+                  onClick={() => handleLanguageChange("en")}
+                  disabled={isLanguageLoading}
+                  className={`text-sm font-semibold focus:outline-none ml-1 disabled:opacity-60 disabled:cursor-not-allowed ${
                     locale === "en"
                       ? "text-primary"
                       : "text-gray-700 hover:text-primary"
                   }`}
                   aria-pressed={locale === "en"}
+                  aria-busy={isLanguageLoading}
                 >
                   ENG
                 </button>
+                {isLanguageLoading && (
+                  <span
+                    className="ml-2 inline-block h-3 w-3 rounded-full border-2 border-gray-300 border-t-primary animate-spin"
+                    aria-hidden="true"
+                  />
+                )}
               </div>
               <PopoverButton
                 className={"bg-background rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-secondary"}
@@ -141,33 +169,39 @@ const Menu = () => {
                 <div className="flex items-center">
                   <button
                     type="button"
-                    onClick={() =>
-                      router.push(asPath, asPath, { locale: "sl" })
-                    }
-                    className={`text-sm font-semibold focus:outline-none mr-1 ${
+                    onClick={() => handleLanguageChange("sl")}
+                    disabled={isLanguageLoading}
+                    className={`text-sm font-semibold focus:outline-none mr-1 disabled:opacity-60 disabled:cursor-not-allowed ${
                       locale === "sl"
                         ? "text-primary"
                         : "text-gray-700 hover:text-primary"
                     }`}
                     aria-pressed={locale === "sl"}
+                    aria-busy={isLanguageLoading}
                   >
                     SLO
                   </button>
                   <span className="text-gray-400">/</span>
                   <button
                     type="button"
-                    onClick={() =>
-                      router.push(asPath, asPath, { locale: "en" })
-                    }
-                    className={`text-sm font-semibold focus:outline-none ml-1 ${
+                    onClick={() => handleLanguageChange("en")}
+                    disabled={isLanguageLoading}
+                    className={`text-sm font-semibold focus:outline-none ml-1 disabled:opacity-60 disabled:cursor-not-allowed ${
                       locale === "en"
                         ? "text-primary"
                         : "text-gray-700 hover:text-primary"
                     }`}
                     aria-pressed={locale === "en"}
+                    aria-busy={isLanguageLoading}
                   >
                     ENG
                   </button>
+                  {isLanguageLoading && (
+                    <span
+                      className="ml-2 inline-block h-3 w-3 rounded-full border-2 border-gray-300 border-t-primary animate-spin"
+                      aria-hidden="true"
+                    />
+                  )}
                 </div>
                 {isHome ? (
                   <ScrollLink
