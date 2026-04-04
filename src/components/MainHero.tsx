@@ -3,7 +3,6 @@ import { useTranslation } from "next-i18next";
 import Image from "next/image";
 import { Link as ScrollLink } from "react-scroll";
 
-
 const MainHero = () => {
   const { t } = useTranslation("common");
   const mainHero = t("mainHero", { returnObjects: true }) as any;
@@ -35,23 +34,16 @@ const MainHero = () => {
           {mainHero.bookButton || "Rezerviraj termin"}
         </ScrollLink>
       </div>
-      <Image
-        alt="collage image"
-        className="w-auto align-middle mx-auto rounded-lg"
-        src={collageImage}
-        width={720}
-        height={480}
-      />
-      <ScrollLink
-        spy={true}
-        active="active"
-        smooth={true}
-        duration={1000}
-        to={mainHero.secondaryAction.href.replace(/^#/, "")}
-        className="px-6 py-3 rounded-md bg-primary text-white font-semibold hover:bg-secondary transition-colors duration-200 shadow-lg mx-auto cursor-pointer"
-      >
-        {mainHero.ctaText}
-      </ScrollLink>    
+      <div className="relative mx-auto w-full max-w-[720px] aspect-[3/2]">
+        <Image
+          alt="collage image"
+          className="rounded-lg object-cover"
+          src={collageImage}
+          fill
+          priority
+          sizes="(max-width: 768px) 100vw, 720px"
+        />
+      </div>
     </main>
   );
 };

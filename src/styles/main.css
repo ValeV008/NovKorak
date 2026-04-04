@@ -2,9 +2,9 @@
 @import "tailwindcss";
 
 :root {
-  --color-primary: #e71324;
+  --color-primary: #f2b70d;
   --color-secondary: #a12c34;
-  --color-tertiaty: #99a0a3;
+  --color-tertiary: #99a0a3;
 }
 
 @layer base {
@@ -14,7 +14,7 @@
 }
 
 a:hover {
-  @apply border-b-2 border-red-700;
+  @apply underline decoration-2 underline-offset-4;
 }
 
 .content p {

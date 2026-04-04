@@ -32,6 +32,7 @@ const Menu = () => {
   const [isLanguageLoading, setIsLanguageLoading] = useState(false);
   const isHome = router.pathname === "/";
   const { locale, asPath } = router;
+  const isCurrentRoute = (href: string) => router.pathname === href;
 
   const logoSrc = logoOrangeSubtext || logoOrange;
 
@@ -128,11 +129,17 @@ const Menu = () => {
               <div className="flex items-center space-x-8">
                 {navigation.map((item) => {
                   if (item.href.startsWith("/")) {
+                    const isCurrent = isCurrentRoute(item.href);
                     return (
                       <Link
                         key={item.name}
                         href={item.href}
-                        className="font-medium text-gray-500 hover:text-gray-900 cursor-pointer"
+                        aria-current={isCurrent ? "page" : undefined}
+                        className={`font-medium cursor-pointer ${
+                          isCurrent
+                            ? "text-primary"
+                            : "text-gray-500 hover:text-gray-900"
+                        }`}
                       >
                         {item.name}
                       </Link>
@@ -271,11 +278,17 @@ const Menu = () => {
               <div className="px-2 pt-2 pb-3 space-y-1">
                 {navigation.map((item) => {
                   if (item.href.startsWith("/")) {
+                    const isCurrent = isCurrentRoute(item.href);
                     return (
                       <Link
                         key={item.name}
                         href={item.href}
-                        className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
+                        aria-current={isCurrent ? "page" : undefined}
+                        className={`block px-3 py-2 rounded-md text-base font-medium ${
+                          isCurrent
+                            ? "text-primary bg-gray-50"
+                            : "text-gray-700 hover:text-gray-900 hover:bg-gray-50"
+                        }`}
                       >
                         {item.name}
                       </Link>

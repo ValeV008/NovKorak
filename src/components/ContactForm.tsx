@@ -9,19 +9,43 @@ import Divider from "./Divider";
 export default function ContactForm2() {
   const { t } = useTranslation("common");
   const [submitted, setSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitError, setSubmitError] = useState<string | null>(null);
 
   const handleSubmit = async (event: FormEvent) => {
     event.preventDefault();
+    if (isSubmitting) {
+      return;
+    }
+    setSubmitError(null);
+    setIsSubmitting(true);
     const formData = new FormData(event.target as HTMLFormElement);
+    try {
+      const response = await fetch("/netlify-form-detection.html", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams(formData as any).toString(),
+      });
 
-    const response = await fetch("/netlify-form-detection.html", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: new URLSearchParams(formData as any).toString(),
-    });
-
-    if (response.ok) {
-      setSubmitted(true);
+      if (response.ok) {
+        setSubmitted(true);
+        return;
+      }
+      setSubmitError(
+        t("contact.error", {
+          defaultValue:
+            "Sorry, something went wrong while sending your message. Please try again.",
+        })
+      );
+    } catch {
+      setSubmitError(
+        t("contact.error", {
+          defaultValue:
+            "Sorry, something went wrong while sending your message. Please try again.",
+        })
+      );
+    } finally {
+      setIsSubmitting(false);
     }
   };
 
@@ -46,51 +70,74 @@ export default function ContactForm2() {
             onSubmit={handleSubmit}
             name="contact"
             data-netlify="true"
+            aria-busy={isSubmitting}
             className="space-y-4"
           >
             <input type="hidden" name="form-name" value="contact" />
             <div>
-              <label className="block text-gray-700 font-medium">
+              <label htmlFor="contact-name" className="block text-gray-700 font-medium">
                 {t("contact.nameLabel")}
               </label>
               <input
+                id="contact-name"
                 type="text"
                 name="name"
                 required
-                className="mt-1 w-full p-2 border border-gray-300 rounded-lg focus:border-gray-400 focus:ring-1 focus:ring-blue-200"
+                autoComplete="name"
+                className="mt-1 w-full p-2 border border-gray-300 rounded-lg focus:border-primary focus:ring-2 focus:ring-primary/20"
               />
             </div>
 
             <div>
-              <label className="block text-gray-700 font-medium">
+              <label htmlFor="contact-email" className="block text-gray-700 font-medium">
                 {t("contact.emailLabel")}
               </label>
               <input
+                id="contact-email"
                 type="email"
                 name="email"
                 required
-                className="mt-1 w-full p-2 border border-gray-300 rounded-lg focus:border-gray-400 focus:ring-1 focus:ring-blue-200"
+                autoComplete="email"
+                className="mt-1 w-full p-2 border border-gray-300 rounded-lg focus:border-primary focus:ring-2 focus:ring-primary/20"
               />
             </div>
 
             <div>
-              <label className="block text-gray-700 font-medium">
+              <label htmlFor="contact-message" className="block text-gray-700 font-medium">
                 {t("contact.messageLabel")}
               </label>
               <textarea
+                id="contact-message"
                 name="message"
                 required
                 rows={10}
-                className="mt-1 w-full p-2 border border-gray-300 rounded-lg focus:border-gray-400 focus:ring-1 focus:ring-blue-200"
+                className="mt-1 w-full p-2 border border-gray-300 rounded-lg focus:border-primary focus:ring-2 focus:ring-primary/20"
               />
             </div>
+            {submitError && (
+              <p
+                id="contact-form-error"
+                className="text-sm font-medium text-red-700"
+                role="alert"
+              >
+                {submitError}
+              </p>
+            )}
 
             <button
               type="submit"
-              className="w-full bg-primary text-white py-2 rounded-lg hover:bg-blue-700 transition"
+              disabled={isSubmitting}
+              className="w-full bg-primary text-white py-2 rounded-lg hover:bg-secondary disabled:opacity-70 disabled:cursor-not-allowed transition-colors"
             >
-              {t("contact.submit")}
+              {isSubmitting
+                ? t("contact.submitting", { defaultValue: "Sending..." })
+                : t("contact.submit")}
             </button>
+            <p className="sr-only" aria-live="polite">
+              {isSubmitting
+                ? t("contact.submitting", { defaultValue: "Sending..." })
+                : ""}
+            </p>
           </form>
         </>
       )}

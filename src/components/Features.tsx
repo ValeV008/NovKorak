@@ -26,12 +26,31 @@ const Features = ({ translationKey = "features" }: FeaturesProps) => {
     | string;
   const features: FeatureTranslations =
     rawFeatures && typeof rawFeatures === "object" ? rawFeatures : {};
-  const { items } = features;
+  const { title, subtitle, description, items } = features;
   const featuresList = Array.isArray(items) ? items : [];
 
   return (
     <div className={"py-12 bg-background"} id="features">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {(title || subtitle || description) && (
+          <div className="max-w-3xl mx-auto text-center">
+            {title && (
+              <p className="text-sm font-semibold uppercase tracking-wider text-primary">
+                {title}
+              </p>
+            )}
+            {subtitle && (
+              <h2 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+                {subtitle}
+              </h2>
+            )}
+            {description && (
+              <p className="mt-4 text-base leading-relaxed text-gray-700">
+                {description}
+              </p>
+            )}
+          </div>
+        )}
         <div className="mt-10">
           <dl className="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
             {featuresList.map((feature: FeatureItem) => (
@@ -41,7 +60,7 @@ const Features = ({ translationKey = "features" }: FeaturesProps) => {
                     className={"absolute flex items-center justify-center h-12 w-12 rounded-md bg-background text-tertiary border-primary border-4"}
                   >
                     <Image
-                      className={"inline-block"}
+                      className="w-8 h-8 object-contain"
                       src={feature.icon}
                       alt={feature.name}
                       width={32}
@@ -52,7 +71,7 @@ const Features = ({ translationKey = "features" }: FeaturesProps) => {
                     {feature.name}
                   </p>
                 </dt>
-                <dd className="mt-2 ml-16 text-base text-justify">
+                <dd className="mt-2 ml-16 text-base leading-relaxed">
                   {feature.description}
                 </dd>
               </div>

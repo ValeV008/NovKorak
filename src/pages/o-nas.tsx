@@ -28,24 +28,24 @@ const ONasPage = () => {
             />
           </div>
           <div className="w-full sm:w-1/2 lg:text-left">
-            <h1 className="my-2 text-5xl tracking-tight font-bold text-gray-900 text-center lg:text-right">
+            <h1 className="my-2 text-3xl sm:text-4xl lg:text-5xl tracking-tight font-bold text-gray-900 text-center lg:text-right">
               {aboutMe.title}
               <br />
               <span className={" text-primary"}>{aboutMe.highlighted_title}</span>
             </h1>
             <Divider />
-            <p className="px-6 whitespace-pre-line">
+            <p className="px-6 whitespace-pre-line leading-relaxed max-w-3xl ml-auto">
               {t("aboutMePage.paragraph")}
             </p>
           </div>
         </div>
         <LazyShow>
         <div className="mt-12">
-            <h3 className="my-2 text-5xl tracking-tight font-bold text-gray-900 text-center lg:text-center">
+            <h3 className="my-2 text-3xl sm:text-4xl lg:text-5xl tracking-tight font-bold text-gray-900 text-center lg:text-center">
               {aboutMePage.trainingTitle}
           </h3>
           <Divider />
-          <ul className="list-disc px-6 sm:px-0 sm:pl-6 space-y-2">
+          <ul className="list-disc px-6 sm:px-0 sm:pl-6 space-y-2 max-w-4xl mx-auto leading-relaxed">
               {trainingItems.map((item: string, idx: number) => (
                 <li key={idx}>{item}</li>
               ))}

@@ -9,7 +9,7 @@ const OdrasliFor = () => {
   return (
     <section className="mx-auto container space-y-4 py-6">
       <h1
-          className={"mx-auto md:w-full my-2 text-5xl font-bold leading-tight text-center"}
+          className={"mx-auto md:w-full my-2 text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight text-center px-4"}
         >
           {odrasliForTexts.header.split(" ").map((word: string, index: number) => (
             <span
@@ -21,9 +21,9 @@ const OdrasliFor = () => {
           ))}
         </h1>
         <Divider />
-      <ul className="list-disc list-inside space-y-3  px-3 lg:px-[10%]">
+      <ul className="list-disc list-inside space-y-3 px-3 lg:px-[10%] max-w-5xl mx-auto">
         {odrasliForTexts.list.map((item: string, index: number) => (
-          <li key={index}>
+          <li key={index} className="leading-relaxed">
             {item}
           </li>
         ))}

@@ -99,7 +99,8 @@
   },
   "youngerHero": {
     "subtitle": "za otroke in mladostnike",
-    "description": "Delovna terapevtka spodbuja otroka k samostojnosti na različnih področjih.\n\nOkupacije so tiste stvari, ki so otroku všeč in jih rad dela ali pa so pomembne za njegovo delovanje v vsakdanjem življenju. Da bo lahko preizkušal kako hitro gredo lahko sanke po snegu, se mora najprej obleči.\n\nOsredotoča se na spretnosti, kjer otrok potrebuje usmerjanje, da jih bo lahko vnesel v igro.\n\nPediatrična delovna terapija se usmerja na različne starostne skupine otrok in mladostnikov.  V prvem letu pomaga dojenčkom pri handlingu, samostojnem hranjenju in požiranju, razvoju igre in fine motorike in razvijanju kvalitete gibanja v obliki grobe motorike."
+    "description": "Delovna terapevtka spodbuja otroka k samostojnosti na različnih področjih.\n\nOkupacije so tiste stvari, ki so otroku všeč in jih rad dela ali pa so pomembne za njegovo delovanje v vsakdanjem življenju. Da bo lahko preizkušal kako hitro gredo lahko sanke po snegu, se mora najprej obleči.\n\nOsredotoča se na spretnosti, kjer otrok potrebuje usmerjanje, da jih bo lahko vnesel v igro.\n\nPediatrična delovna terapija se usmerja na različne starostne skupine otrok in mladostnikov.  V prvem letu pomaga dojenčkom pri handlingu, samostojnem hranjenju in požiranju, razvoju igre in fine motorike in razvijanju kvalitete gibanja v obliki grobe motorike.",
+    "videoAlt": "Video predstavitev delovne terapije za otroke in mladostnike"
   },
   "featuresOdrasli": {
     "title": "Ne spreglejte ...",
@@ -229,7 +230,9 @@
     "emailLabel": "Elektronski naslov",
     "messageLabel": "Sporočilo",
     "submit": "Pošlji",
-    "success": "Hvala! Sporočilo je bilo poslano."
+    "submitting": "Pošiljanje ...",
+    "success": "Hvala! Sporočilo je bilo poslano.",
+    "error": "Pri pošiljanju sporočila je prišlo do napake. Poskusite znova."
   },
   "odrasliFor": {
     "header": "Delovna terapija je za tistega, ki:",

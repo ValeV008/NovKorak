@@ -28,22 +28,35 @@ const CenikPage = () => {
               className={"h-1 mx-auto bg-primary w-64 opacity-25 my-0 py-0 rounded-t"}
             ></div>
           </div>
-          <table className="w-full table-fixed border border-gray-200 rounded-lg overflow-hidden mb-8">
-            <thead className="bg-primary text-background">
-              <tr>
-                <th className="px-4 py-2 border-b border-gray-200 text-center">{t("cenikPage.headers.service")}</th>
-                <th className="px-4 py-2 border-b border-gray-200 text-center">{t("cenikPage.headers.price")}</th>
-              </tr>
-            </thead>
-            <tbody className="text-gray-900">
-              {items.map((item, idx) => (
-                <tr key={item.name} className={idx % 2 === 1 ? "bg-gray-50" : undefined}>
-                  <td className="px-4 py-2 border-b border-gray-200">{item.name}</td>
-                  <td className="px-4 py-2 border-b border-gray-200 text-center">{item.price}</td>
+          <div className="md:hidden space-y-3 mb-8">
+            {items.map((item) => (
+              <article
+                key={item.name}
+                className="rounded-lg border border-gray-200 bg-white p-4 shadow-sm"
+              >
+                <p className="font-semibold text-gray-900">{item.name}</p>
+                <p className="mt-1 text-primary font-bold">{item.price}</p>
+              </article>
+            ))}
+          </div>
+          <div className="hidden md:block overflow-x-auto mb-8">
+            <table className="w-full min-w-[640px] border border-gray-200 rounded-lg overflow-hidden">
+              <thead className="bg-primary text-background">
+                <tr>
+                  <th className="px-4 py-2 border-b border-gray-200 text-center">{t("cenikPage.headers.service")}</th>
+                  <th className="px-4 py-2 border-b border-gray-200 text-center">{t("cenikPage.headers.price")}</th>
                 </tr>
-              ))}
-            </tbody>
-          </table>
+              </thead>
+              <tbody className="text-gray-900">
+                {items.map((item, idx) => (
+                  <tr key={item.name} className={idx % 2 === 1 ? "bg-gray-50" : undefined}>
+                    <td className="px-4 py-2 border-b border-gray-200">{item.name}</td>
+                    <td className="px-4 py-2 border-b border-gray-200 text-center">{item.price}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
           <p className="text-sm italic mt-2">{t("cenikPage.note")}</p>
         </div>
       </section>

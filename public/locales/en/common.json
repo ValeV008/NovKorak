@@ -99,7 +99,8 @@
   },
   "youngerHero": {
     "subtitle": "for children and adolescents",
-    "description": "The occupational therapist encourages the child to be independent in various areas.\n\nOccupations are the things that the child enjoys and likes to do, or that are important for their functioning in everyday life. In order to try how fast the sled can go down the snow, they must first get dressed.\n\nIt focuses on the skills where the child needs guidance so they can bring them into play.\n\nPediatric occupational therapy targets different age groups of children and adolescents. In the first year, it helps infants with handling, independent feeding and swallowing, the development of play and fine motor skills, and the development of quality movement in the form of gross motor skills."
+    "description": "The occupational therapist encourages the child to be independent in various areas.\n\nOccupations are the things that the child enjoys and likes to do, or that are important for their functioning in everyday life. In order to try how fast the sled can go down the snow, they must first get dressed.\n\nIt focuses on the skills where the child needs guidance so they can bring them into play.\n\nPediatric occupational therapy targets different age groups of children and adolescents. In the first year, it helps infants with handling, independent feeding and swallowing, the development of play and fine motor skills, and the development of quality movement in the form of gross motor skills.",
+    "videoAlt": "Video presentation of occupational therapy for children and adolescents"
   },
   "featuresOdrasli": {
     "title": "Don't miss ...",
@@ -229,7 +230,9 @@
     "emailLabel": "Email address",
     "messageLabel": "Message",
     "submit": "Send",
-    "success": "Thank you! Your message has been sent."
+    "submitting": "Sending...",
+    "success": "Thank you! Your message has been sent.",
+    "error": "Sorry, something went wrong while sending your message. Please try again."
   },
   "odrasliFor": {
     "header": "Occupational therapy is for those, who:",
