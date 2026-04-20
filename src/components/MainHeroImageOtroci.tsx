@@ -3,10 +3,17 @@ import { useEffect, useRef } from "react";
 import { useTranslation } from "next-i18next";
 
 const MainHeroImageOtroci = () => {
-  const { t } = useTranslation("common");
+  const { i18n, t } = useTranslation("common");
+  const locale = i18n.language;
   const youngerHero = t("youngerHero", { returnObjects: true }) as any;
-  const videoSrc = "/assets/videos/OT_children_slo.mp4";
-  const posterSrc = "/assets/images/otroci/children_video_placeholder_slo.png";
+  const videoSrc =
+    locale === "sl"
+      ? "/assets/videos/OT_children_slo.mp4"
+      : "/assets/videos/OT_children_eng.mp4";
+  const posterSrc =
+    locale === "sl"
+      ? "/assets/images/otroci/children_video_placeholder_slo.png"
+      : "/assets/images/otroci/children_video_placeholder_eng.png";
 
   const videoRef = useRef<HTMLVideoElement | null>(null);
   useEffect(() => {
