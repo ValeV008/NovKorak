@@ -11,6 +11,14 @@
   body {
     @apply text-base text-gray-600;
   }
+
+  p {
+    @apply text-base sm:text-lg md:text-xl whitespace-pre-line leading-relaxed;
+  }
+
+  li {
+    @apply text-base sm:text-lg md:text-xl whitespace-pre-line leading-relaxed;
+  }
 }
 
 a:hover {

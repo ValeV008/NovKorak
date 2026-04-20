@@ -99,7 +99,7 @@
   },
   "youngerHero": {
     "subtitle": "za otroke in mladostnike",
-    "description": "Delovna terapevtka spodbuja otroka k samostojnosti na različnih področjih.\n\nOkupacije so tiste stvari, ki so otroku všeč in jih rad dela ali pa so pomembne za njegovo delovanje v vsakdanjem življenju. Da bo lahko preizkušal kako hitro gredo lahko sanke po snegu, se mora najprej obleči.\n\nOsredotoča se na spretnosti, kjer otrok potrebuje usmerjanje, da jih bo lahko vnesel v igro.\n\nPediatrična delovna terapija se usmerja na različne starostne skupine otrok in mladostnikov.  V prvem letu pomaga dojenčkom pri handlingu, samostojnem hranjenju in požiranju, razvoju igre in fine motorike in razvijanju kvalitete gibanja v obliki grobe motorike.",
+    "description": "Pediatrična delovna terapija se usmerja na različne starostne skupine otrok in mladostnikov. V prvem letu pomaga dojenčkom pri handlingu, samostojnem hranjenju in požiranju, razvoju igre in fine motorike in razvijanju kvalitete gibanja v obliki grobe motorike.\n\nV okviru delovne terapije otroci razvijajo samostojnost na različnih področjih.",
     "videoAlt": "Video predstavitev delovne terapije za otroke in mladostnike"
   },
   "featuresOdrasli": {
@@ -237,27 +237,27 @@
   "odrasliFor": {
     "header": "Delovna terapija je za tistega, ki:",
     "list": [
-      "Okreva po poškodbah mišično-skeletnega sistema ali operacijah (npr. zlomih kolka, operacija ramenskega obroča ali zgornjega uda/roke) in želi obnoviti ali ohraniti mišično funkcijo.",
-      "Se sooča s poškodbami centralnega živčnega sistema (npr. Možgansko-žilni dogodek/možganska kap, cerebralna paraliza, poškodbe hrbtenjače ali možganov …).",
-      "Se sooča z izzivi gibanja zaradi starostnih sprememb (npr. zmanjšana moč, gibljivost ali statično/dinamično ravnotežje).",
-      "Živi s kroničnimi boleznimi (npr. Parkinsonova bolezen, multipla skleroza, Huntingtonova bolezen).",
-      "Se sooča s kognitivnimi spremembami (npr. različne vrste demence, blaga kognitivna okvara), kjer je cilj ohraniti dnevno neodvisnost.",
-      "Ima težave s vsakodnevnimi aktivnostmi (npr. oblačenje, osebna higiena, kuhanje in nakupovanje).",
-      "Potrebujete prilagoditve svojega domačega okolja (npr. pripomočke, varne postavitve prostorov za preprečevanje padcev, prilagoditve kopalnice).",
-      "Želi uporabljati medicinsko-tehnične pripomočke, vendar išče ideje, kako jih uporabiti.",
-      "Živi v domačem okolju in želi ohraniti čim več neodvisnosti in kakovosti življenja.",
-      "Se sooča s socialnimi in psihološkimi izzivi (osamljenost, izguba motivacije ali depresija), kjer lahko delovna terapija ponudi smiselne aktivnosti in podporo."
+      "Okreva <strong>po poškodbah mišično-skeletnega sistema ali operacijah</strong> (npr. zlomih kolka, operacija ramenskega obroča ali zgornjega uda/roke) in želi obnoviti ali <strong>ohraniti mišično funkcijo</strong>.",
+      "Se <strong>sooča s poškodbami centralnega živčnega sistema</strong> (npr. Možgansko-žilni dogodek/možganska kap, cerebralna paraliza, poškodbe hrbtenjače ali možganov …).",
+      "Se <strong>sooča z izzivi gibanja</strong> zaradi starostnih sprememb (npr. zmanjšana moč, gibljivost ali statično/dinamično ravnotežje).",
+      "Živi s <strong>kroničnimi boleznimi</strong> (npr. Parkinsonova bolezen, multipla skleroza, Huntingtonova bolezen).",
+      "Se <strong>sooča s kognitivnimi spremembami</strong> (npr. različne vrste demence, blaga kognitivna okvara), kjer je cilj ohraniti dnevno neodvisnost.",
+      "Ima <strong>težave s vsakodnevnimi aktivnostmi</strong> (npr. oblačenje, osebna higiena, kuhanje in nakupovanje).",
+      "Potrebuje <strong>prilagoditve</strong> svojega <strong>domačega okolja</strong> (npr. pripomočke, varne postavitve prostorov za preprečevanje padcev, prilagoditve kopalnice).",
+      "Želi uporabljati <strong>medicinsko-tehnične pripomočke</strong>, vendar išče ideje, kako jih uporabiti.",
+      "Živi v domačem okolju in želi <strong>ohraniti</strong> čim več <strong>neodvisnosti in kakovosti življenja</strong>.",
+      "Se sooča s <strong>socialnimi in psihološkimi izzivi</strong> (osamljenost, izguba motivacije ali depresija), kjer lahko delovna terapija ponudi smiselne aktivnosti in podporo."
     ]
   },
   "otrociFor": {
     "header": "Z delovno terapijo v RUA, otroci lahko:",
     "list": [
-      "Razvijajo kvalitetne gibalne vzorce.",
-      "Razvijajo intrinzične mišice dlani za fino motoriko, manipulacijo predmetov ter koordinacijo zgornjih udov.",
-      "Razvijajo finomotorične spretnosti za prijem in izpust igrač, razvoj pincetnega prijema ter risanja, pisanja oz. grafomotorike.",
+      "Razvijajo <strong>kvalitetne gibalne vzorce</strong>.",
+      "Razvijajo intrinzične mišice dlani za <strong>fino motoriko, manipulacijo predmetov ter koordinacijo zgornjih udov</strong>.",
+      "Razvijajo finomotorične spretnosti za prijem in izpust igrač, razvoj pincetnega prijema ter risanja, pisanja oz. <strong>grafomotorike</strong>.",
       "Krepijo koordinacijo oko-roka (za namen igre ali šolskih spretnosti).",
-      "Osvojijo Osnovne Dnevne Aktivnosti, kot so oblačenje, umivanje zob, hranjenje.",
-      "Prejmejo informacije o uporabi specifičnih pripomočkov za gibanje, držanje pisala, obuvanja nogavic …"
+      "Osvojijo <strong>Osnovne Dnevne Aktivnosti</strong>, kot so oblačenje, umivanje zob, hranjenje.",
+      "Prejmejo informacije o uporabi specifičnih <strong>medicinsko-tehničnih pripomočkov</strong> za gibanje, držanje pisala, obuvanja nogavic …"
     ],
     "extra": "Srečanja dajejo spodbude za razvoj na fizičnem in kognitivnem razvoju. Z elementi senzorne integracije prepoznamo, uravnavamo  organiziramo in integriramo občutke in čutila v telesu za učinkovito delovanje v okolju.\nV terapijo aktivno vključujemo tudi starše oz. skrbnike, da videno prenesejo v domače okolje. Zavedamo se pomembnosti 24urnega placinga.\nSvetujemo glede potencialnih prilagoditev vrtčevskega/šolskega/domačega okolja in uporabe terapevtskih pripomočkov."
   },

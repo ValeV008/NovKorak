@@ -1,4 +1,4 @@
-import { useTranslation } from "next-i18next";
+import { Trans, useTranslation } from "next-i18next";
 
 import Divider from "./Divider";
 
@@ -22,9 +22,13 @@ const OdrasliFor = () => {
         </h1>
         <Divider />
       <ul className="list-disc list-inside space-y-3 px-3 lg:px-[10%] max-w-5xl mx-auto">
-        {odrasliForTexts.list.map((item: string, index: number) => (
-          <li key={index} className="leading-relaxed">
-            {item}
+        {odrasliForTexts.list.map((_: string, index: number) => (
+          <li key={index}>
+            <Trans
+              i18nKey={`odrasliFor.list.${index}`}
+              t={t}
+              components={{ strong: <strong /> }}
+            />
           </li>
         ))}
       </ul>

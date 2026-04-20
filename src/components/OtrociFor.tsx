@@ -1,4 +1,4 @@
-import { useTranslation } from "next-i18next";
+import { Trans, useTranslation } from "next-i18next";
 
 import Divider from "./Divider";
 
@@ -22,14 +22,18 @@ const OtrociFor = () => {
         </h1>
         <Divider />
       <ul className="list-disc list-inside space-y-3 px-3 lg:px-[10%] max-w-5xl mx-auto">
-        {otrociForTexts.list.map((item: string, index: number) => (
-          <li key={index} className="text-base leading-relaxed">
-            {item}
+        {otrociForTexts.list.map((_: string, index: number) => (
+          <li key={index}>
+            <Trans
+              i18nKey={`otrociFor.list.${index}`}
+              t={t}
+              components={{ strong: <strong /> }}
+            />
           </li>
         ))}
       </ul>
       <br />
-      <p className="text-base leading-relaxed px-3 lg:px-[10%] max-w-5xl mx-auto whitespace-pre-line">
+      <p className="px-3 lg:px-[10%] max-w-5xl mx-auto">
         {otrociForTexts.extra}
       </p>
     </section>

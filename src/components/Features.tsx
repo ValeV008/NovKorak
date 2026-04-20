@@ -45,7 +45,7 @@ const Features = ({ translationKey = "features" }: FeaturesProps) => {
               </h2>
             )}
             {description && (
-              <p className="mt-4 text-base leading-relaxed text-gray-700">
+              <p className="mt-4">
                 {description}
               </p>
             )}
