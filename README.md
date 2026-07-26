@@ -75,7 +75,7 @@ You can create an optimised production build with:
 
 ```
 npx prettier --write .
-yarn build-prod
+yarn build
 ```
 
 ### Contributions

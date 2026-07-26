@@ -3,24 +3,16 @@ import { Fragment, useCallback, useState } from "react";
 import { useTranslation } from "next-i18next";
 import { useTopLoader } from "nextjs-toploader";
 
-import {
-  Popover,
-  PopoverButton,
-  PopoverPanel,
-  Transition,
-} from "@headlessui/react";
+import { Popover, PopoverButton, PopoverPanel, Transition } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { Link as ScrollLink } from "react-scroll";
 
 const Menu = () => {
   const { t } = useTranslation("common");
   const navigationRaw = t("navigation", { returnObjects: true });
-  const navigation: Array<{ name: string; href: string }> = Array.isArray(
-    navigationRaw
-  )
+  const navigation: Array<{ name: string; href: string }> = Array.isArray(navigationRaw)
     ? (navigationRaw as any)
     : [];
 
@@ -62,10 +54,7 @@ const Menu = () => {
     >
       <Popover>
         <div className="relative pt-6 px-4 sm:px-6 lg:px-8 pb-1">
-          <nav
-            className="relative flex items-center justify-between"
-            aria-label="Global"
-          >
+          <nav className="relative flex items-center justify-between" aria-label="Global">
             <div className="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
               <div className="flex items-center md:space-x-6 w-full md:w-auto">
                 <Link href="/" passHref>
@@ -86,10 +75,8 @@ const Menu = () => {
                   type="button"
                   onClick={() => handleLanguageChange("sl")}
                   disabled={isLanguageLoading}
-                  className={`text-sm font-semibold focus:outline-none mr-1 disabled:opacity-60 disabled:cursor-not-allowed ${
-                    locale === "sl"
-                      ? "text-primary"
-                      : "text-gray-700 hover:text-primary"
+                  className={`text-sm font-semibold cursor-pointer focus:outline-none mr-1 disabled:opacity-60 disabled:cursor-not-allowed ${
+                    locale === "sl" ? "text-primary" : "text-gray-700 hover:text-primary"
                   }`}
                   aria-pressed={locale === "sl"}
                   aria-busy={isLanguageLoading}
@@ -101,10 +88,8 @@ const Menu = () => {
                   type="button"
                   onClick={() => handleLanguageChange("en")}
                   disabled={isLanguageLoading}
-                  className={`text-sm font-semibold focus:outline-none ml-1 disabled:opacity-60 disabled:cursor-not-allowed ${
-                    locale === "en"
-                      ? "text-primary"
-                      : "text-gray-700 hover:text-primary"
+                  className={`text-sm font-semibold cursor-pointer focus:outline-none ml-1 disabled:opacity-60 disabled:cursor-not-allowed ${
+                    locale === "en" ? "text-primary" : "text-gray-700 hover:text-primary"
                   }`}
                   aria-pressed={locale === "en"}
                   aria-busy={isLanguageLoading}
@@ -119,7 +104,9 @@ const Menu = () => {
                 )}
               </div>
               <PopoverButton
-                className={"bg-background rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-secondary"}
+                className={
+                  "bg-background rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-secondary"
+                }
               >
                 <span className="sr-only">Open main menu</span>
                 <Bars3Icon className="h-6 w-6" aria-hidden="true" />
@@ -136,9 +123,7 @@ const Menu = () => {
                         href={item.href}
                         aria-current={isCurrent ? "page" : undefined}
                         className={`font-medium cursor-pointer ${
-                          isCurrent
-                            ? "text-primary"
-                            : "text-gray-500 hover:text-gray-900"
+                          isCurrent ? "text-primary" : "text-gray-500 hover:text-gray-900"
                         }`}
                       >
                         {item.name}
@@ -146,23 +131,17 @@ const Menu = () => {
                     );
                   }
                   return isHome ? (
-                    <ScrollLink
-                      spy={true}
-                      active="active"
-                      smooth={true}
-                      duration={1000}
+                    <a
                       key={item.name}
-                      to={item.href.replace(/^#/, "")}
+                      href={`#${item.href.replace(/^#/, "")}`}
                       className="font-medium text-gray-500 hover:text-gray-900 cursor-pointer"
                     >
                       {item.name}
-                    </ScrollLink>
+                    </a>
                   ) : (
                     <Link
                       key={item.name}
-                      href={`/${
-                        item.href.startsWith("#") ? item.href : `#${item.href}`
-                      }`
+                      href={`/${item.href.startsWith("#") ? item.href : `#${item.href}`}`
                         .replace("//#", "/#")
                         .replace("//", "/")}
                       className="font-medium text-gray-500 hover:text-gray-900 cursor-pointer"
@@ -178,10 +157,8 @@ const Menu = () => {
                     type="button"
                     onClick={() => handleLanguageChange("sl")}
                     disabled={isLanguageLoading}
-                    className={`text-sm font-semibold focus:outline-none mr-1 disabled:opacity-60 disabled:cursor-not-allowed ${
-                      locale === "sl"
-                        ? "text-primary"
-                        : "text-gray-700 hover:text-primary"
+                    className={`text-sm font-semibold cursor-pointer focus:outline-none mr-1 disabled:opacity-60 disabled:cursor-not-allowed ${
+                      locale === "sl" ? "text-primary" : "text-gray-700 hover:text-primary"
                     }`}
                     aria-pressed={locale === "sl"}
                     aria-busy={isLanguageLoading}
@@ -193,10 +170,8 @@ const Menu = () => {
                     type="button"
                     onClick={() => handleLanguageChange("en")}
                     disabled={isLanguageLoading}
-                    className={`text-sm font-semibold focus:outline-none ml-1 disabled:opacity-60 disabled:cursor-not-allowed ${
-                      locale === "en"
-                        ? "text-primary"
-                        : "text-gray-700 hover:text-primary"
+                    className={`text-sm font-semibold cursor-pointer focus:outline-none ml-1 disabled:opacity-60 disabled:cursor-not-allowed ${
+                      locale === "en" ? "text-primary" : "text-gray-700 hover:text-primary"
                     }`}
                     aria-pressed={locale === "en"}
                     aria-busy={isLanguageLoading}
@@ -211,16 +186,12 @@ const Menu = () => {
                   )}
                 </div>
                 {isHome ? (
-                  <ScrollLink
-                    spy={true}
-                    active="active"
-                    smooth={true}
-                    duration={1000}
-                    to={mainHero.secondaryAction.href.replace(/^#/, "")}
+                  <a
+                    href={`#${mainHero.secondaryAction.href.replace(/^#/, "")}`}
                     className="px-6 py-2 rounded-md bg-primary text-white font-semibold hover:bg-secondary transition-colors duration-200 shadow-lg cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary"
                   >
                     {locale === "sl" ? "Kontakt" : "Contact"}
-                  </ScrollLink>
+                  </a>
                 ) : (
                   <Link
                     href={`/${
@@ -254,21 +225,19 @@ const Menu = () => {
             className="fixed z-50 top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden"
           >
             <div
-              className={"rounded-lg shadow-md bg-background ring-1 ring-black ring-opacity-5 overflow-hidden"}
+              className={
+                "rounded-lg shadow-md bg-background ring-1 ring-black ring-opacity-5 overflow-hidden"
+              }
             >
               <div className="px-5 pt-4 flex items-center justify-between">
                 <div>
-                  <Image
-                    className="h-8 w-auto"
-                    src={logoSrc}
-                    alt=""
-                    width={32}
-                    height={32}
-                  />
+                  <Image className="h-8 w-auto" src={logoSrc} alt="" width={32} height={32} />
                 </div>
                 <div className="-mr-2">
                   <PopoverButton
-                    className={"bg-background rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-secondary"}
+                    className={
+                      "bg-background rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-secondary"
+                    }
                   >
                     <span className="sr-only">Close main menu</span>
                     <XMarkIcon className="h-6 w-6" aria-hidden="true" />
@@ -295,23 +264,17 @@ const Menu = () => {
                     );
                   }
                   return isHome ? (
-                    <ScrollLink
-                      spy={true}
-                      active="active"
-                      smooth={true}
-                      duration={1000}
+                    <a
                       key={item.name}
-                      to={item.href.replace(/^#/, "")}
+                      href={`#${item.href.replace(/^#/, "")}`}
                       className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
                     >
                       {item.name}
-                    </ScrollLink>
+                    </a>
                   ) : (
                     <Link
                       key={item.name}
-                      href={`/${
-                        item.href.startsWith("#") ? item.href : `#${item.href}`
-                      }`
+                      href={`/${item.href.startsWith("#") ? item.href : `#${item.href}`}`
                         .replace("//#", "/#")
                         .replace("//", "/")}
                       className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"

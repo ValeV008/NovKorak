@@ -1,18 +1,34 @@
-import { ReactNode } from "react";
-
-import { motion } from "framer-motion";
+import { ReactNode, useEffect, useRef, useState } from "react";
 
 const LazyShow = ({ children }: { children: ReactNode }) => {
+  const elementRef = useRef<HTMLDivElement>(null);
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const element = elementRef.current;
+    if (!element) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry?.isIntersecting) {
+          setIsVisible(true);
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.2 }
+    );
+
+    observer.observe(element);
+    return () => observer.disconnect();
+  }, []);
+
   return (
-    <motion.div
-      className="lazy-div"
-      initial={{ opacity: 0, x: -50 }}
-      whileInView={{ opacity: 1, x: 0 }}
-      viewport={{ once: true, amount: 0.2 }}
-      transition={{ duration: 0.8, ease: "easeOut" }}
+    <div
+      ref={elementRef}
+      className={`lazy-div ${isVisible ? "lazy-div--visible" : ""}`}
     >
       {children}
-    </motion.div>
+    </div>
   );
 };
 

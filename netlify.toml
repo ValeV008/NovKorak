@@ -1,10 +1,9 @@
 [build]
-  # Netlify Next.js plugin will handle the .next output; for SSG you can keep publish empty or set to .next
-  #publish = ".next"
-  # Use yarn instead of npm to match project packageManager
-  command = "yarn build-prod"
+  # Netlify Next.js plugin handles the .next output.
+  command = "yarn build"
+
 [build.environment]
-  NODE_VERSION = "22.0.0"
+  NODE_VERSION = "22"
 
 [[plugins]]
-  package = "@netlify/plugin-nextjs"  # This enables the Next.js runtime on Netlify
+  package = "@netlify/plugin-nextjs"
