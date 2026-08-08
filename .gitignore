@@ -3,6 +3,9 @@
 #redesign sources
 context/redesign_pages
 
+#codex config
+.codex/config.toml
+
 # dependencies
 /node_modules
 /.pnp

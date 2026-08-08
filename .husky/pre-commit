@@ -1,2 +1,4 @@
+#!/usr/bin/env sh
+
 # Run type-checking after ESLint to keep hook output deterministic.
 yarn lint-staged --concurrent false

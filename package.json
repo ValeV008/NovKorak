@@ -2,7 +2,7 @@
   "name": "react-landing-page-2021",
   "version": "1.0.0",
   "engines": {
-    "node": ">=22 <23"
+    "node": ">=22 <27"
   },
   "scripts": {
     "dev": "next dev",
