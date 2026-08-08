@@ -1,10 +1,38 @@
 {
   "company": {
-    "name": "Nov Korak",
-    "logoOrange": "/assets/images/logo/logo_orange.jpg",
-    "logoOrangeSubtext": "/assets/images/logo/logo_orange_subtext.jpg",
-    "logoWhite": "/assets/images/logo/logo_white.jpg",
+    "name": "RUA",
+    "logoOrange": "/assets/rua-logo.png",
+    "logoOrangeSubtext": "/assets/rua-logo.png",
+    "logoWhite": "/assets/rua-logo.png",
     "collageImage": "/assets/images/homepage_kolaz.png"
+  },
+  "shell": {
+    "metaTitle": "RUA | Occupational therapy",
+    "brandAlt": "RUA \u2014 Rehabilitation \u00b7 Art \u00b7 Activity",
+    "navigationLabel": "Main navigation",
+    "menuOpen": "Open main menu",
+    "menuClose": "Close main menu",
+    "languageLabel": "Choose language",
+    "localeSl": "SLO",
+    "localeEn": "ENG",
+    "contact": "Book a session",
+    "navigation": [
+      { "name": "Children & adolescents", "href": "/otroci" },
+      { "name": "Older adults", "href": "/odrasli" },
+      { "name": "Pricing", "href": "/cenik" },
+      { "name": "About us", "href": "/o-nas" }
+    ],
+    "footer": {
+      "tagline": "Occupational therapy for the young and the old.",
+      "servicesHeading": "Services",
+      "linksHeading": "Links",
+      "contactHeading": "Contact",
+      "email": "ruaterapija@gmail.com",
+      "phone": "+386 40 287 507",
+      "serviceArea": "Ljubljana in okolica",
+      "copyright": "\u00a9 2026 RUA, delovna terapija",
+      "backHome": "\u2190 Back to home"
+    }
   },
   "navigation": [
     {

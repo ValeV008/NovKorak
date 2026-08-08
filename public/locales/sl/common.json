@@ -1,10 +1,38 @@
 {
   "company": {
-    "name": "Nov Korak",
-    "logoOrange": "/assets/images/logo/logo_orange.jpg",
-    "logoOrangeSubtext": "/assets/images/logo/logo_orange_subtext.jpg",
-    "logoWhite": "/assets/images/logo/logo_white.jpg",
+    "name": "RUA",
+    "logoOrange": "/assets/rua-logo.png",
+    "logoOrangeSubtext": "/assets/rua-logo.png",
+    "logoWhite": "/assets/rua-logo.png",
     "collageImage": "/assets/images/homepage_kolaz.png"
+  },
+  "shell": {
+    "metaTitle": "RUA | Delovna terapija",
+    "brandAlt": "RUA \u2014 Rehabilitacija \u00b7 Umetnost \u00b7 Aktivnost",
+    "navigationLabel": "Glavna navigacija",
+    "menuOpen": "Odpri glavni meni",
+    "menuClose": "Zapri glavni meni",
+    "languageLabel": "Izberite jezik",
+    "localeSl": "SLO",
+    "localeEn": "ENG",
+    "contact": "Rezervirajte termin",
+    "navigation": [
+      { "name": "Otroci in mladostniki", "href": "/otroci" },
+      { "name": "Starejši odrasli", "href": "/odrasli" },
+      { "name": "Cenik", "href": "/cenik" },
+      { "name": "O nas", "href": "/o-nas" }
+    ],
+    "footer": {
+      "tagline": "Delovna terapija za majhne in velike.",
+      "servicesHeading": "Obravnave",
+      "linksHeading": "Povezave",
+      "contactHeading": "Kontakt",
+      "email": "ruaterapija@gmail.com",
+      "phone": "+386 40 287 507",
+      "serviceArea": "Ljubljana in okolica",
+      "copyright": "\u00a9 2026 RUA, delovna terapija",
+      "backHome": "\u2190 Nazaj na domačo stran"
+    }
   },
   "navigation": [
     {

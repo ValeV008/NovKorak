@@ -6,8 +6,8 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
 import aboutMePic from "../../public/assets/images/aboutMe.png";
 import Divider from "../components/Divider";
-import Header from "../components/Header";
 import LazyShow from "../components/LazyShow";
+import SiteShell from "../components/SiteShell";
 
 const ONasPage = () => {
   const { t } = useTranslation("common");
@@ -16,8 +16,8 @@ const ONasPage = () => {
   const trainingItems = (aboutMePage?.trainingList ?? []) as string[];
 
   return (
+    <SiteShell>
     <div className="bg-background">
-      <Header />
       <main className="max-w-5xl mx-auto py-8" id="aboutMe">
         <div className="flex flex-col-reverse sm:flex-row sm:items-end sm:space-x-10">
           <div className="w-full sm:w-1/2">
@@ -54,6 +54,7 @@ const ONasPage = () => {
         </LazyShow>
       </main>
     </div>
+    </SiteShell>
   );
 };
 
