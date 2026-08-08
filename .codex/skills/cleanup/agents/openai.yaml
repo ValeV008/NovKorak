@@ -1,0 +1,4 @@
+interface:
+  display_name: "NovKorak Cleanup"
+  short_description: "Review and selectively fix NovKorak housekeeping"
+  default_prompt: "Use $cleanup to inspect NovKorak housekeeping in check mode."

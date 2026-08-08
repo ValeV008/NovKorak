@@ -1,0 +1,4 @@
+interface:
+  display_name: "NovKorak Feature Workflow"
+  short_description: "Run the NovKorak feature delivery workflow"
+  default_prompt: "Use $feature to review the active NovKorak feature."
