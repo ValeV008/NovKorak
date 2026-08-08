@@ -3,7 +3,7 @@ import { useTranslation } from "next-i18next";
 
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
-import Header from "../components/Header";
+import SiteShell from "../components/SiteShell";
 
 const CenikPage = () => {
   const { t } = useTranslation("common");
@@ -12,8 +12,8 @@ const CenikPage = () => {
     ? (itemsRaw as any)
     : [];
   return (
+    <SiteShell>
     <div className={"bg-background grid gap-y-8 xl:gap-y-16"}>
-      <Header />
       <section className={"bg-background py-8"} id="pricing">
         <div
           className={"container max-w-5xl mx-auto px-2 pt-4 pb-12"}
@@ -61,6 +61,7 @@ const CenikPage = () => {
         </div>
       </section>
     </div>
+    </SiteShell>
   );
 };
 

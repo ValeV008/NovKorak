@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 
-import { appWithTranslation } from "next-i18next";
+import { appWithTranslation, useTranslation } from "next-i18next";
 import NextTopLoader from "nextjs-toploader";
 
 import { AppProps } from "next/app";
@@ -12,6 +12,7 @@ import { AppConfig } from "../utils/AppConfig";
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
   const { locale } = useRouter();
+  const { t } = useTranslation("common");
 
   useEffect(() => {
     document.documentElement.lang = locale || AppConfig.locale;
@@ -20,9 +21,9 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
   return (
     <>
       <Head>
-        <title>Nov Korak</title>
+        <title>{t("shell.metaTitle")}</title>
       </Head>
-      <NextTopLoader color="#f2b70d" showSpinner={false} />
+      <NextTopLoader color="#f5ba01" showSpinner={false} />
       <Component {...pageProps} />
     </>
   );
