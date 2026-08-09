@@ -417,16 +417,56 @@
     "videoPause": "Pause",
     "checklistTitle": "Occupational therapy is for someone who:",
     "checklist": [
-      { "pre": "Is ", "bold": "recovering from musculoskeletal injuries or surgery", "post": " (e.g. hip fracture, shoulder or upper-limb surgery) and wants to restore or maintain muscle function." },
-      { "pre": "Is ", "bold": "facing central nervous system injuries", "post": " (e.g. stroke, cerebral palsy, spinal cord or brain injuries)." },
-      { "pre": "Faces ", "bold": "movement challenges", "post": " due to age-related changes (e.g. reduced strength, mobility or balance)." },
-      { "pre": "Lives with ", "bold": "chronic illnesses", "post": " (e.g. Parkinson’s, multiple sclerosis, Huntington’s disease)." },
-      { "pre": "Is ", "bold": "facing cognitive changes", "post": " (e.g. various dementias, mild cognitive impairment), where the goal is to maintain daily independence." },
-      { "pre": "Has ", "bold": "difficulties with everyday activities", "post": " (e.g. dressing, personal hygiene, cooking and shopping)." },
-      { "pre": "Needs ", "bold": "home environment adaptations", "post": " (e.g. aids, safe room layouts to prevent falls, bathroom adaptations)." },
-      { "pre": "Wants to use ", "bold": "medical-technical aids", "post": " but is looking for ideas on how to use them." },
-      { "pre": "Lives at home and wants to ", "bold": "maintain independence and quality of life", "post": "." },
-      { "pre": "Faces ", "bold": "social and psychological challenges", "post": " (loneliness, loss of motivation or depression), where occupational therapy offers meaningful activities and support." }
+      {
+        "pre": "Is ",
+        "bold": "recovering from musculoskeletal injuries or surgery",
+        "post": " (e.g. hip fracture, shoulder or upper-limb surgery) and wants to restore or maintain muscle function."
+      },
+      {
+        "pre": "Is ",
+        "bold": "facing central nervous system injuries",
+        "post": " (e.g. stroke, cerebral palsy, spinal cord or brain injuries)."
+      },
+      {
+        "pre": "Faces ",
+        "bold": "movement challenges",
+        "post": " due to age-related changes (e.g. reduced strength, mobility or balance)."
+      },
+      {
+        "pre": "Lives with ",
+        "bold": "chronic illnesses",
+        "post": " (e.g. Parkinson’s, multiple sclerosis, Huntington’s disease)."
+      },
+      {
+        "pre": "Is ",
+        "bold": "facing cognitive changes",
+        "post": " (e.g. various dementias, mild cognitive impairment), where the goal is to maintain daily independence."
+      },
+      {
+        "pre": "Has ",
+        "bold": "difficulties with everyday activities",
+        "post": " (e.g. dressing, personal hygiene, cooking and shopping)."
+      },
+      {
+        "pre": "Needs ",
+        "bold": "home environment adaptations",
+        "post": " (e.g. aids, safe room layouts to prevent falls, bathroom adaptations)."
+      },
+      {
+        "pre": "Wants to use ",
+        "bold": "medical-technical aids",
+        "post": " but is looking for ideas on how to use them."
+      },
+      {
+        "pre": "Lives at home and wants to ",
+        "bold": "maintain independence and quality of life",
+        "post": "."
+      },
+      {
+        "pre": "Faces ",
+        "bold": "social and psychological challenges",
+        "post": " (loneliness, loss of motivation or depression), where occupational therapy offers meaningful activities and support."
+      }
     ],
     "followUp": [
       "Through shared goals we carry out activities that promote health and wellbeing and the most successful performance of prioritised everyday activities.",
@@ -434,10 +474,30 @@
     ],
     "approachesTitle": "Approaches",
     "approaches": [
-      { "title": "Bobath concept", "text": "A rehabilitation approach for neurological conditions based on quality of movement and activity. The emphasis is on the person transferring learning into everyday daily activities and occupations.", "icon": "/assets/images/odrasli/icon-bobath-odrasli.png", "iconAlt": "Bobath concept icon" },
-      { "title": "Neuromuscular taping", "text": "A technique influencing the musculoskeletal, vascular, lymphatic and neurological system, using (de)compressive stimuli with an adhesive elastic tape to support the body’s natural healing.", "icon": "/assets/images/odrasli/icon-taping.png", "iconAlt": "Neuromuscular taping icon" },
-      { "title": "Occupational therapy with Montessori elements", "text": "When working with people with dementia, a holistic understanding of the individual is essential — one that goes beyond diagnosis and includes their abilities, interests and life experience. The Montessori approach for dementia and ageing is based on self-respect, choice and active contribution to the community.", "icon": "/assets/images/odrasli/icon-montessori-odrasli.png", "iconAlt": "Montessori pedagogy icon" },
-      { "title": "Expressive arts therapies", "text": "Art therapy guides the person through a process of expression and creation. Through music, drama or visual art therapy comes self-expression, physical and mental wellbeing and personal growth. Our goal is the process of experiencing, not the final product.", "icon": "/assets/images/odrasli/icon-umetnost.png", "iconAlt": "Expressive arts therapies icon" }
+      {
+        "title": "Bobath concept",
+        "text": "A rehabilitation approach for neurological conditions based on quality of movement and activity. The emphasis is on the person transferring learning into everyday daily activities and occupations.",
+        "icon": "/assets/images/odrasli/icon-bobath-odrasli.png",
+        "iconAlt": "Bobath concept icon"
+      },
+      {
+        "title": "Neuromuscular taping",
+        "text": "A technique influencing the musculoskeletal, vascular, lymphatic and neurological system, using (de)compressive stimuli with an adhesive elastic tape to support the body’s natural healing.",
+        "icon": "/assets/images/odrasli/icon-taping.png",
+        "iconAlt": "Neuromuscular taping icon"
+      },
+      {
+        "title": "Occupational therapy with Montessori elements",
+        "text": "When working with people with dementia, a holistic understanding of the individual is essential — one that goes beyond diagnosis and includes their abilities, interests and life experience. The Montessori approach for dementia and ageing is based on self-respect, choice and active contribution to the community.",
+        "icon": "/assets/images/odrasli/icon-montessori-odrasli.png",
+        "iconAlt": "Montessori pedagogy icon"
+      },
+      {
+        "title": "Expressive arts therapies",
+        "text": "Art therapy guides the person through a process of expression and creation. Through music, drama or visual art therapy comes self-expression, physical and mental wellbeing and personal growth. Our goal is the process of experiencing, not the final product.",
+        "icon": "/assets/images/odrasli/icon-umetnost.png",
+        "iconAlt": "Expressive arts therapies icon"
+      }
     ]
   },
   "contact": {
@@ -486,19 +546,20 @@
     "extra": "Sessions encourage progress in both physical and cognitive development. With elements of sensory integration we recognize, regulate, organize, and integrate sensations in the body for effective participation in the environment.\nWe actively involve parents or guardians in therapy so they can transfer what they observe to the home environment. We understand the importance of 24-hour positioning.\nWe advise on possible adjustments in preschool, school, or home settings and on the use of therapeutic aids."
   },
   "cenikPage": {
-    "title": "Price list",
+    "title": "Price",
+    "titleAccent": "list",
+    "caption": "RUA service price list",
     "headers": {
       "service": "Service",
       "price": "Price"
     },
     "items": [
-      { "name": "First session (documentation review and session)", "price": "75 €" },
-      { "name": "Session", "price": "60 €" },
-      { "name": "Kinesiotaping", "price": "10 €" },
-      { "name": "Online consultation (30 min)", "price": "30 €" },
-      { "name": "Online consultation (60 min)", "price": "60 €" },
-      { "name": "Occupational therapy report", "price": "30 €" }
+      { "name": "First session (review of documentation and treatment)", "price": "€75" },
+      { "name": "Package of 3 / 6 sessions", "price": "€200 / €390" },
+      { "name": "Kinesiotaping", "price": "€10" },
+      { "name": "Remote consultation / telerehabilitation (30 min)", "price": "€30" },
+      { "name": "Occupational therapy report", "price": "€30" }
     ],
-    "note": "*Therapies are performed at the client's home. For locations outside our regular operation area, travel costs are charged according to the official mileage rate."
+    "note": "*Therapies take place at the client's home. For locations outside our regular area, travel costs are charged per the official mileage rate."
   }
 }
