@@ -1,53 +1,15 @@
 import { GetStaticProps } from "next";
-import { useTranslation } from "next-i18next";
 
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
-import Features from "../components/Features";
-import LazyShow from "../components/LazyShow";
-import MainHeroImageOdrasli from "../components/MainHeroImageOdrasli";
-import MainHeroOdrasli from "../components/MainHeroOdrasli";
-import OdrasliFor from "../components/OdrasliFor";
+import OlderAdultsPage from "../components/OlderAdultsPage";
 import SiteShell from "../components/SiteShell";
 
-const OdrasliPage = () => {
-  const { t } = useTranslation("common");
-  const mainHero = t("mainHero", { returnObjects: true }) as any;
-  const elderlyHero = t("elderlyHero", { returnObjects: true }) as any;
-
-  return (
-    <SiteShell>
-    <div className={"bg-background grid gap-y-8 xl:gap-y-16"}>
-      <div className={"relative bg-background"}>
-        <div className="max-w-7xl mx-auto">
-          <h1 className="text-4xl font-extrabold text-gray-900 sm:text-5xl md:text-6xl mx-auto text-center">
-            <span className="block xl:inline">{mainHero.title}</span>{" "}
-            <span className={"block text-primary xl:inline"}>
-              {elderlyHero.subtitle}
-            </span>
-          </h1>
-          <div className="pt-10 flex flex-col lg:flex-row lg:items-stretch">
-            <div className="relative z-10 bg-background w-full lg:w-1/2 lg:flex lg:flex-col lg:justify-end">
-              <MainHeroOdrasli />
-            </div>
-            <div className="w-full lg:w-1/2 lg:flex lg:flex-col lg:justify-end">
-              <MainHeroImageOdrasli />
-            </div>
-          </div>
-        </div>
-      </div>
-      <LazyShow>
-        <>
-          <OdrasliFor />
-        </>
-      </LazyShow>
-      <LazyShow>
-        <Features translationKey="featuresOdrasli" />
-      </LazyShow>
-    </div>
-    </SiteShell>
-  );
-};
+const OdrasliPage = () => (
+  <SiteShell>
+    <OlderAdultsPage />
+  </SiteShell>
+);
 
 export default OdrasliPage;
 

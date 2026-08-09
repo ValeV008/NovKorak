@@ -403,6 +403,43 @@
       }
     ]
   },
+  "olderAdultsPage": {
+    "title": "Delovna terapija",
+    "titleAccent": "za starejše odrasle",
+    "intro": [
+      "Delovna terapija je zdravstvena stroka, delovni terapevt pa zdravstveni delavec, ki spodbuja posameznika k vključevanju v njemu/njej smiselne dejavnosti vsakodnevnega življenja. Osredotočamo se na izboljševanje oz. ohranjanje zdravstvenega stanja na področju telesnih funkcij in struktur ter duševnega zdravja.",
+      "Naši skupni cilji so izvajanje aktivnosti za spodbujanje zdravja, dobrega počutja in čimbolj uspešno opravljanje prioritetno postavljenih dejavnosti.",
+      "Pogledali bomo tudi sodelovanje v širših dnevnih aktivnostih, oceno okoljskih dejavnikov tveganja, preprečevanje padcev ter svetovanje glede prilagoditve doma za večjo varnost. Z osebo se pogovarjamo o uporabi ortotskih in medicinsko-tehničnih pripomočkov, s svojci pa o podporni tehnologiji za večjo samostojnost."
+    ],
+    "videoAlt": "Video predstavitev delovne terapije za starejše odrasle",
+    "videoFallback": "Vaš brskalnik ne podpira predvajanja videa.",
+    "videoPlay": "Predvajaj",
+    "videoPause": "Ustavi",
+    "checklistTitle": "Delovna terapija je za tistega, ki:",
+    "checklist": [
+      { "pre": "Okreva ", "bold": "po poškodbah mišično-skeletnega sistema ali operacijah", "post": " (npr. zlom kolka, operacija ramenskega obroča ali zgornjega uda) in želi obnoviti ali ohraniti mišično funkcijo." },
+      { "pre": "Se ", "bold": "sooča s poškodbami centralnega živčnega sistema", "post": " (npr. možganska kap, cerebralna paraliza, poškodbe hrbtenjače ali možganov)." },
+      { "pre": "Se ", "bold": "sooča z izzivi gibanja", "post": " zaradi starostnih sprememb (npr. zmanjšana moč, gibljivost ali ravnotežje)." },
+      { "pre": "Živi s ", "bold": "kroničnimi boleznimi", "post": " (npr. Parkinsonova bolezen, multipla skleroza, Huntingtonova bolezen)." },
+      { "pre": "Se ", "bold": "sooča s kognitivnimi spremembami", "post": " (npr. različne vrste demence, blaga kognitivna okvara), kjer je cilj ohraniti dnevno neodvisnost." },
+      { "pre": "Ima ", "bold": "težave z vsakodnevnimi aktivnostmi", "post": " (npr. oblačenje, osebna higiena, kuhanje in nakupovanje)." },
+      { "pre": "Potrebuje ", "bold": "prilagoditve domačega okolja", "post": " (npr. pripomočke, varne postavitve prostorov za preprečevanje padcev, prilagoditve kopalnice)." },
+      { "pre": "Želi uporabljati ", "bold": "medicinsko-tehnične pripomočke", "post": ", vendar išče ideje, kako jih uporabiti." },
+      { "pre": "Živi v domačem okolju in želi ", "bold": "ohraniti neodvisnost in kakovost življenja", "post": "." },
+      { "pre": "Se sooča s ", "bold": "socialnimi in psihološkimi izzivi", "post": " (osamljenost, izguba motivacije ali depresija), kjer delovna terapija ponudi smiselne aktivnosti in podporo." }
+    ],
+    "followUp": [
+      "S skupnimi cilji izvajamo aktivnosti za spodbujanje zdravja in dobrega počutja ter čimbolj uspešno opravljanje prioritetno postavljenih dejavnosti vsakdanjega življenja.",
+      "Delovna terapija ponuja smiselne aktivnosti tudi ob socialnih in psiholoških izzivih ter podpira posameznika pri ohranjanju dostojanstva in kakovosti življenja v domačem okolju."
+    ],
+    "approachesTitle": "Pristopi obravnave",
+    "approaches": [
+      { "title": "Bobath koncept", "text": "Terapevtski pristop (re)habilitacije nevroloških stanj, ki temelji na kvaliteti izvedbe giba in aktivnosti. Poudarek je na tem, da oseba naučeno prenaša v vsakdanje dnevne aktivnosti in okupacije.", "icon": "/assets/images/odrasli/icon-bobath-odrasli.png", "iconAlt": "Ikona Bobath koncepta" },
+      { "title": "Nevro-mišični taping", "text": "Tehnika, prek katere vplivamo na mišično-skeletni, žilni, limfni in nevrološki sistem. Pri tem uporabljamo (de)kompresivne dražljaje z namestitvijo samolepilnega elastičnega traku za naravno zdravljenje telesa.", "icon": "/assets/images/odrasli/icon-taping.png", "iconAlt": "Ikona nevro-mišičnega tapinga" },
+      { "title": "Delovna terapija z elementi Montessori pedagogike", "text": "Pristop, ki v ospredje postavlja posameznikove vrednote, sposobnosti, interese in avtonomijo ter spodbuja samostojno odločanje in vključevanje v smiselne vsakodnevne dejavnosti. Temelji na celostnem razumevanju posameznika, samospoštovanju ter možnosti izbire.", "icon": "/assets/images/odrasli/icon-montessori-odrasli.png", "iconAlt": "Ikona Montessori pedagogike" },
+      { "title": "Pomoč z umetnostjo", "text": "Umetnostna terapija vodi osebo skozi proces izražanja in ustvarjanja. Prek glasbene, gledališke/dramske ali likovne terapije prihaja do samoizražanja, telesnega in duševnega zdravja ter osebnostne rasti. Naš cilj je proces doživljanja in ne končni izdelek.", "icon": "/assets/images/odrasli/icon-umetnost.png", "iconAlt": "Ikona pomoči z umetnostjo" }
+    ]
+  },
   "contact": {
     "phoneLabel": "Telefon",
     "serviceLabel": "Področje",

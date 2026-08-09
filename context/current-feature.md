@@ -1,15 +1,25 @@
-# Current Feature
+# Current Feature: Older adults page
 
 ## Status
 
-Not Started
+In Progress
 
 ## Goals
 
+- Rebuild `/odrasli` from the approved prototype with the localized title, introductory copy/video layout, burgundy checklist section, follow-up copy, approach cards, and shared subpage footer.
+- Add all older-adults copy, alt text, media references, and approach data to both locale message files; retain locale-aware URL and document language behaviour.
+- Reuse the shared video player with adult-specific video and poster assets, translated controls, native controls, playback overlay, and locale media swapping.
+- Match the prescribed burgundy visual treatment and ensure the page remains a readable, single-column layout on mobile.
+- Verify production build, focused lint/type checks, desktop and mobile layouts in both locales, and video/language-switch behaviour without browser warnings.
 
 
 ## Notes
 
+- Specification: `context/features/04-older-adults-page.md`.
+- Prototype authority: `context/redesign_pages/Odrasli.dc.html`; depend on the completed shared shell and children page.
+- Use adult media/icons: `icon-bobath-odrasli.png`, `icon-taping.png`, `icon-montessori-odrasli.png`, and `icon-umetnost.png`.
+- Do not duplicate video interaction code or add unapproved sections, testimonials, or marketing content.
+- Key visual constraints: burgundy checklist background, white headings, pale rose lead text, pale checklist text, and gold kicker/ticks.
 
 
 
