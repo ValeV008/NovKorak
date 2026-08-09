@@ -258,3 +258,42 @@ button:not(:disabled), a[href] { cursor: pointer; }
 @media (max-width: 520px) {
   .children-page__intro h1 { font-size: 32px; }
 }
+
+.older-adults-page { background: #fdfcf7; }
+.older-adults-page__intro { max-width: 1200px; margin: 0 auto; padding: 70px 48px 40px; }
+.older-adults-page__intro h1 { margin: 0 0 50px; color: #2f3d47; font-size: clamp(40px, 4vw, 58px); line-height: 1.05; text-align: center; }
+.older-adults-page__intro h1 span { color: #951050; }
+.older-adults-page__intro-grid { display: grid; grid-template-columns: 1fr 1.1fr; align-items: center; gap: 60px; }
+.older-adults-page__intro-copy, .older-adults-page__follow-up { display: grid; gap: 20px; color: #4a5862; font-size: 17px; line-height: 1.6; }
+.older-adults-page__intro-copy { text-align: justify; }
+.older-adults-page__intro-copy p, .older-adults-page__follow-up p { margin: 0; }
+.older-adults-page .video-player { box-shadow: 0 24px 60px rgb(149 16 80 / 20%); }
+.older-adults-page__checklist-section { background: #951050; padding: 70px 48px; }
+.older-adults-page__checklist { max-width: 900px; margin: 0 auto; }
+.older-adults-page__checklist h2 { margin: 0 0 8px; color: #fff; font-size: 40px; font-weight: 700; text-align: center; }
+.older-adults-page__checklist .gold-rule { margin-top: 12px; margin-bottom: 34px; }
+.older-adults-page__checklist ul { display: grid; gap: 16px; margin: 0; padding: 0; list-style: none; }
+.older-adults-page__checklist li { display: flex; align-items: flex-start; gap: 14px; color: #fbe4ee; font-size: 17px; line-height: 1.6; }
+.older-adults-page__check { display: grid; flex: none; width: 22px; height: 22px; margin-top: 5px; place-items: center; border-radius: 50%; background: #f5ba01; color: #951050; font-size: 13px; font-weight: 800; }
+.older-adults-page__follow-up { max-width: 900px; margin: 0 auto; padding: 60px 48px 20px; }
+.older-adults-page__approaches { max-width: 1100px; margin: 0 auto; padding: 40px 48px 90px; }
+.older-adults-page__approaches > h2 { margin: 0 0 46px; color: #2f3d47; font-size: 42px; text-align: center; }
+.older-adults-page__approaches-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px 50px; }
+.older-adults-page__approach { display: flex; align-items: flex-start; gap: 20px; }
+.older-adults-page__approach-icon { display: grid; flex: none; width: 52px; height: 52px; place-items: center; border: 2px solid #f5ba01; border-radius: 14px; }
+.older-adults-page__approach-icon img { width: 32px; height: 32px; object-fit: contain; }
+.older-adults-page__approach h3 { margin: 0 0 8px; color: #2f3d47; font-size: 24px; }
+.older-adults-page__approach p { margin: 0; color: #5a6872; font-size: 15px; line-height: 1.6; text-align: justify; }
+
+@media (max-width: 900px) {
+  .older-adults-page__intro-grid, .older-adults-page__approaches-grid { grid-template-columns: 1fr; gap: 30px; }
+  .older-adults-page__intro, .older-adults-page__checklist-section, .older-adults-page__follow-up, .older-adults-page__approaches { padding-right: 20px; padding-left: 20px; }
+  .older-adults-page__intro { padding-top: 48px; }
+  .older-adults-page__intro h1 { margin-bottom: 36px; }
+  .older-adults-page__intro-copy, .older-adults-page__approach p { text-align: left; }
+  .older-adults-page__checklist h2, .older-adults-page__approaches > h2 { font-size: 30px; }
+}
+
+@media (max-width: 520px) {
+  .older-adults-page__intro h1 { font-size: 32px; }
+}
