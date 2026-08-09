@@ -4,44 +4,41 @@ import { FormEvent, useState } from "react";
 
 import { useTranslation } from "next-i18next";
 
-import Divider from "./Divider";
-
-export default function ContactForm2() {
-  const { t, i18n } = useTranslation("common");
+const ContactForm = () => {
+  const { t } = useTranslation("common");
   const [submitted, setSubmitted] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitError, setSubmitError] = useState<string | null>(null);
 
-  const handleSubmit = async (event: FormEvent) => {
+  const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     if (isSubmitting) {
       return;
     }
     setSubmitError(null);
     setIsSubmitting(true);
-    const form = event.currentTarget as HTMLFormElement;
+    const form = event.currentTarget;
 
-    const isPlainNextDevelopment =
-      process.env.NODE_ENV === "development" &&
-      ["localhost", "127.0.0.1"].includes(window.location.hostname) &&
-      window.location.port === "3000";
+    const isLocalhost = ["localhost", "127.0.0.1"].includes(window.location.hostname);
 
-    if (isPlainNextDevelopment) {
-      setSubmitError(
-        i18n.language.startsWith("sl")
-          ? "V razvojnem načinu sporočilo ni bilo poslano. Netlify Forms preizkusite na Netlify predogledu ali z Netlify Dev."
-          : "The message was not sent in development mode. Test Netlify Forms on a Netlify deploy preview or with Netlify Dev."
-      );
+    if (isLocalhost) {
+      setSubmitError(t("contact.localSubmissionUnavailable"));
       setIsSubmitting(false);
       return;
     }
 
     const formData = new FormData(form);
+    const payload = new URLSearchParams();
+    formData.forEach((value, key) => {
+      if (typeof value === "string") {
+        payload.append(key, value);
+      }
+    });
     try {
       const response = await fetch("/", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: new URLSearchParams(formData as any).toString(),
+      body: payload.toString(),
       });
 
       if (response.ok) {
@@ -66,26 +63,24 @@ export default function ContactForm2() {
   };
 
   return (
-    <div className="max-w-lg mx-auto mt-10 p-6 bg-white shadow-lg rounded-lg" id="form">
-      <h1 className={"w-full my-2 text-5xl font-bold leading-tight text-center text-primary"}>
-        {t("contact.title")}
-      </h1>
-      <Divider />
+    <div className="home-contact-form" id="form">
       {submitted && (
-        <p className="mb-4 text-center text-lg font-semibold text-green-700" role="status">
-          {t("contact.success")}
-        </p>
+        <div className="home-contact-form__success" role="status">
+          <span aria-hidden="true">✓</span>
+          <h3>{t("contact.successTitle")}</h3>
+          <p>{t("contact.homeSuccess")}</p>
+        </div>
       )}
       <form
         onSubmit={handleSubmit}
         name="contact"
         data-netlify="true"
         aria-busy={isSubmitting}
-        className="space-y-4"
+        className="home-contact-form__fields"
       >
         <input type="hidden" name="form-name" value="contact" />
         <div>
-          <label htmlFor="contact-name" className="block text-gray-700 font-medium">
+          <label htmlFor="contact-name">
             {t("contact.nameLabel")}
           </label>
           <input
@@ -94,12 +89,13 @@ export default function ContactForm2() {
             name="name"
             required
             autoComplete="name"
-            className="mt-1 w-full p-2 border border-gray-300 rounded-lg focus:border-primary focus:ring-2 focus:ring-primary/20"
+            className="home-contact-form__input"
           />
         </div>
 
-        <div>
-          <label htmlFor="contact-email" className="block text-gray-700 font-medium">
+        <div className="home-contact-form__split">
+          <div>
+          <label htmlFor="contact-email">
             {t("contact.emailLabel")}
           </label>
           <input
@@ -108,24 +104,37 @@ export default function ContactForm2() {
             name="email"
             required
             autoComplete="email"
-            className="mt-1 w-full p-2 border border-gray-300 rounded-lg focus:border-primary focus:ring-2 focus:ring-primary/20"
+            className="home-contact-form__input"
           />
+          </div>
+          <div>
+          <label htmlFor="contact-phone">{t("contact.phoneLabel")}</label>
+          <input id="contact-phone" type="tel" name="phone" autoComplete="tel" className="home-contact-form__input" />
+          </div>
+        </div>
+        <div>
+          <label htmlFor="contact-service">{t("contact.serviceLabel")}</label>
+          <select id="contact-service" name="service" className="home-contact-form__input" defaultValue="children">
+            <option value="children">{t("contact.serviceChildren")}</option>
+            <option value="adults">{t("contact.serviceAdults")}</option>
+            <option value="art">{t("contact.serviceArt")}</option>
+          </select>
         </div>
 
         <div>
-          <label htmlFor="contact-message" className="block text-gray-700 font-medium">
+          <label htmlFor="contact-message">
             {t("contact.messageLabel")}
           </label>
           <textarea
             id="contact-message"
             name="message"
             required
-            rows={10}
-            className="mt-1 w-full p-2 border border-gray-300 rounded-lg focus:border-primary focus:ring-2 focus:ring-primary/20"
+            rows={4}
+            className="home-contact-form__input home-contact-form__textarea"
           />
         </div>
         {submitError && (
-          <p id="contact-form-error" className="text-sm font-medium text-red-700" role="alert">
+          <p id="contact-form-error" className="home-contact-form__error" role="alert">
             {submitError}
           </p>
         )}
@@ -133,7 +142,7 @@ export default function ContactForm2() {
         <button
           type="submit"
           disabled={isSubmitting}
-          className="w-full bg-primary text-white py-2 rounded-lg hover:bg-secondary disabled:opacity-70 disabled:cursor-not-allowed transition-colors"
+          className="rua-button rua-button--form"
         >
           {isSubmitting
             ? t("contact.submitting", { defaultValue: "Sending..." })
@@ -145,4 +154,6 @@ export default function ContactForm2() {
       </form>
     </div>
   );
-}
+};
+
+export default ContactForm;
