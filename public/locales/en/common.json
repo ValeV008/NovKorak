@@ -327,6 +327,82 @@
       "locationLabel": "Location"
     }
   },
+  "childrenPage": {
+    "title": "Occupational therapy",
+    "titleAccent": "for children & adolescents",
+    "intro": [
+      "Pediatric occupational therapy focuses on different age groups of children and adolescents.",
+      "In the first year it helps babies with handling, independent feeding and swallowing, play and fine motor development, and building quality of movement through gross motor skills.",
+      "Furthermore, within occupational therapy — which is individually tailored — children develop independence in cognitive, motor and social areas, such as learning everyday self-care activities [feeding, personal hygiene, dressing] and the possible use of aids for independence."
+    ],
+    "videoAlt": "Video presentation of occupational therapy for children and adolescents",
+    "videoFallback": "Your browser does not support the video tag.",
+    "videoPlay": "Play",
+    "videoPause": "Pause",
+    "checklistTitle": "With occupational therapy at RUA,",
+    "checklistAccent": "children",
+    "checklistSuffix": "can:",
+    "checklist": [
+      { "pre": "Develop ", "bold": "quality movement patterns", "post": "." },
+      {
+        "pre": "Develop the intrinsic muscles of the hand for ",
+        "bold": "fine motor skills, object manipulation and upper-limb coordination",
+        "post": "."
+      },
+      {
+        "pre": "Develop fine motor skills for grasping and releasing toys, pincer grip, drawing and writing — ",
+        "bold": "graphomotor skills",
+        "post": "."
+      },
+      {
+        "pre": "Strengthen eye–hand coordination (for play or school skills).",
+        "bold": "",
+        "post": ""
+      },
+      {
+        "pre": "Master ",
+        "bold": "Basic Daily Activities",
+        "post": " such as dressing, brushing teeth and feeding."
+      },
+      {
+        "pre": "Receive guidance on using specific ",
+        "bold": "medical-technical aids",
+        "post": " for movement, holding a pen, putting on socks …"
+      }
+    ],
+    "followUp": [
+      "Sessions stimulate physical and cognitive development. With elements of sensory integration we recognise, regulate, organise and integrate sensations and senses in the body for effective functioning in the environment.",
+      "We actively involve parents and carers so they can transfer what they see into the home environment. We are aware of the importance of 24-hour placing.",
+      "We advise on potential adaptations of the kindergarten, school or home environment and the use of therapeutic aids."
+    ],
+    "approachesTitle": "Approaches",
+    "approaches": [
+      {
+        "title": "Bobath concept",
+        "text": "A rehabilitation approach for neurological conditions based on quality of movement and activity. The emphasis is on the child transferring learning into everyday daily activities and occupations.",
+        "icon": "/assets/images/otroci/icon-bobath.png",
+        "iconAlt": "Bobath concept icon"
+      },
+      {
+        "title": "Neuromuscular taping",
+        "text": "A technique influencing the musculoskeletal, vascular, lymphatic and neurological system, using (de)compressive stimuli with an adhesive elastic tape to support the body’s natural healing.",
+        "icon": "/assets/images/otroci/icon-taping.png",
+        "iconAlt": "Neuromuscular taping icon"
+      },
+      {
+        "title": "Occupational therapy with Montessori elements",
+        "text": "Guided by “Help me to do it myself,” the child gains new insights and develops abilities and skills. With carefully prepared materials the child actively develops the senses and finds joy in learning and doing. Through “learning from mistakes” they learn to notice an error and correct it.",
+        "icon": "/assets/images/otroci/icon-montessori.png",
+        "iconAlt": "Montessori pedagogy icon"
+      },
+      {
+        "title": "Expressive arts therapies",
+        "text": "Art therapy guides the child through a process of expression and creation. Through music, drama or visual art therapy comes self-expression, physical and mental wellbeing and personal growth.",
+        "icon": "/assets/images/otroci/icon-umetnost.png",
+        "iconAlt": "Expressive arts therapies icon"
+      }
+    ]
+  },
   "contact": {
     "phoneLabel": "Phone",
     "serviceLabel": "Area of interest",

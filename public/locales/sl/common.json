@@ -327,6 +327,82 @@
       "locationLabel": "Lokacija"
     }
   },
+  "childrenPage": {
+    "title": "Delovna terapija",
+    "titleAccent": "za otroke in mladostnike",
+    "intro": [
+      "Pediatrična delovna terapija se usmerja na različne starostne skupine otrok in mladostnikov.",
+      "V prvem letu pomaga dojenčkom pri handlingu, samostojnem hranjenju in požiranju, razvoju igre in fine motorike ter razvijanju kvalitete gibanja v obliki grobe motorike.",
+      "Nadalje, v okviru delovne terapije, ki je individualno prilagojena, otroci razvijajo samostojnost na področjih kognitivnega, gibalnega in socialnega razvoja, kot so učenje vsakodnevnih aktivnosti na področju skrbi zase [hranjenje, osebna nega, oblačenje] ter morebitni uporabi pripomočkov za samostojnost."
+    ],
+    "videoAlt": "Video predstavitev delovne terapije za otroke in mladostnike",
+    "videoFallback": "Vaš brskalnik ne podpira predvajanja videa.",
+    "videoPlay": "Predvajaj",
+    "videoPause": "Ustavi",
+    "checklistTitle": "Z delovno terapijo v RUA,",
+    "checklistAccent": "otroci",
+    "checklistSuffix": "lahko:",
+    "checklist": [
+      { "pre": "Razvijajo ", "bold": "kvalitetne gibalne vzorce", "post": "." },
+      {
+        "pre": "Razvijajo intrinzične mišice dlani za ",
+        "bold": "fino motoriko, manipulacijo predmetov ter koordinacijo zgornjih udov",
+        "post": "."
+      },
+      {
+        "pre": "Razvijajo finomotorične spretnosti za prijem in izpust igrač, razvoj pincetnega prijema ter risanja, pisanja oz. ",
+        "bold": "grafomotorike",
+        "post": "."
+      },
+      {
+        "pre": "Krepijo koordinacijo oko-roka (za namen igre ali šolskih spretnosti).",
+        "bold": "",
+        "post": ""
+      },
+      {
+        "pre": "Osvojijo ",
+        "bold": "Osnovne Dnevne Aktivnosti",
+        "post": ", kot so oblačenje, umivanje zob, hranjenje."
+      },
+      {
+        "pre": "Prejmejo informacije o uporabi specifičnih ",
+        "bold": "medicinsko-tehničnih pripomočkov",
+        "post": " za gibanje, držanje pisala, obuvanja nogavic …"
+      }
+    ],
+    "followUp": [
+      "Srečanja dajejo spodbude za razvoj na fizičnem in kognitivnem razvoju. Z elementi senzorne integracije prepoznamo, uravnavamo, organiziramo in integriramo občutke in čutila v telesu za učinkovito delovanje v okolju.",
+      "V terapijo aktivno vključujemo tudi starše oz. skrbnike, da videno prenesejo v domače okolje. Zavedamo se pomembnosti 24-urnega placinga.",
+      "Svetujemo glede potencialnih prilagoditev vrtčevskega/šolskega/domačega okolja in uporabe terapevtskih pripomočkov."
+    ],
+    "approachesTitle": "Pristopi obravnave",
+    "approaches": [
+      {
+        "title": "Bobath koncept",
+        "text": "Terapevtski pristop (re)habilitacije nevroloških stanj, ki temelji na kvaliteti izvedbe giba in aktivnosti. Poudarek je na tem, da otrok naučeno prenaša v vsakdanje dnevne aktivnosti in okupacije.",
+        "icon": "/assets/images/otroci/icon-bobath.png",
+        "iconAlt": "Ikona Bobath koncepta"
+      },
+      {
+        "title": "Nevro-mišični taping",
+        "text": "Tehnika, prek katere vplivamo na mišično-skeletni, žilni, limfni in nevrološki sistem. Pri tem uporabljamo (de)kompresivne dražljaje z namestitvijo samolepilnega elastičnega traku za naravno zdravljenje telesa.",
+        "icon": "/assets/images/otroci/icon-taping.png",
+        "iconAlt": "Ikona nevro-mišičnega tapinga"
+      },
+      {
+        "title": "Delovna terapija z elementi Montessori pedagogike",
+        "text": "Z vodilom »Pomagaj mi, da naredim sam.« otrok pridobiva nova spoznanja in razvija sposobnosti ter spretnosti. S skladno pripravljenimi materiali otrok aktivno razvija svoje čute ter pridobiva veselje do učenja ter dela. Prek učenja »iz napak« se uči zaznati napako in jo popraviti.",
+        "icon": "/assets/images/otroci/icon-montessori.png",
+        "iconAlt": "Ikona Montessori pedagogike"
+      },
+      {
+        "title": "Pomoč z umetnostjo",
+        "text": "Umetnostna terapija vodi otroka skozi proces izražanja in ustvarjanja. Prek pristopa glasbene, gledališke/dramske ali likovne terapije prihaja do samoizražanja, telesnega in duševnega zdravja ter osebnostne rasti.",
+        "icon": "/assets/images/otroci/icon-umetnost.png",
+        "iconAlt": "Ikona pomoči z umetnostjo"
+      }
+    ]
+  },
   "contact": {
     "phoneLabel": "Telefon",
     "serviceLabel": "Področje",
