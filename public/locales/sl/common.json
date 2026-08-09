@@ -103,6 +103,19 @@
       "Šola sodobnih performativnih in uličnih umetnosti | Društvo Gledališče Ane Monro [marec 2014– avgust 2014]"
     ]
   },
+  "aboutPage": {
+    "kicker": "O nas",
+    "title": "Delovna terapevtka in terapevtka pomoči z umetnostjo",
+    "portraitAlt": "Portret delovne terapevtke Tine Zadravec",
+    "paragraphOnePrefix": "Pod sloganom ",
+    "paragraphOneSuffix": " sem Tina Zadravec, magistra umetnostne terapije ter diplomirana delovna terapevtka. Z desetletnimi izkušnjami v delu povezujem različna znanja s študija in dodatnih strokovnih izobraževanj z namenom, da posameznik prejme individualni pristop in obravnavo.",
+    "paragraphs": [
+      "Soustvarjam trenutke, ob katerih uporabniki rečejo: »Že dolgo nisem imela toliko idej in informacij glede možnosti, ki obstajajo!« Posameznikom pomagam, da znova zgradijo v sebi misel, da tudi oni zmorejo opravljati tiste vsakdanje stvari, ki že dolgo niso bile mogoče.",
+      "V okviru delovne terapije delujemo na področju [re]habilitacije oseb z nevrološkimi, mišično-skeletnimi težavami in izzivi na področju duševnega zdravja. Cenimo znanje in modrosti, zato pri svojem delu premišljeno vpeljujemo nove pristope in terapevtske pripomočke. Povezujemo se tudi s strokovnjaki iz tujine.",
+      "Smo aktivni člani Zbornice delovnih terapevtov Slovenije in Slovenskega združenja umetnostnih terapevtov."
+    ],
+    "educationTitle": "Opravljena izobraževanja in tečaji"
+  },
   "product": {
     "title": "O delovni terapiji",
     "items": [

@@ -24,3 +24,4 @@ Not Started
 - 2026-08-09: Completed the children and adolescents page, including localized copy, responsive layouts, approach cards, and reusable accessible video playback.
 - 2026-08-09: Completed the older adults page, including localized content and media, responsive burgundy treatment, shared video playback, and approach cards.
 - 2026-08-09: Completed the pricing page, including the localized semantic service table, responsive card layout, and subpage footer.
+- 2026-08-10: Completed the About page, including localized portrait-led layout, semantic introductory copy, and the approved 21-item education list.
