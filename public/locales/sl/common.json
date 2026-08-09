@@ -252,7 +252,90 @@
       "linkedin": "https://si.linkedin.com/in/tina-zadravec-034140152"
     }
   },
+  "home": {
+    "heroTitle": "Delovna terapija",
+    "heroKicker": "za majhne in velike",
+    "heroText": "Preko aktivnosti do samostojnosti v vsakdanjem življenju.",
+    "heroPrimary": "Rezervirajte termin",
+    "heroSecondary": "Spoznajte področja",
+    "heroImageAlt": "Delovna terapevtka pri aktivnosti z otrokom",
+    "introTitle": "Vloga delovne terapije",
+    "introText": "Delovna terapija je zdravstvena stroka, ki posameznika spodbuja k vključevanju v njemu smiselne dejavnosti vsakdanjega življenja. Osredotoča se na izboljševanje in ohranjanje telesnih funkcij, duševnega zdravja ter samostojnosti.",
+    "children": {
+      "kicker": "Otroci in mladostniki",
+      "title": "Pediatrična delovna terapija",
+      "lead": "Razvojno-nevrološka obravnava pomaga otrokom razvijati fino-motorične, socialne, gibalne, kognitivne, čustveno-socialne spretnosti, ki jih potrebujejo za igro in vsakdanje življenje.",
+      "listTitle": "Z delovno terapijo otroci lahko:",
+      "items": [
+        "Razvijajo kvalitetne gibalne vzorce.",
+        "Razvijajo fino motoriko, manipulacijo predmetov in koordinacijo zgornjih udov.",
+        "Razvijajo grafomotoriko — prijem, risanje in pisanje.",
+        "Krepijo koordinacijo oko–roka za igro in šolske spretnosti.",
+        "Osvojijo osnovne dnevne aktivnosti: oblačenje, umivanje zob, hranjenje.",
+        "Spoznajo uporabo medicinsko-tehničnih pripomočkov."
+      ],
+      "cta": "Več o terapiji",
+      "imageAlt": "Otrok med ustvarjalno dejavnostjo"
+    },
+    "adults": {
+      "kicker": "Starejši odrasli",
+      "title": "Delovna terapija za starejše",
+      "lead": "Osredotočamo se na izboljševanje oz. ohranjanje zdravstvenega stanja na področju telesnih funkcij in struktur ter duševnega zdravja.",
+      "listTitle": "Delovna terapija je za tistega, ki:",
+      "items": [
+        "Okreva po poškodbah ali operacijah in želi ohraniti mišično funkcijo.",
+        "Se sooča s poškodbami centralnega živčnega sistema (kap, poškodbe možganov).",
+        "Se sooča z izzivi gibanja zaradi starostnih sprememb.",
+        "Živi s kroničnimi boleznimi (Parkinson, multipla skleroza).",
+        "Se sooča s kognitivnimi spremembami in želi ohraniti dnevno neodvisnost.",
+        "Potrebuje prilagoditve domačega okolja za preprečevanje padcev."
+      ],
+      "cta": "Več o terapiji",
+      "imageAlt": "Starejša oseba med rehabilitacijsko dejavnostjo"
+    },
+    "approaches": {
+      "title": "Naši terapevtski pristopi",
+      "lead": "Individualno prilagojene metode, ki povezujejo Rehabilitacijo, Umetnost in Aktivnost.",
+      "items": [
+        {
+          "no": "01",
+          "title": "Bobath koncept",
+          "text": "Terapevtski pristop (re)habilitacije nevroloških stanj, ki temelji na kvaliteti giba in prenosu naučenega v vsakdanje aktivnosti."
+        },
+        {
+          "no": "02",
+          "title": "Nevro-mišični taping",
+          "text": "Tehnika (de)kompresivnih dražljajev s samolepilnim elastičnim trakom za naravno zdravljenje mišično-skeletnega in nevrološkega sistema."
+        },
+        {
+          "no": "03",
+          "title": "Montessori pristop",
+          "text": "»Pomagaj mi, da naredim sam.« S skladno pripravljenimi materiali oseba aktivno razvija čute, samostojnost in veselje do dela."
+        },
+        {
+          "no": "04",
+          "title": "Pomoč z umetnostjo",
+          "text": "Glasbena, gledališka in likovna terapija vodijo osebo skozi proces izražanja, telesnega in duševnega zdravja ter osebnostne rasti."
+        }
+      ]
+    },
+    "contact": {
+      "title": "Stopite v stik",
+      "lead": "Napišite nam sporočilo ali nas pokličite za uvodno srečanje.",
+      "emailLabel": "E-pošta",
+      "phoneLabel": "Telefon",
+      "locationLabel": "Lokacija"
+    }
+  },
   "contact": {
+    "phoneLabel": "Telefon",
+    "serviceLabel": "Področje",
+    "serviceChildren": "Otroci in mladostniki",
+    "serviceAdults": "Starejši odrasli",
+    "serviceArt": "Umetnostna terapija",
+    "successTitle": "Hvala!",
+    "homeSuccess": "Vaše sporočilo smo prejeli in se vam bomo kmalu oglasili.",
+    "localSubmissionUnavailable": "Sporočilo lokalno ni bilo poslano. Netlify Forms preizkusite v Netlify predogledu ali z Netlify Dev.",
     "title": "Pišite nam",
     "nameLabel": "Ime",
     "emailLabel": "Elektronski naslov",

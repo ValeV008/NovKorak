@@ -252,7 +252,90 @@
       "linkedin": "https://si.linkedin.com/in/tina-zadravec-034140152"
     }
   },
+  "home": {
+    "heroTitle": "A new step toward independence",
+    "heroKicker": "for the young and the old",
+    "heroText": "Rehabilitation and arts therapies for children and elderly — with compassion, presence and expertise we walk beside you toward greater independence and quality of life.",
+    "heroPrimary": "Book a session",
+    "heroSecondary": "Explore our fields",
+    "heroImageAlt": "Occupational therapist during an activity with a child",
+    "introTitle": "The role of occupational therapy",
+    "introText": "Occupational therapy is a health profession that encourages each person to engage in the everyday activities meaningful to them. It focuses on improving and maintaining physical function, mental health and independence — from a baby's first movements to dignified ageing.",
+    "children": {
+      "kicker": "Children & adolescents",
+      "title": "Pediatric occupational therapy",
+      "lead": "Tailored to different age groups. In the first year it supports babies with handling, feeding and swallowing, play, fine motor skills and quality of movement.",
+      "listTitle": "With occupational therapy, children can:",
+      "items": [
+        "Develop quality movement patterns.",
+        "Build fine motor skills, object manipulation and upper-limb coordination.",
+        "Develop graphomotor skills — grip, drawing and writing.",
+        "Strengthen eye–hand coordination for play and school skills.",
+        "Master daily activities: dressing, brushing teeth, feeding.",
+        "Learn to use medical-technical aids and adaptations."
+      ],
+      "cta": "More about therapy",
+      "imageAlt": "Child during a creative activity"
+    },
+    "adults": {
+      "kicker": "Older adults",
+      "title": "Occupational therapy for elderly",
+      "lead": "We focus on improving and maintaining physical function, mental health and independence in the daily activities that matter most.",
+      "listTitle": "Occupational therapy is for someone who:",
+      "items": [
+        "Is recovering from injury or surgery and wants to keep muscle function.",
+        "Is facing central nervous system injury (stroke, brain injury).",
+        "Faces movement challenges due to age-related changes.",
+        "Lives with chronic illness (Parkinson's, multiple sclerosis).",
+        "Is facing cognitive changes and wants to keep daily independence.",
+        "Needs home adaptations to prevent falls."
+      ],
+      "cta": "More about therapy",
+      "imageAlt": "Older person during a rehabilitation activity"
+    },
+    "approaches": {
+      "title": "Our therapeutic approaches",
+      "lead": "Individually tailored methods that blend expertise, art and gentle guidance.",
+      "items": [
+        {
+          "no": "01",
+          "title": "Bobath concept",
+          "text": "A rehabilitation approach for neurological conditions based on quality of movement and transferring learning into daily life."
+        },
+        {
+          "no": "02",
+          "title": "Neuromuscular taping",
+          "text": "A technique using (de)compressive stimuli with elastic tape to naturally support the musculoskeletal and neurological system."
+        },
+        {
+          "no": "03",
+          "title": "Montessori approach",
+          "text": "“Help me to do it myself.” With carefully prepared materials the person actively develops senses, independence and joy in doing."
+        },
+        {
+          "no": "04",
+          "title": "Help through art",
+          "text": "Music, drama and visual art therapy guide the person through self-expression, physical and mental wellbeing and personal growth."
+        }
+      ]
+    },
+    "contact": {
+      "title": "Get in touch",
+      "lead": "Let’s take the first step together. Write to us and we’ll arrange a time that suits you.",
+      "emailLabel": "Email",
+      "phoneLabel": "Phone",
+      "locationLabel": "Location"
+    }
+  },
   "contact": {
+    "phoneLabel": "Phone",
+    "serviceLabel": "Area of interest",
+    "serviceChildren": "Children & adolescents",
+    "serviceAdults": "Older adults",
+    "serviceArt": "Art therapy",
+    "successTitle": "Thank you!",
+    "homeSuccess": "We've received your message and will get back to you soon.",
+    "localSubmissionUnavailable": "The message was not sent locally. Test Netlify Forms in a Netlify deploy preview or with Netlify Dev.",
     "title": "Contact Us",
     "nameLabel": "Name",
     "emailLabel": "Email address",
