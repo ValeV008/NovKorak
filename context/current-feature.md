@@ -23,3 +23,4 @@ Not Started
 - 2026-08-09: Completed the RUA home page, including localized sections, responsive media layouts, approaches grid, and Netlify contact form handling.
 - 2026-08-09: Completed the children and adolescents page, including localized copy, responsive layouts, approach cards, and reusable accessible video playback.
 - 2026-08-09: Completed the older adults page, including localized content and media, responsive burgundy treatment, shared video playback, and approach cards.
+- 2026-08-09: Completed the pricing page, including the localized semantic service table, responsive card layout, and subpage footer.
