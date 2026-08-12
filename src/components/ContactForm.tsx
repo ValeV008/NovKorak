@@ -35,7 +35,7 @@ const ContactForm = () => {
       }
     });
     try {
-      const response = await fetch("/", {
+      const response = await fetch("/netlify-form-detection.html", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: payload.toString(),
@@ -74,11 +74,19 @@ const ContactForm = () => {
       <form
         onSubmit={handleSubmit}
         name="contact"
+        method="post"
+        action="/netlify-form-detection.html"
         data-netlify="true"
+        data-netlify-honeypot="bot-field"
         aria-busy={isSubmitting}
         className="home-contact-form__fields"
       >
         <input type="hidden" name="form-name" value="contact" />
+        <p className="sr-only">
+          <label>
+            Do not fill this out if you are human: <input name="bot-field" />
+          </label>
+        </p>
         <div>
           <label htmlFor="contact-name">
             {t("contact.nameLabel")}

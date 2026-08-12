@@ -2,16 +2,16 @@
 
 ## Status
 
-Not Started
+Completed
 
 ## Goals
 
-<!-- Add feature goals here -->
+- Restore reliable Netlify Forms submissions from the homepage. Netlify's form-submission email notification is configured in the project.
 
 
 ## Notes
 
-<!-- Add implementation notes here -->
+- Netlify Forms is enabled and detects the `contact` form, but currently retains zero submissions. The homepage posted to `/`, which is handled by the Next.js server function. The AJAX request now targets the dedicated static form-definition file, and the static and rendered forms have matching POST, honeypot, and input configuration.
 
 
 
@@ -25,3 +25,4 @@ Not Started
 - 2026-08-09: Completed the older adults page, including localized content and media, responsive burgundy treatment, shared video playback, and approach cards.
 - 2026-08-09: Completed the pricing page, including the localized semantic service table, responsive card layout, and subpage footer.
 - 2026-08-10: Completed the About page, including localized portrait-led layout, semantic introductory copy, and the approved 21-item education list.
+- 2026-08-12: Restored homepage Netlify Forms submissions by routing AJAX requests to the static form definition, aligning form metadata, and adding a honeypot.
