@@ -2,16 +2,16 @@
 
 ## Status
 
-Completed
+Not Started
 
 ## Goals
 
-- Restore reliable Netlify Forms submissions from the homepage. Netlify's form-submission email notification is configured in the project.
+<!-- Add feature goals here -->
 
 
 ## Notes
 
-- Netlify Forms is enabled and detects the `contact` form, but currently retains zero submissions. The homepage posted to `/`, which is handled by the Next.js server function. The AJAX request now targets the dedicated static form-definition file, and the static and rendered forms have matching POST, honeypot, and input configuration.
+<!-- Add implementation notes here -->
 
 
 
