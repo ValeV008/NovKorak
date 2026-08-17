@@ -350,8 +350,6 @@
     ],
     "videoAlt": "Video predstavitev delovne terapije za otroke in mladostnike",
     "videoFallback": "Vaš brskalnik ne podpira predvajanja videa.",
-    "videoPlay": "Predvajaj",
-    "videoPause": "Ustavi",
     "checklistTitle": "Z delovno terapijo v RUA,",
     "checklistAccent": "otroci",
     "checklistSuffix": "lahko:",
@@ -426,8 +424,6 @@
     ],
     "videoAlt": "Video predstavitev delovne terapije za starejše odrasle",
     "videoFallback": "Vaš brskalnik ne podpira predvajanja videa.",
-    "videoPlay": "Predvajaj",
-    "videoPause": "Ustavi",
     "checklistTitle": "Delovna terapija je za tistega, ki:",
     "checklist": [
       {
@@ -480,10 +476,6 @@
         "bold": "socialnimi in psihološkimi izzivi",
         "post": " (osamljenost, izguba motivacije ali depresija), kjer delovna terapija ponudi smiselne aktivnosti in podporo."
       }
-    ],
-    "followUp": [
-      "S skupnimi cilji izvajamo aktivnosti za spodbujanje zdravja in dobrega počutja ter čimbolj uspešno opravljanje prioritetno postavljenih dejavnosti vsakdanjega življenja.",
-      "Delovna terapija ponuja smiselne aktivnosti tudi ob socialnih in psiholoških izzivih ter podpira posameznika pri ohranjanju dostojanstva in kakovosti življenja v domačem okolju."
     ],
     "approachesTitle": "Pristopi obravnave",
     "approaches": [

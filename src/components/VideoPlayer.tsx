@@ -4,21 +4,12 @@ interface VideoPlayerProps {
   source: string;
   poster: string;
   videoLabel: string;
-  playLabel: string;
-  pauseLabel: string;
   fallbackText: string;
 }
 
 const CONTROL_BAR_HEIGHT = 56;
 
-const VideoPlayer = ({
-  source,
-  poster,
-  videoLabel,
-  playLabel,
-  pauseLabel,
-  fallbackText,
-}: VideoPlayerProps) => {
+const VideoPlayer = ({ source, poster, videoLabel, fallbackText }: VideoPlayerProps) => {
   const videoRef = useRef<HTMLVideoElement>(null);
   const [isPlaying, setIsPlaying] = useState(false);
 
@@ -88,19 +79,10 @@ const VideoPlayer = ({
         {fallbackText}
       </video>
       {!isPlaying && (
-        <button type="button" className="video-player__overlay" aria-label={playLabel} onClick={() => void play()}>
+        <button type="button" className="video-player__overlay" aria-label={videoLabel} onClick={() => void play()}>
           <span className="video-player__play-icon" aria-hidden="true" />
         </button>
       )}
-      <button
-        type="button"
-        className="video-player__toggle"
-        aria-label={isPlaying ? pauseLabel : playLabel}
-        onClick={togglePlayback}
-      >
-        <span aria-hidden="true">{isPlaying ? "Ⅱ" : "▶"}</span>
-        {isPlaying ? pauseLabel : playLabel}
-      </button>
     </div>
   );
 };

@@ -24,8 +24,6 @@ interface ChildrenPageCopy {
   intro: string[];
   videoAlt: string;
   videoFallback: string;
-  videoPlay: string;
-  videoPause: string;
   checklistTitle: string;
   checklistAccent: string;
   checklistSuffix: string;
@@ -59,8 +57,6 @@ const ChildrenPage = () => {
             poster={videoPoster}
             videoLabel={page.videoAlt}
             fallbackText={page.videoFallback}
-            playLabel={page.videoPlay}
-            pauseLabel={page.videoPause}
           />
         </div>
       </section>

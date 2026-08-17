@@ -29,8 +29,8 @@
       "contactHeading": "Contact",
       "email": "ruaterapija@gmail.com",
       "phone": "+386 40 287 507",
-      "serviceArea": "Ljubljana in okolica",
-      "copyright": "\u00a9 2026 RUA, delovna terapija",
+      "serviceArea": "Ljubljana and surrounding areas",
+      "copyright": "\u00a9 2026 RUA, occupational therapy",
       "backHome": "\u2190 Back to home"
     }
   },
@@ -350,8 +350,6 @@
     ],
     "videoAlt": "Video presentation of occupational therapy for children and adolescents",
     "videoFallback": "Your browser does not support the video tag.",
-    "videoPlay": "Play",
-    "videoPause": "Pause",
     "checklistTitle": "With occupational therapy at RUA,",
     "checklistAccent": "children",
     "checklistSuffix": "can:",
@@ -426,8 +424,6 @@
     ],
     "videoAlt": "Video presentation of occupational therapy for older adults",
     "videoFallback": "Your browser does not support the video tag.",
-    "videoPlay": "Play",
-    "videoPause": "Pause",
     "checklistTitle": "Occupational therapy is for someone who:",
     "checklist": [
       {
@@ -480,10 +476,6 @@
         "bold": "social and psychological challenges",
         "post": " (loneliness, loss of motivation or depression), where occupational therapy offers meaningful activities and support."
       }
-    ],
-    "followUp": [
-      "Through shared goals we carry out activities that promote health and wellbeing and the most successful performance of prioritised everyday activities.",
-      "Occupational therapy also offers meaningful activities in the face of social and psychological challenges and supports the person in maintaining dignity and quality of life at home."
     ],
     "approachesTitle": "Approaches",
     "approaches": [

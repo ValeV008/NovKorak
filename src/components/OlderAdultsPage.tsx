@@ -24,11 +24,8 @@ interface OlderAdultsPageCopy {
   intro: string[];
   videoAlt: string;
   videoFallback: string;
-  videoPlay: string;
-  videoPause: string;
   checklistTitle: string;
   checklist: ChecklistItem[];
-  followUp: string[];
   approachesTitle: string;
   approaches: Approach[];
 }
@@ -57,8 +54,6 @@ const OlderAdultsPage = () => {
             poster={videoPoster}
             videoLabel={page.videoAlt}
             fallbackText={page.videoFallback}
-            playLabel={page.videoPlay}
-            pauseLabel={page.videoPause}
           />
         </div>
       </section>
@@ -76,10 +71,6 @@ const OlderAdultsPage = () => {
             ))}
           </ul>
         </div>
-      </section>
-
-      <section className="older-adults-page__follow-up" aria-label={page.title}>
-        {page.followUp.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
       </section>
 
       <section className="older-adults-page__approaches" aria-labelledby="older-adults-approaches-title">
