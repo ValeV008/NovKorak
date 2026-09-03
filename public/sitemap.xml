@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://ruaterapija.si/</loc>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://ruaterapija.si/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://ruaterapija.si/en/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ruaterapija.si/" />
+  </url>
+  <url>
+    <loc>https://ruaterapija.si/otroci/</loc>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://ruaterapija.si/otroci/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://ruaterapija.si/en/otroci/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ruaterapija.si/otroci/" />
+  </url>
+  <url>
+    <loc>https://ruaterapija.si/odrasli/</loc>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://ruaterapija.si/odrasli/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://ruaterapija.si/en/odrasli/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ruaterapija.si/odrasli/" />
+  </url>
+  <url>
+    <loc>https://ruaterapija.si/cenik/</loc>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://ruaterapija.si/cenik/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://ruaterapija.si/en/cenik/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ruaterapija.si/cenik/" />
+  </url>
+  <url>
+    <loc>https://ruaterapija.si/o-nas/</loc>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://ruaterapija.si/o-nas/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://ruaterapija.si/en/o-nas/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ruaterapija.si/o-nas/" />
+  </url>
+  <url>
+    <loc>https://ruaterapija.si/en/</loc>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://ruaterapija.si/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://ruaterapija.si/en/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ruaterapija.si/" />
+  </url>
+  <url>
+    <loc>https://ruaterapija.si/en/otroci/</loc>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://ruaterapija.si/otroci/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://ruaterapija.si/en/otroci/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ruaterapija.si/otroci/" />
+  </url>
+  <url>
+    <loc>https://ruaterapija.si/en/odrasli/</loc>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://ruaterapija.si/odrasli/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://ruaterapija.si/en/odrasli/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ruaterapija.si/odrasli/" />
+  </url>
+  <url>
+    <loc>https://ruaterapija.si/en/cenik/</loc>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://ruaterapija.si/cenik/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://ruaterapija.si/en/cenik/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ruaterapija.si/cenik/" />
+  </url>
+  <url>
+    <loc>https://ruaterapija.si/en/o-nas/</loc>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://ruaterapija.si/o-nas/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://ruaterapija.si/en/o-nas/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ruaterapija.si/o-nas/" />
+  </url>
+</urlset>

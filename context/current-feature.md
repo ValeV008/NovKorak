@@ -26,3 +26,5 @@ Not Started
 - 2026-08-09: Completed the pricing page, including the localized semantic service table, responsive card layout, and subpage footer.
 - 2026-08-10: Completed the About page, including localized portrait-led layout, semantic introductory copy, and the approved 21-item education list.
 - 2026-08-12: Restored homepage Netlify Forms submissions by routing AJAX requests to the static form definition, aligning form metadata, and adding a honeypot.
+- 2026-09-03: Set the approved orange RUA logo as the browser tab icon across the site.
+- 2026-09-03: Added a localized XML sitemap and robots.txt discovery directive for search indexing.
