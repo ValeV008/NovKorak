@@ -8,12 +8,9 @@ Not Started
 
 <!-- Add feature goals here -->
 
-
 ## Notes
 
 <!-- Add implementation notes here -->
-
-
 
 ## History
 
@@ -28,3 +25,4 @@ Not Started
 - 2026-08-12: Restored homepage Netlify Forms submissions by routing AJAX requests to the static form definition, aligning form metadata, and adding a honeypot.
 - 2026-09-03: Set the approved orange RUA logo as the browser tab icon across the site.
 - 2026-09-03: Added a localized XML sitemap and robots.txt discovery directive for search indexing.
+- 2026-09-24: Standardized the project on npm with baseline-preserving dependency versions and integrity metadata; localized all 21 About page education entries into English while preserving Slovenian text. Updated specifications and agent guidance, excluded local verification artifacts, and passed clean installation, types, lint, production build, and bilingual desktop/mobile browser checks.

@@ -1,6 +1,6 @@
 [build]
   # Netlify Next.js plugin handles the .next output.
-  command = "yarn build"
+  command = "npm run build"
 
 [build.environment]
   NODE_VERSION = "22"

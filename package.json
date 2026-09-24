@@ -8,7 +8,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "build-stats": "cross-env ANALYZE=true yarn build",
+    "build-stats": "cross-env ANALYZE=true npm run build",
     "lint": "eslint \"src/**/*.{ts,tsx}\"",
     "build-types": "tsc --noEmit --pretty",
     "eslint:check": "eslint \"src/**/*.{ts,tsx}\"",
@@ -51,9 +51,9 @@
     "tailwindcss": "^4.3.3",
     "typescript": "^5.9.3"
   },
-  "resolutions": {
+  "overrides": {
     "i18next-fs-backend": "^2.6.6"
   },
   "license": "ISC",
-  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
+  "packageManager": "npm@11.19.1"
 }

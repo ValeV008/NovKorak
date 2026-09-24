@@ -2,8 +2,6 @@ import { useTranslation } from "next-i18next";
 
 import Image from "next/image";
 
-import { ABOUT_EDUCATION } from "../content/aboutEducation";
-
 interface AboutPageCopy {
   kicker: string;
   title: string;
@@ -12,6 +10,7 @@ interface AboutPageCopy {
   paragraphOneSuffix: string;
   paragraphs: string[];
   educationTitle: string;
+  educationItems: string[];
 }
 
 const AboutPage = () => {
@@ -55,7 +54,7 @@ const AboutPage = () => {
         <h2 id="about-page-education-title">{page.educationTitle}</h2>
         <div className="about-page__education-rule" aria-hidden="true" />
         <ul>
-          {ABOUT_EDUCATION.map((education) => (
+          {page.educationItems.map((education) => (
             <li key={education}>{education}</li>
           ))}
         </ul>

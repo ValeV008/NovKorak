@@ -152,8 +152,9 @@ Render the table as a real `<table>` with `<caption>`/`<th scope>` for accessibi
 2-col grid: 4:5 portrait left, right column right-aligned kicker (`O nas`, Mulish 34px/700) and
 gold Cormorant h1, a 220px gold rule, then four justified paragraphs (the first containing the
 bold-initial slogan). Below: "Opravljena izobraževanja in tečaji" — a 21-item bulleted list with
-7px gold dots. The list is **not translated** (Slovenian only in both locales); keep it that way
-and copy all 21 entries verbatim, including bracketed dates.
+7px gold dots. Store the list in each locale's `aboutPage.educationItems` messages: preserve
+all Slovenian entries verbatim and provide complete English translations. Retain the approved
+order, proper names, qualifications, and factual dates, including bracketed date formatting.
 
 ### Video player behaviour
 
