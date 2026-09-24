@@ -35,16 +35,18 @@ Built-in feature from Next.js:
 
 #### 1. Clone repo
 
+Use Node.js 22 (as configured for Netlify) and npm. The supported Node range and npm version are declared in [package.json](package.json). Commit [package-lock.json](package-lock.json) when dependencies change; use `npm install` or `npm install <package>` for dependency updates and `npm ci` for reproducible installs.
+
 ```
 git clone https://github.com/issaafalkattan/react-landing-page-template-2021.git
 cd react-landing-page-template-2021
-yarn
+npm ci
 ```
 
 Then, you can run locally in development mode with live reload:
 
 ```
-yarn dev
+npm run dev
 ```
 
 Open <http://localhost:3000> with your favorite browser to see your project.
@@ -65,8 +67,8 @@ You can see the results locally in production mode with:
 
 ```
 npx prettier --write .
-yarn build
-yarn start
+npm run build
+npm start
 ```
 
 The generated HTML and CSS files are minified (built-in feature from Next js). It will also removed unused CSS from [Tailwind CSS](https://tailwindcss.com).
@@ -75,7 +77,7 @@ You can create an optimised production build with:
 
 ```
 npx prettier --write .
-yarn build
+npm run build
 ```
 
 ### Contributions
