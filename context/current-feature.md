@@ -29,3 +29,4 @@ The sitemap is generated before each production build with per-route `lastmod` v
 - 2026-10-04: Replaced the homepage children-section image with `image_kaj_je_terapija.png` and set it to fill the circular frame horizontally while keeping the child's face visible; types, lint, and production build passed.
 - 2026-10-04: Updated the homepage lead to state the at-home Ljubljana service area in both locales and refined its visual treatment.
 - 2026-10-04: Generated the localized sitemap during production builds with route-specific `lastmod` values and reciprocal language alternates. Added a Netlify IndexNow deployment plugin with a published verification key to notify IndexNow-compatible search engines after production deployments.
+- 2026-10-04: Replaced the unused placeholder browser icons with the approved RUA Favicon.io icon set, including Apple touch and Android manifest assets.
