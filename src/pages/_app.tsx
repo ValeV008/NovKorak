@@ -13,6 +13,63 @@ import { AppConfig } from "../utils/AppConfig";
 
 const SITE_URL = "https://ruaterapija.si";
 
+const STRUCTURED_DATA = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": ["MedicalBusiness", "LocalBusiness"],
+      "@id": `${SITE_URL}/#organization`,
+      name: "RUA, delovna terapija",
+      alternateName: "RUA terapija",
+      url: `${SITE_URL}/`,
+      logo: `${SITE_URL}/assets/rua-logo.png`,
+      telephone: "+386 40 287 507",
+      email: "ruaterapija@gmail.com",
+      description:
+        "Delovna terapija na domu za otroke, mladostnike in starejše v Ljubljani in okolici. Bobath koncept, senzorna integracija, nevro-mišični taping, Montessori, pomoč z umetnostjo.",
+      areaServed: [
+        { "@type": "City", name: "Ljubljana" },
+        { "@type": "AdministrativeArea", name: "Osrednjeslovenska regija" },
+      ],
+      medicalSpecialty: "Occupational therapy",
+      priceRange: "30 € – 390 €",
+      currenciesAccepted: "EUR",
+      availableLanguage: ["sl", "en"],
+      founder: { "@id": `${SITE_URL}/#tina` },
+    },
+    {
+      "@type": "Person",
+      "@id": `${SITE_URL}/#tina`,
+      name: "Tina Zadravec",
+      jobTitle: "diplomirana delovna terapevtka, magistra umetnostne terapije",
+      worksFor: { "@id": `${SITE_URL}/#organization` },
+      url: `${SITE_URL}/o-nas/`,
+      memberOf: [
+        { "@type": "Organization", name: "Zbornica delovnih terapevtov Slovenije" },
+        { "@type": "Organization", name: "Slovensko združenje umetnostnih terapevtov" },
+      ],
+      knowsAbout: [
+        "delovna terapija",
+        "Bobath koncept",
+        "senzorna integracija",
+        "nevro-mišični taping",
+        "umetnostna terapija",
+        "demenca",
+        "rehabilitacija po možganski kapi",
+      ],
+    },
+    {
+      "@type": "OfferCatalog",
+      name: "Cenik storitev RUA",
+      itemListElement: [
+        { "@type": "Offer", name: "Prva obravnava na domu", price: "75", priceCurrency: "EUR" },
+        { "@type": "Offer", name: "Paket 6 obravnav", price: "390", priceCurrency: "EUR" },
+        { "@type": "Offer", name: "Posvet na daljavo (30 min)", price: "30", priceCurrency: "EUR" },
+      ],
+    },
+  ],
+};
+
 const EMPTY_INITIAL_I18N_CONFIG: UserConfig = {
   i18n: {
     defaultLocale: AppConfig.locale,
@@ -50,6 +107,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
         <link rel="alternate" hrefLang="sl" href={slUrl} />
         <link rel="alternate" hrefLang="en" href={enUrl} />
         <link rel="alternate" hrefLang="x-default" href={slUrl} />
+        <script type="application/ld+json">{JSON.stringify(STRUCTURED_DATA)}</script>
       </Head>
       <NextTopLoader color="#f5ba01" showSpinner={false} />
       <Component {...pageProps} />
