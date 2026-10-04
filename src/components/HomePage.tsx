@@ -91,7 +91,7 @@ const HomePage = () => {
           <div className="home-audience__visual">
             <div className="home-audience__circle home-audience__circle--gold" aria-hidden="true" />
             <div className="home-audience__image">
-              <Image src="/assets/images/puncka.jpg" alt={home.children.imageAlt} fill sizes="(max-width: 900px) 90vw, 400px" />
+              <Image src="/assets/images/image_kaj_je_terapija.jpg" alt={home.children.imageAlt} fill sizes="(max-width: 900px) 90vw, 400px" />
             </div>
             <Link className="rua-button" href="/otroci">{home.children.cta}</Link>
           </div>
