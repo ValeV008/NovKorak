@@ -69,7 +69,7 @@ const VideoPlayer = ({ source, poster, videoLabel, fallbackText }: VideoPlayerPr
         poster={poster}
         controls
         playsInline
-        preload="auto"
+        preload="metadata"
         aria-label={videoLabel}
         onClick={handleVideoClick}
         onPlay={() => setIsPlaying(true)}
