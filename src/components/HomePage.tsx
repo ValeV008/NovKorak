@@ -50,6 +50,7 @@ interface HomeCopy {
     emailLabel: string;
     phoneLabel: string;
     locationLabel: string;
+    location: string;
   };
 }
 
@@ -158,7 +159,7 @@ const HomePage = () => {
             </a>
             <p className="home-contact__row">
               <span className="home-contact__icon home-contact__icon--location" aria-hidden="true">⌖</span>
-              <span><span className="sr-only">{home.contact.locationLabel}: </span>Ljubljana in okolica</span>
+              <span><span className="sr-only">{home.contact.locationLabel}: </span>{home.contact.location}</span>
             </p>
           </address>
         </div>

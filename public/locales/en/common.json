@@ -314,7 +314,7 @@
   "home": {
     "heroTitle": "Occupational therapy",
     "heroKicker": "for the small and the tall",
-    "heroText": "Rehabilitation and arts therapies for children and elderly — with compassion, presence and expertise we walk beside you toward greater independence and quality of life.",
+    "heroText": "Occupational therapy in the comfort of your home in Ljubljana and the surrounding area.",
     "heroPrimary": "Book a session",
     "heroSecondary": "Explore our fields",
     "heroImageAlt": "Occupational therapist during an activity with a child",
@@ -383,7 +383,8 @@
       "lead": "Let’s take the first step together. Write to us and we’ll arrange a time that suits you.",
       "emailLabel": "Email",
       "phoneLabel": "Phone",
-      "locationLabel": "Location"
+      "locationLabel": "Location",
+      "location": "Ljubljana and surrounding area"
     }
   },
   "childrenPage": {

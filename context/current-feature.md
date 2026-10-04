@@ -12,6 +12,8 @@ Replace the homepage children-section image `puncka.jpg` with the optimized `ima
 
 Preserved the existing circular layout and localized alternative text. The portrait image fills the circle horizontally with a top-aligned vertical crop so the child's face remains visible. Type checking, lint, and the production build passed. No automated test suite is configured.
 
+Updated the Slovenian homepage hero lead to state that occupational therapy is provided at the client&apos;s home in Ljubljana and its surroundings, with matching English copy and a restrained gold lead treatment.
+
 ## History
 
 <!-- Keep this updated. Earliest to latest-->
@@ -27,3 +29,4 @@ Preserved the existing circular layout and localized alternative text. The portr
 - 2026-09-03: Added a localized XML sitemap and robots.txt discovery directive for search indexing.
 - 2026-09-24: Standardized the project on npm with baseline-preserving dependency versions and integrity metadata; localized all 21 About page education entries into English while preserving Slovenian text. Updated specifications and agent guidance, excluded local verification artifacts, and passed clean installation, types, lint, production build, and bilingual desktop/mobile browser checks.
 - 2026-10-04: Replaced the homepage children-section image with `image_kaj_je_terapija.png` and set it to fill the circular frame horizontally while keeping the child's face visible; types, lint, and production build passed.
+- 2026-10-04: Updated the homepage lead to state the at-home Ljubljana service area in both locales and refined its visual treatment.

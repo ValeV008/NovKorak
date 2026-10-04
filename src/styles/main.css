@@ -131,7 +131,7 @@ button:not(:disabled), a[href] { cursor: pointer; }
 .home-hero__content { position: relative; z-index: 1; display: flex; flex-direction: column; justify-content: space-between; }
 .home-hero__title { max-width: 620px; margin: 0 0 22px; color: #47412fdd; font-size: clamp(44px, 4.6vw, 74px); line-height: 1.03; }
 .home-hero__title span { color: #f5ba01; }
-.home-hero__lead { max-width: 480px; margin: 0 0 32px; color: #4a5862; font-size: 18px; line-height: 1.6; }
+.home-hero__lead { max-width: 480px; margin: 0 0 32px; border-left: 3px solid #f5ba01; color: #4a5862; padding-left: 18px; font-size: 19px; font-weight: 600; line-height: 1.55; }
 .home-hero__actions { display: flex; flex-wrap: wrap; align-items: center; gap: 16px; margin-top: auto; }
 .rua-button--large { padding: 15px 30px; font-size: 16px; }
 .home-text-link { border-bottom: 2px solid #f5ba01; color: #2f3d47; padding-bottom: 3px; font-size: 16px; font-weight: 700; }

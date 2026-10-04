@@ -314,7 +314,7 @@
   "home": {
     "heroTitle": "Delovna terapija",
     "heroKicker": "za majhne in velike",
-    "heroText": "Preko aktivnosti do samostojnosti v vsakdanjem življenju.",
+    "heroText": "Delovna terapija na vašem domu v Ljubljani in okolici.",
     "heroPrimary": "Rezervirajte termin",
     "heroSecondary": "Spoznajte področja",
     "heroImageAlt": "Delovna terapevtka pri aktivnosti z otrokom",
@@ -383,7 +383,8 @@
       "lead": "Napišite nam sporočilo ali nas pokličite za uvodno srečanje.",
       "emailLabel": "E-pošta",
       "phoneLabel": "Telefon",
-      "locationLabel": "Lokacija"
+      "locationLabel": "Lokacija",
+      "location": "Ljubljana in okolica"
     }
   },
   "childrenPage": {
