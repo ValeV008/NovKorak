@@ -1,6 +1,7 @@
 import { useTranslation } from "next-i18next";
 
 import Image from "next/image";
+import Link from "next/link";
 
 import GoldRule from "./GoldRule";
 import VideoPlayer from "./VideoPlayer";
@@ -29,6 +30,10 @@ interface ChildrenPageCopy {
   checklistSuffix: string;
   checklist: ChecklistItem[];
   followUp: string[];
+  relatedLinksIntro: string;
+  relatedLinksAnd: string;
+  pricingLink: string;
+  aboutLink: string;
   approachesTitle: string;
   approaches: Approach[];
 }
@@ -80,6 +85,9 @@ const ChildrenPage = () => {
 
       <section className="children-page__follow-up" aria-label={page.title}>
         {page.followUp.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
+        <p>
+          {page.relatedLinksIntro} <Link href="/cenik">{page.pricingLink}</Link> {page.relatedLinksAnd} <Link href="/o-nas">{page.aboutLink}</Link>.
+        </p>
       </section>
 
       <section className="children-page__approaches" aria-labelledby="children-approaches-title">

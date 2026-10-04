@@ -2,32 +2,10 @@ import { useTranslation } from "next-i18next";
 
 import Image from "next/image";
 import Link from "next/link";
-type FooterVariant = "home" | "subpage";
 
-interface FooterProps {
-  variant: FooterVariant;
-}
-
-const Footer = ({ variant }: FooterProps) => {
+const Footer = () => {
   const { t } = useTranslation("common");
   const footerPrefix = "shell.footer";
-
-  if (variant === "subpage") {
-    return (
-      <footer className="site-footer site-footer--subpage">
-        <div className="site-footer__subpage-top">
-          <Link href="/" aria-label={t("shell.brandAlt")}>
-            <Image className="site-footer__logo" src="/assets/rua-logo.png" alt="RUA delovna terapija" width={71} height={48} />
-          </Link>
-          <Link href="/" className="site-footer__home-link">{t(`${footerPrefix}.backHome`)}</Link>
-        </div>
-        <div className="site-footer__bottom">
-          <span>{t(`${footerPrefix}.copyright`)}</span>
-          <span>{t(`${footerPrefix}.serviceArea`)}</span>
-        </div>
-      </footer>
-    );
-  }
 
   return (
     <footer className="site-footer">
@@ -57,7 +35,7 @@ const Footer = ({ variant }: FooterProps) => {
           <div className="site-footer__links">
             <Link href="/#kontakt">{t("shell.contact")}</Link>
             <a href={`mailto:${t(`${footerPrefix}.email`)}`}>{t(`${footerPrefix}.email`)}</a>
-            <span>{t(`${footerPrefix}.phone`)}</span>
+            <a href={`tel:${t(`${footerPrefix}.phone`).replace(/[^\d+]/g, "")}`}>{t(`${footerPrefix}.phone`)}</a>
           </div>
         </div>
       </div>
