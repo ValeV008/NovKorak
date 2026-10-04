@@ -97,7 +97,7 @@
   "aboutMe": {
     "title": "O nas",
     "highlighted_title": "Delovna terapevtka in terapevtka pomoči z umetnostjo",
-    "img": "/assets/images/aboutMe.png",
+    "img": "/assets/images/aboutMe.webp",
     "href": "aboutMe"
   },
   "aboutMePage": {
@@ -168,7 +168,7 @@
       {
         "title": "Delovna terapija za otroke in mladostnike",
         "description": "Razvojno-nevrološka obravnava pomaga otrokom razvijati fino-motorične, socialne, gibalne, kognitivne, čustveno-socialne spretnosti, ki jih potrebujejo za igro in vsakdanje življenje.",
-        "img": "/assets/images/image_kaj_je_terapija.jpg",
+        "img": "/assets/images/image_kaj_je_terapija.webp",
         "gumbText": "Več o otrocih"
       },
       {

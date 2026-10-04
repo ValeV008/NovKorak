@@ -39,8 +39,8 @@ const ChildrenPage = () => {
   const isEnglish = i18n.language === "en";
   const videoSource = isEnglish ? "/assets/videos/OT_children_eng.mp4" : "/assets/videos/OT_children_slo.mp4";
   const videoPoster = isEnglish
-    ? "/assets/images/otroci/children_video_placeholder_eng.png"
-    : "/assets/images/otroci/children_video_placeholder_slo.png";
+    ? "/assets/images/otroci/children_video_placeholder_eng.webp"
+    : "/assets/images/otroci/children_video_placeholder_slo.webp";
 
   return (
     <main className="children-page">

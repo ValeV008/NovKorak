@@ -22,7 +22,7 @@ const AboutPage = () => {
       <section className="about-page__intro" aria-labelledby="about-page-title">
         <div className="about-page__portrait">
           <Image
-            src="/assets/images/aboutMe.png"
+            src="/assets/images/aboutMe.webp"
             alt={page.portraitAlt}
             fill
             priority

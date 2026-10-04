@@ -76,7 +76,7 @@ const HomePage = () => {
           </div>
         </div>
         <div className="home-hero__media floaty">
-          <Image src="/assets/hero-main.png" alt={home.heroImageAlt} fill priority sizes="(max-width: 900px) 100vw, 50vw" />
+          <Image src="/assets/hero-main.webp" alt={home.heroImageAlt} fill priority sizes="(max-width: 900px) 100vw, 50vw" />
         </div>
       </section>
 
@@ -91,7 +91,7 @@ const HomePage = () => {
           <div className="home-audience__visual">
             <div className="home-audience__circle home-audience__circle--gold" aria-hidden="true" />
             <div className="home-audience__image">
-              <Image src="/assets/images/image_kaj_je_terapija.jpg" alt={home.children.imageAlt} fill sizes="(max-width: 900px) 90vw, 400px" />
+              <Image src="/assets/images/image_kaj_je_terapija.webp" alt={home.children.imageAlt} fill sizes="(max-width: 900px) 90vw, 400px" />
             </div>
             <Link className="rua-button" href="/otroci">{home.children.cta}</Link>
           </div>
@@ -119,7 +119,7 @@ const HomePage = () => {
           <div className="home-audience__visual">
             <div className="home-audience__circle home-audience__circle--mint" aria-hidden="true" />
             <div className="home-audience__image">
-              <Image src="/assets/images/gospa.png" alt={home.adults.imageAlt} fill sizes="(max-width: 900px) 90vw, 400px" />
+              <Image src="/assets/images/gospa.webp" alt={home.adults.imageAlt} fill sizes="(max-width: 900px) 90vw, 400px" />
             </div>
             <Link className="rua-button" href="/odrasli">{home.adults.cta}</Link>
           </div>

@@ -36,8 +36,8 @@ const OlderAdultsPage = () => {
   const isEnglish = i18n.language === "en";
   const videoSource = isEnglish ? "/assets/videos/OT_elderly_eng.mp4" : "/assets/videos/OT_elderly_slo.mp4";
   const videoPoster = isEnglish
-    ? "/assets/images/odrasli/OT_elderly_eng_poster.png"
-    : "/assets/images/odrasli/OT_elderly_poster.png";
+    ? "/assets/images/odrasli/OT_elderly_eng_poster.webp"
+    : "/assets/images/odrasli/OT_elderly_poster.webp";
 
   return (
     <main className="older-adults-page">
