@@ -7,7 +7,30 @@
     "collageImage": "/assets/images/homepage_kolaz.png"
   },
   "shell": {
-    "metaTitle": "RUA | Occupational therapy",
+    "metaTitle": "RUA I Rehabilitacija Umetnost Aktivnost",
+    "metaDescription": "Integrative occupational therapy for children and adults.",
+    "meta": {
+      "home": {
+        "title": "RUA I Rehabilitacija Umetnost Aktivnost",
+        "description": "Integrative occupational therapy for children and adults."
+      },
+      "children": {
+        "title": "Occupational Therapy for Children and Adolescents | RUA",
+        "description": "Occupational therapy for children and adolescents at RUA."
+      },
+      "olderAdults": {
+        "title": "Occupational Therapy for Older Adults | RUA",
+        "description": "Occupational therapy for older adults at RUA."
+      },
+      "pricing": {
+        "title": "Pricing | RUA",
+        "description": "RUA occupational therapy service pricing."
+      },
+      "about": {
+        "title": "About Us | RUA",
+        "description": "Learn about RUA and our integrative approach to occupational therapy."
+      }
+    },
     "brandAlt": "RUA \u2014 Rehabilitation \u00b7 Art \u00b7 Activity",
     "navigationLabel": "Main navigation",
     "menuOpen": "Open main menu",

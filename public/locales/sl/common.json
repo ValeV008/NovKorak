@@ -7,7 +7,30 @@
     "collageImage": "/assets/images/homepage_kolaz.png"
   },
   "shell": {
-    "metaTitle": "RUA | Delovna terapija",
+    "metaTitle": "RUA I Rehabilitacija Umetnost Aktivnost",
+    "metaDescription": "Integrativna delovno-terapevtska obravnava otrok in odraslih.",
+    "meta": {
+      "home": {
+        "title": "RUA I Rehabilitacija Umetnost Aktivnost",
+        "description": "Integrativna delovno-terapevtska obravnava otrok in odraslih."
+      },
+      "children": {
+        "title": "Delovna terapija za otroke in mladostnike | RUA",
+        "description": "Delovna terapija za otroke in mladostnike v RUA."
+      },
+      "olderAdults": {
+        "title": "Delovna terapija za starejše odrasle | RUA",
+        "description": "Delovna terapija za starejše odrasle v RUA."
+      },
+      "pricing": {
+        "title": "Cenik | RUA",
+        "description": "Cenik delovno-terapevtskih obravnav RUA."
+      },
+      "about": {
+        "title": "O nas | RUA",
+        "description": "Spoznajte RUA in naš integrativni pristop k delovni terapiji."
+      }
+    },
     "brandAlt": "RUA \u2014 Rehabilitacija \u00b7 Umetnost \u00b7 Aktivnost",
     "navigationLabel": "Glavna navigacija",
     "menuOpen": "Odpri glavni meni",

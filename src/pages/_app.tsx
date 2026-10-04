@@ -19,8 +19,18 @@ const EMPTY_INITIAL_I18N_CONFIG: UserConfig = {
 };
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
-  const { locale } = useRouter();
+  const { locale, pathname } = useRouter();
   const { t } = useTranslation("common");
+  const metaKey =
+    pathname === "/otroci"
+      ? "children"
+      : pathname === "/odrasli"
+        ? "olderAdults"
+        : pathname === "/cenik"
+          ? "pricing"
+          : pathname === "/o-nas"
+            ? "about"
+            : "home";
 
   useEffect(() => {
     document.documentElement.lang = locale || AppConfig.locale;
@@ -29,7 +39,8 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
   return (
     <>
       <Head>
-        <title>{t("shell.metaTitle")}</title>
+        <title>{t(`shell.meta.${metaKey}.title`)}</title>
+        <meta name="description" content={t(`shell.meta.${metaKey}.description`)} />
       </Head>
       <NextTopLoader color="#f5ba01" showSpinner={false} />
       <Component {...pageProps} />
