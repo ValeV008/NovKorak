@@ -7,3 +7,10 @@
 
 [[plugins]]
   package = "@netlify/plugin-nextjs"
+
+[[plugins]]
+  package = "./plugins/indexnow"
+
+  [plugins.inputs]
+    siteUrl = "https://ruaterapija.si"
+    key = "22ff7e65b2284a82b9825e091614299d"

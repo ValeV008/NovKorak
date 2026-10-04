@@ -1,0 +1,6 @@
+name: indexnow
+inputs:
+  - name: siteUrl
+    required: true
+  - name: key
+    required: true
