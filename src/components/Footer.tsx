@@ -17,7 +17,7 @@ const Footer = ({ variant }: FooterProps) => {
       <footer className="site-footer site-footer--subpage">
         <div className="site-footer__subpage-top">
           <Link href="/" aria-label={t("shell.brandAlt")}>
-            <Image className="site-footer__logo" src="/assets/rua-logo.png" alt="" width={71} height={48} />
+            <Image className="site-footer__logo" src="/assets/rua-logo.png" alt="RUA delovna terapija" width={71} height={48} />
           </Link>
           <Link href="/" className="site-footer__home-link">{t(`${footerPrefix}.backHome`)}</Link>
         </div>
@@ -34,7 +34,7 @@ const Footer = ({ variant }: FooterProps) => {
       <div className="site-footer__grid">
         <div>
           <Link href="/" aria-label={t("shell.brandAlt")}>
-            <Image className="site-footer__logo" src="/assets/rua-logo.png" alt="" width={107} height={72} />
+            <Image className="site-footer__logo" src="/assets/rua-logo.png" alt="RUA delovna terapija" width={107} height={72} />
           </Link>
           <p className="site-footer__tagline">{t(`${footerPrefix}.tagline`)}</p>
         </div>

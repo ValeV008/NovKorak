@@ -79,7 +79,7 @@ const Header = () => {
     <header className="site-header">
       <div className="site-header__inner">
         <Link href="/" className="site-header__brand" aria-label={t("shell.brandAlt")}>
-          <Image className="site-header__logo" src="/assets/rua-logo.png" alt="" width={68} height={46} priority />
+          <Image className="site-header__logo" src="/assets/rua-logo.png" alt="RUA delovna terapija" width={68} height={46} priority />
         </Link>
         <nav className="site-header__nav" aria-label={t("shell.navigationLabel")}>
           {navigation.map((item) => (
