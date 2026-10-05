@@ -140,6 +140,7 @@
     ],
     "educationTitle": "Completed trainings and courses",
     "educationItems": [
+      "Integrated sensory feeding workshop [Course Eating problems] | [26 - 27 September 2026]",
       "12th Congress of Occupational Therapists of Slovenia: Co-creating change from profession to calling | [May 2026]",
       "Participation at the international Ontario Society of Occupational Therapists (OSOT) Conference [23 October 2025 – 24 October 2025]",
       "Pediatric palliative care | University Children's Hospital Ljubljana, facilitators: POO PEK [17 November – 21 November 2025]",
@@ -562,7 +563,7 @@
     "serviceLabel": "Area of interest",
     "serviceChildren": "Children & adolescents",
     "serviceAdults": "Older adults",
-    "serviceArt": "Art therapy",
+    "serviceArt": "Expressive arts therapies",
     "successTitle": "Thank you!",
     "homeSuccess": "We've received your message and will get back to you soon.",
     "localSubmissionUnavailable": "The message was not sent locally. Test Netlify Forms in a Netlify deploy preview or with Netlify Dev.",
