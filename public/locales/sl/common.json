@@ -43,7 +43,8 @@
       { "name": "Otroci in mladostniki", "href": "/otroci" },
       { "name": "Starejši odrasli", "href": "/odrasli" },
       { "name": "Cenik", "href": "/cenik" },
-      { "name": "O nas", "href": "/o-nas" }
+      { "name": "O nas", "href": "/o-nas" },
+      { "name": "Blog", "href": "/blog" }
     ],
     "footer": {
       "tagline": "Delovna terapija za majhne in velike.",

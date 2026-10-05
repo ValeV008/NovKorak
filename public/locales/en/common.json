@@ -43,7 +43,8 @@
       { "name": "Children & adolescents", "href": "/otroci" },
       { "name": "Older adults", "href": "/odrasli" },
       { "name": "Pricing", "href": "/cenik" },
-      { "name": "About us", "href": "/o-nas" }
+      { "name": "About us", "href": "/o-nas" },
+      { "name": "Blog", "href": "/blog" }
     ],
     "footer": {
       "tagline": "Occupational therapy for the young and the old.",
