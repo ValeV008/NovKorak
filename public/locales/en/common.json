@@ -1,9 +1,9 @@
 {
   "company": {
     "name": "RUA",
-    "logoOrange": "/assets/rua-logo.png",
-    "logoOrangeSubtext": "/assets/rua-logo.png",
-    "logoWhite": "/assets/rua-logo.png",
+    "logoOrange": "/assets/images/logo/logo_orange.jpg",
+    "logoOrangeSubtext": "/assets/images/logo/logo_orange_subtext.jpg",
+    "logoWhite": "/assets/images/logo/logo_white.jpg",
     "collageImage": "/assets/images/homepage_kolaz.png"
   },
   "shell": {

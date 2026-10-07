@@ -62,7 +62,7 @@ button:not(:disabled), a[href] { cursor: pointer; }
 .site-header { position: sticky; top: 0; z-index: 50; border-bottom: 1px solid rgb(47 61 71 / 8%); background: rgb(253 252 247 / 90%); backdrop-filter: blur(10px); }
 .site-header__inner { display: flex; min-height: 82px; max-width: var(--container-rua-wide); align-items: center; gap: 30px; margin: 0 auto; padding: 14px var(--spacing-rua-page); }
 .site-header__brand { flex: none; }
-.site-header__logo { display: block; height: 46px; width: auto; border-radius: 8px; }
+.site-header__logo { display: block; height: 60px; width: auto; border-radius: 8px; }
 .site-header__nav { display: flex; align-items: center; gap: 30px; margin-left: auto; font-size: 15px; font-weight: 600; }
 .site-header__link { color: #2f3d47; transition: color 150ms ease; }
 .site-header__link:hover, .site-header__link[aria-current="page"] { color: #b8005e; }
@@ -86,7 +86,7 @@ button:not(:disabled), a[href] { cursor: pointer; }
 
 .site-footer { margin-top: auto; border-top: 1px solid rgb(47 61 71 / 10%); background: #fdfcf7; color: #2f3d47; padding: 60px 48px 30px; }
 .site-footer__grid { display: grid; max-width: 1200px; grid-template-columns: 1.4fr repeat(3, 1fr); gap: 40px; margin: 0 auto; }
-.site-footer__logo { display: block; width: auto; height: 72px; margin-bottom: 18px; border-radius: 8px; }
+.site-footer__logo { display: block; width: auto; height: 60px; margin-bottom: 18px; border-radius: 8px; }
 .site-footer__tagline { max-width: 260px; margin: 0; color: #5a6872; font-size: 14px; }
 .site-footer__heading { margin: 0 0 16px; color: #b8005e; font-size: 12px; font-weight: 800; letter-spacing: .16em; text-transform: uppercase; }
 .site-footer__links { display: grid; gap: 10px; color: #2f3d47; font-size: 14px; }
@@ -111,7 +111,8 @@ button:not(:disabled), a[href] { cursor: pointer; }
 }
 @media (max-width: 520px) {
   h1 { font-size: 32px; }
-  .site-header__logo { height: 40px; }
+  .site-header__logo { height: 56px; }
+  .site-footer__logo { height: 56px; }
   .site-header__mobile-nav { font-size: 12px; }
 }
 @media (prefers-reduced-motion: reduce) {

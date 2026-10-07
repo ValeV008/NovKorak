@@ -1,4 +1,0 @@
-interface:
-  display_name: "NovKorak Component Inventory"
-  short_description: "List and summarize NovKorak React component files"
-  default_prompt: "Use $list-components to inventory components under src/components."

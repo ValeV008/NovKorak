@@ -5,6 +5,7 @@ import Link from "next/link";
 
 const Footer = () => {
   const { t } = useTranslation("common");
+  const logo = t("company.logoOrange");
   const footerPrefix = "shell.footer";
 
   return (
@@ -12,7 +13,7 @@ const Footer = () => {
       <div className="site-footer__grid">
         <div>
           <Link href="/" aria-label={t("shell.brandAlt")}>
-            <Image className="site-footer__logo" src="/assets/rua-logo.png" alt="RUA delovna terapija" width={107} height={72} />
+              <Image className="site-footer__logo" src={logo} alt="RUA delovna terapija" width={124} height={86} priority />
           </Link>
           <p className="site-footer__tagline">{t(`${footerPrefix}.tagline`)}</p>
         </div>

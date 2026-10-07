@@ -13,7 +13,7 @@ import { AppConfig } from "../utils/AppConfig";
 
 const SITE_URL = "https://ruaterapija.si";
 
-const STRUCTURED_DATA = {
+const getStructuredData = (logo: string) => ({
   "@context": "https://schema.org",
   "@graph": [
     {
@@ -22,7 +22,7 @@ const STRUCTURED_DATA = {
       name: "RUA, delovna terapija",
       alternateName: "RUA terapija",
       url: `${SITE_URL}/`,
-      logo: `${SITE_URL}/assets/rua-logo.png`,
+      logo,
       telephone: "+386 40 287 507",
       email: "ruaterapija@gmail.com",
       description:
@@ -68,7 +68,7 @@ const STRUCTURED_DATA = {
       ],
     },
   ],
-};
+});
 
 const EMPTY_INITIAL_I18N_CONFIG: UserConfig = {
   i18n: {
@@ -80,6 +80,7 @@ const EMPTY_INITIAL_I18N_CONFIG: UserConfig = {
 const MyApp = ({ Component, pageProps }: AppProps) => {
   const { locale, pathname } = useRouter();
   const { t } = useTranslation("common");
+  const logo = t("company.logoOrange");
   const slUrl = `${SITE_URL}${pathname === "/" ? "/" : `${pathname}/`}`;
   const enUrl = `${SITE_URL}/en${pathname === "/" ? "/" : `${pathname}/`}`;
   const canonicalUrl = locale === "en" ? enUrl : slUrl;
@@ -107,7 +108,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
         <link rel="alternate" hrefLang="sl" href={slUrl} />
         <link rel="alternate" hrefLang="en" href={enUrl} />
         <link rel="alternate" hrefLang="x-default" href={slUrl} />
-        <script type="application/ld+json">{JSON.stringify(STRUCTURED_DATA)}</script>
+        <script type="application/ld+json">{JSON.stringify(getStructuredData(`${SITE_URL}${logo}`))}</script>
       </Head>
       <NextTopLoader color="#f5ba01" showSpinner={false} />
       <Component {...pageProps} />
