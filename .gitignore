@@ -49,13 +49,8 @@ node_modules/
 /playwright/.cache/
 /playwright/.auth/
 
-# Claude local config
-.claude/
-
 # Playwright CLI local artifacts
 .playwright-cli/
-
-# Local verification artifacts
 /.playwright-mcp/
 /output/playwright/
 /output/npm-migration/
